@@ -1,0 +1,24 @@
+{
+  "name": "foam.css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "./node_modules/.bin/node-sass styles -o dist",
+    "postinstall": "npm run build-css",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-o-a-m/foam.css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f-o-a-m/foam.css/issues"
+  },
+  "homepage": "https://github.com/f-o-a-m/foam.css#readme",
+  "dependencies": {
+    "node-sass": "^4.6.0"
+  }
+}
