@@ -142,14 +142,13 @@ li, ol, ul {
 
 #sideBarContainer {
   display: block;
-  width: 21rem;
+  width: 24rem;
   padding: 1rem;
   height: 100vh;
   position: fixed;
   color: white;
   z-index: 800;
-  padding-top: 0;
-  pointer-events: none; }
+  padding-top: 0; }
 
 #searchbar {
   border-radius: 999px;
@@ -167,9 +166,9 @@ li, ol, ul {
 
 #searchWrapper {
   z-index: 99;
-  position: fixed;
-  width: 100%;
-  width: 21rem; }
+  position: absolute;
+  left: 1rem;
+  right: 1rem; }
 
 #glass {
   display: flex;
@@ -183,9 +182,9 @@ li, ol, ul {
 
 #cardColumn {
   padding-top: 3rem;
-  overflow: hidden;
+  overflow-y: scroll;
   height: 100vh;
-  width: 21rem; }
+  width: 100%; }
 
 #mapControlsContainer {
   border-radius: 999px;
@@ -293,7 +292,7 @@ li, ol, ul {
 
 .cardContainer {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 1.8rem;
+  border-radius: 20px;
   margin-top: 1rem;
   position: relative;
   width: 100%;

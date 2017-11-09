@@ -7,7 +7,8 @@
   color: white;
   z-index: 800;
   padding-top: 0;
-  pointer-events: none;
+  // pointer-events: none;
+  // overflow: scroll;
 }
 
 #searchbar{
@@ -27,9 +28,10 @@
 
 #searchWrapper {
   z-index: 99;
-  position: fixed;
-  width: 100%;
-  width: $d-7;
+  position: absolute;
+  left: $d-1;
+  right: $d-1;
+  // width: 100%;
 }
 
 #glass {
@@ -37,13 +39,13 @@
   height: 100%;
   position: absolute;
   left: 0.8rem;
-  top:8px;;
+  top:8px;
   font-size: $t-3;
 }
 
 #cardColumn {
   padding-top: 3rem;
-  overflow: hidden;
+  overflow-y: scroll;
   height: 100vh;
-  width: $d-7;
+  width: 100%;
 }
