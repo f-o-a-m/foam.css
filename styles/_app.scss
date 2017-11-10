@@ -1,10 +1,11 @@
 // app-wide defaults
 
-button{
+button {
 	outline: none;
 	border:none;
 	font-size: inherit;
 	user-select: none;
+	border-radius: 0;
 }
 
 button:hover{
@@ -12,7 +13,7 @@ button:hover{
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 li, ol, ul {
@@ -20,4 +21,17 @@ li, ol, ul {
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+input {
+	@include pill;
+  @include padding-interface;
+	@include inner-shadow;
+  @include shadow-l;
+	font-size: inherit;
+  pointer-events: all;
+	margin-top: 1rem;
+	border: 1px solid $silver;
+  outline: none;
+	width: 100%;
 }

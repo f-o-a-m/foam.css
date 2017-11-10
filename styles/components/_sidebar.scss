@@ -1,29 +1,11 @@
 #sideBarContainer {
-  display: block;
-  width: $d-7;
-  padding: $d-1;
-  height: 100vh;
+  @include sidebar;
   position: fixed;
-  color: white;
-  z-index: 800;
-  padding-top: 0;
-  // pointer-events: none;
-  // overflow: scroll;
+  transition: transform .3s ease;
 }
 
-#searchbar{
-  @include pill;
-  @include padding-interface;
-  padding-left: 2.5rem; // for magnifying glass
-  @include inner-shadow;
-  @include shadow-l;
-  width: 100%;
-  z-index: 800;
-  border: 1px solid $silver;
-  outline: none;
-  margin-top: 1rem;
-  font-size: inherit;
-  pointer-events: all;
+.closed #sideBarContainer{
+  transform: translateX(-286px);
 }
 
 #searchWrapper {
@@ -31,16 +13,42 @@
   position: absolute;
   left: $d-1;
   right: $d-1;
-  // width: 100%;
+}
+
+#searchbar {
+  padding-left: 2.5rem; // for magnifying glass
+  position: relative;
+  z-index: 50;
 }
 
 #glass {
   @include flex-all-center;
   height: 100%;
   position: absolute;
-  left: 0.8rem;
-  top:8px;
+  left: .75rem;
+  top:0;
   font-size: $t-3;
+}
+
+#button-collapseSidebar{
+  position: absolute;
+  @include padding-interface;
+  @include pill-glass;
+  color: white;
+  font-size: $t-2;
+  margin-top: 1rem;
+  padding-left: 50px;
+  transition: transform 300ms ease;
+  transform: translateX(-40px);
+  z-index: 49;
+}
+
+#button-collapseSidebar:hover {
+  background-color: $pendingBlue;
+  background: $pendingBlue;
+  border: 1px solid $pendingBlue;
+  cursor: pointer;
+  transform: translateX(-30px);
 }
 
 #cardColumn {

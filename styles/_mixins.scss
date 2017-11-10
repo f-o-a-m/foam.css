@@ -30,6 +30,18 @@
   padding:0;
 }
 
+// structural
+@mixin fixed-full {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+}
+
 // flexbox
 @mixin flex-align-center {
   display: flex;
@@ -77,8 +89,12 @@
   border-radius: 999px 0px 0px 999px;
 }
 
-@mixin radius-friendly {
+@mixin radius-card {
   border-radius: 20px;
+}
+
+@mixin radius-tile {
+  border-radius: 25px;
 }
 
 // color application
@@ -106,6 +122,47 @@
   fill: $pink;
 }
 
+@mixin bg-copper-gradient {
+  background-color: rgba(215,149,133,1);
+  background: -moz-linear-gradient(top, rgba(215,149,133,1) 0%, rgba(215,149,133,0.27) 98%, rgba(215,149,133,0.25) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(215,149,133,1) 0%,rgba(215,149,133,0.27) 98%,rgba(215,149,133,0.25) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(215,149,133,1) 0%,rgba(215,149,133,0.27) 98%,rgba(215,149,133,0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin bg-glass-gradient {
+  background-color: rgba(51,51,51,1);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 @mixin dim {
   opacity: .6;
+}
+
+@mixin debug {
+  background-color: red;
+  border: 1px solid white;
+  opacity: 0.2;
+}
+
+// component-level
+@mixin sidebar {
+  display: block;
+  width: 360px;
+  padding: $d-1;
+  height: 100vh;
+  color: white;
+  z-index: 800;
+  padding-top: 0;
+  overflow: none;
+}
+
+@mixin pill-glass {
+  @include bg-glass-gradient;
+  @include pill;
+  color: white;
+  border: 1px solid $mediumGrey;
+  &:hover{
+  }
 }

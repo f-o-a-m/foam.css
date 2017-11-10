@@ -1,0 +1,126 @@
+#dash-container {
+  @include fixed-full;
+  color: white;
+  @include bg-copper-gradient;
+  will-change: opacity;
+  display: flex;
+}
+
+.button-closeDash {
+  position: absolute;
+  right: $d-2;
+  top: $d-1;
+  width: 2rem;
+  height: 2rem;
+  @include pill;
+  background-color: transparent;
+  color: white;
+}
+
+.dash-column-small {
+  @include sidebar;
+  will-change: transform;
+}
+
+.dash-column-large {
+  height: 100vh;
+  flex: 1;
+  overflow-y: scroll;
+  @include padding-m;
+  padding-top: 4rem;
+  will-change: transform;
+}
+
+.dash-tile {
+  @include radius-tile;
+  padding: $d-2;
+  margin-bottom: $d-2;
+  background-color: $darkGrey;
+  min-height: 600px;
+}
+
+.dash-stats-hud {
+  @include radius-card;
+  margin-top: $d-2;
+  padding: $d-2;
+  width: 100%;
+  min-height: 100px;
+  background-color: black;
+}
+
+.dash-stats-d3{
+  margin-top: $d-2;
+  position: relative;
+}
+
+.dash-stats-rangeControl{
+  display: inline-block;
+  position: relative;
+  right: 0;
+  margin-bottom: 0.5rem;
+}
+
+.dash-stats-rangeControl button {
+  @include pill;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  margin-left: 0.25rem;
+  background-color: transparent;
+  color: white;
+  transition: 250ms background-color;
+}
+
+.dash-stats-rangeControl button:hover {
+  background-color: #111111;
+}
+
+.dash-stats-rangeControl button.selected {
+  background-color: black;
+}
+
+@keyframes opendash {
+  0% {
+    z-index: 999;
+    opacity: 0;
+  }
+
+  100% {
+    z-index: 999;
+    opacity: 1;
+  }
+}
+
+@keyframes closedash {
+  0% {
+    opacity: 1;
+    z-index: 999;
+  }
+
+  99% {
+    opacity: 0;
+    z-index: 999;
+  }
+  100% {
+    z-index: 0;
+    opacity: 0;
+  }
+}
+
+#dash-container.dash-closed {
+  animation: closedash 350ms;
+  animation-fill-mode: forwards;
+}
+
+#dash-container.dash-open {
+  animation: opendash 350ms;
+  animation-fill-mode: forwards;
+}
+
+.dash-closed .dash-column-large {
+  transform: translateX(100px);
+  transition: transform 300ms;
+}
+
+.dash-closed .dash-column-large {
+  transform: translateX(0px);
+  transition: transform 300ms;
+}

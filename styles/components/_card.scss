@@ -1,6 +1,6 @@
 .cardContainer{
   @include shadow-l
-  @include radius-friendly;
+  @include radius-card;
   margin-top: $d-1;
   position: relative;
   width: 100%;

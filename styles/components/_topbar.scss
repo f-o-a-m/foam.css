@@ -1,6 +1,5 @@
 #topBarContainer{
   display: block;
-  color: white;
   padding: $d-1;
   position: fixed;
   z-index: 800;
@@ -9,17 +8,13 @@
 }
 
 .button-newCSC{
-  @include pill;
   @include padding-interface;
-  @include all-blue-bg;
-  color: white;
+  @include pill-glass;
 }
 
 .button-foam{
-  @include pill;
   @include padding-interface;
-  @include all-gray-bg;
-  color: white;
+  @include pill-glass;
   margin-left: 1em;
 }
 
