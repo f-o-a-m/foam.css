@@ -1,7 +1,6 @@
 #mapControlsContainer{
   @include shadow-s;
   @include pill-glass;
-  border: 1px solid $mediumGrey;
   position: fixed;
   bottom: $d-2;
   right: $d-1;
@@ -17,7 +16,6 @@
   width: 2.25rem;
 }
 
-
 .button-layers {
   @include pill-l;
   padding-left: $sub-5;
@@ -32,7 +30,6 @@
 
 .button-zoomIn {
   color: inherit;
-
 }
 
 .button-zoomOut {

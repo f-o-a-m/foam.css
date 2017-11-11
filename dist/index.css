@@ -92,6 +92,10 @@ p {
   background-color: #242424;
   color: white; }
 
+.hidden {
+  opacity: 0.0;
+  visibility: hidden; }
+
 button {
   outline: none;
   border: none;
@@ -366,7 +370,6 @@ input {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-radius: 999px;
   color: white;
-  border: 1px solid #4F4F4F;
   border: 1px solid #4F4F4F;
   position: fixed;
   bottom: 2rem;
