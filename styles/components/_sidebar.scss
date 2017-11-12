@@ -4,8 +4,12 @@
   transition: transform .3s ease;
 }
 
-.closed #sideBarContainer{
-  transform: translateX(-286px);
+#sideBarContainer.sidebar-closed {
+  transform: translateX(calc(#{-$sidebarWidth} + 16px));
+}
+
+#sideBarContainer.sidebar-open {
+  transform: translateX(0px);
 }
 
 #searchWrapper {
@@ -34,6 +38,7 @@
   position: absolute;
   @include padding-interface;
   @include pill-glass;
+  @include hover-glass;
   color: white;
   font-size: $t-2;
   margin-top: 1rem;
@@ -44,10 +49,6 @@
 }
 
 #button-collapseSidebar:hover {
-  background-color: $pendingBlue;
-  background: $pendingBlue;
-  border: 1px solid $pendingBlue;
-  cursor: pointer;
   transform: translateX(-30px);
 }
 

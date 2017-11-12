@@ -32,6 +32,7 @@
 }
 
 .dash-tile {
+  @include shadow-l;
   @include radius-tile;
   padding: $d-2;
   margin-bottom: $d-2;
@@ -54,7 +55,9 @@
 }
 
 .dash-stats-rangeControl{
-  display: inline-block;
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
   position: relative;
   right: 0;
   margin-bottom: 0.5rem;
@@ -77,50 +80,33 @@
   background-color: black;
 }
 
-@keyframes opendash {
-  0% {
-    z-index: 999;
-    opacity: 0;
-  }
-
-  100% {
-    z-index: 999;
-    opacity: 1;
-  }
+.dash-linegraph-container{
+  margin-top: 1em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-top: 1px solid $silver;
+  border-bottom: 1px solid $silver;
 }
 
-@keyframes closedash {
-  0% {
-    opacity: 1;
-    z-index: 999;
-  }
-
-  99% {
-    opacity: 0;
-    z-index: 999;
-  }
-  100% {
-    z-index: 0;
-    opacity: 0;
-  }
+.dash-closed {
+  z-index: -999;
+  opacity: 0;
+  transition: opacity 400ms ease, z-index 300ms step-end;
 }
 
-#dash-container.dash-closed {
-  animation: closedash 350ms;
-  animation-fill-mode: forwards;
-}
-
-#dash-container.dash-open {
-  animation: opendash 350ms;
-  animation-fill-mode: forwards;
+.dash-open {
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 400ms ease, z-index 300ms step-start;
 }
 
 .dash-closed .dash-column-large {
   transform: translateX(100px);
-  transition: transform 300ms;
+  transition: transform 400ms;
 }
 
-.dash-closed .dash-column-large {
+.dash-open .dash-column-large {
   transform: translateX(0px);
-  transition: transform 300ms;
+  transition: transform 400ms ease;
+
 }

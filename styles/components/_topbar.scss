@@ -10,11 +10,13 @@
 .button-newCSC{
   @include padding-interface;
   @include pill-glass;
+  @include hover-glass;
 }
 
 .button-foam{
   @include padding-interface;
   @include pill-glass;
+  @include hover-glass;
   margin-left: 1em;
 }
 

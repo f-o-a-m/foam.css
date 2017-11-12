@@ -69,6 +69,12 @@ h3 {
   margin-bottom: 1rem;
   font-weight: 400; }
 
+h4 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: #828282; }
+
 p {
   margin-bottom: 1rem;
   font-size: 1rem; }
@@ -137,7 +143,6 @@ input {
   content: '';
   display: block;
   color: white;
-  background-color: #d79585;
   background: -moz-linear-gradient(top, #d79585 0%, rgba(215, 149, 133, 0.27) 98%, rgba(215, 149, 133, 0.25) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #d79585 0%, rgba(215, 149, 133, 0.27) 98%, rgba(215, 149, 133, 0.25) 100%);
@@ -159,7 +164,7 @@ input {
 
 .dash-column-small {
   display: block;
-  width: 360px;
+  width: 23rem;
   padding: 1rem;
   height: 100vh;
   color: white;
@@ -177,6 +182,7 @@ input {
   will-change: transform; }
 
 .dash-tile {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -196,7 +202,9 @@ input {
   position: relative; }
 
 .dash-stats-rangeControl {
-  display: inline-block;
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
   position: relative;
   right: 0;
   margin-bottom: 0.5rem; }
@@ -215,40 +223,30 @@ input {
 .dash-stats-rangeControl button.selected {
   background-color: black; }
 
-@keyframes opendash {
-  0% {
-    z-index: 999;
-    opacity: 0; }
-  100% {
-    z-index: 999;
-    opacity: 1; } }
+.dash-linegraph-container {
+  margin-top: 1em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-top: 1px solid #BDBDBD;
+  border-bottom: 1px solid #BDBDBD; }
 
-@keyframes closedash {
-  0% {
-    opacity: 1;
-    z-index: 999; }
-  99% {
-    opacity: 0;
-    z-index: 999; }
-  100% {
-    z-index: 0;
-    opacity: 0; } }
+.dash-closed {
+  z-index: -999;
+  opacity: 0;
+  transition: opacity 400ms ease, z-index 300ms step-end; }
 
-#dash-container.dash-closed {
-  animation: closedash 350ms;
-  animation-fill-mode: forwards; }
-
-#dash-container.dash-open {
-  animation: opendash 350ms;
-  animation-fill-mode: forwards; }
+.dash-open {
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 400ms ease, z-index 300ms step-start; }
 
 .dash-closed .dash-column-large {
   transform: translateX(100px);
-  transition: transform 300ms; }
+  transition: transform 400ms; }
 
-.dash-closed .dash-column-large {
+.dash-open .dash-column-large {
   transform: translateX(0px);
-  transition: transform 300ms; }
+  transition: transform 400ms ease; }
 
 #topBarContainer {
   display: block;
@@ -261,29 +259,47 @@ input {
 .button-newCSC {
   padding: 0.5rem 1rem 0.5rem 1rem;
   background-color: #333333;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
   border-radius: 999px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
   color: white;
-  border: 1px solid #4F4F4F; }
+  border: 1px solid #828282;
+  transition: background-position 150ms, background-color 150ms; }
+  .button-newCSC:hover {
+    background-position: -120px;
+    background-color: #2F80ED;
+    border-color: #2F80ED;
+    color: white; }
 
 .button-foam {
   padding: 0.5rem 1rem 0.5rem 1rem;
   background-color: #333333;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
   border-radius: 999px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
   color: white;
-  border: 1px solid #4F4F4F;
+  border: 1px solid #828282;
+  transition: background-position 150ms, background-color 150ms;
   margin-left: 1em; }
+  .button-foam:hover {
+    background-position: -120px;
+    background-color: #2F80ED;
+    border-color: #2F80ED;
+    color: white; }
 
 .img-ft {
   height: 0.875rem;
@@ -291,7 +307,7 @@ input {
 
 #sideBarContainer {
   display: block;
-  width: 360px;
+  width: 23rem;
   padding: 1rem;
   height: 100vh;
   color: white;
@@ -301,8 +317,11 @@ input {
   position: fixed;
   transition: transform .3s ease; }
 
-.closed #sideBarContainer {
-  transform: translateX(-286px); }
+#sideBarContainer.sidebar-closed {
+  transform: translateX(calc(-23rem + 16px)); }
+
+#sideBarContainer.sidebar-open {
+  transform: translateX(0px); }
 
 #searchWrapper {
   z-index: 99;
@@ -329,15 +348,19 @@ input {
   position: absolute;
   padding: 0.5rem 1rem 0.5rem 1rem;
   background-color: #333333;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
   border-radius: 999px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
   color: white;
-  border: 1px solid #4F4F4F;
+  border: 1px solid #828282;
+  transition: background-position 150ms, background-color 150ms;
   color: white;
   font-size: 1rem;
   margin-top: 1rem;
@@ -345,12 +368,13 @@ input {
   transition: transform 300ms ease;
   transform: translateX(-40px);
   z-index: 49; }
+  #button-collapseSidebar:hover {
+    background-position: -120px;
+    background-color: #2F80ED;
+    border-color: #2F80ED;
+    color: white; }
 
 #button-collapseSidebar:hover {
-  background-color: #2F80ED;
-  background: #2F80ED;
-  border: 1px solid #2F80ED;
-  cursor: pointer;
   transform: translateX(-30px); }
 
 #cardColumn {
@@ -362,15 +386,18 @@ input {
 #mapControlsContainer {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #333333;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, transparent 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
   border-radius: 999px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
   color: white;
-  border: 1px solid #4F4F4F;
+  border: 1px solid #828282;
   position: fixed;
   bottom: 2rem;
   right: 1rem;
@@ -381,10 +408,16 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-position 150ms, background-color 150ms;
   font-size: 1.5rem;
   background-color: transparent;
   height: 2.25rem;
   width: 2.25rem; }
+  #mapControlsContainer button:hover {
+    background-position: -120px;
+    background-color: #2F80ED;
+    border-color: #2F80ED;
+    color: white; }
 
 .button-layers {
   border-radius: 999px 0px 0px 999px;

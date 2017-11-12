@@ -10,6 +10,7 @@
 
 #mapControlsContainer button{
   @include flex-all-center;
+  @include hover-glass;
   font-size: $t-4;
   background-color: transparent;
   height: 2.25rem;
