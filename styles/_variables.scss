@@ -17,6 +17,7 @@ $sub-5: 0.800rem;
 // colors
 $black:               black;
 $white:               white;
+$lossRed:             #EB5757;
 $activeGreen:         #27AE60;
 $activeGreen_dark:    darken($activeGreen, 10%);
 $pendingBlue:         #2F80ED;
@@ -30,3 +31,6 @@ $silver:              #BDBDBD;
 $brassL:              #895C51;
 $brassR:              #7D4D40;
 $brassT:              #D89583;
+
+$dash-transform-delta: 20px;
+$dash-transform-time: 250ms;

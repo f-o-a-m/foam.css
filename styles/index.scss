@@ -5,7 +5,6 @@
 @import '_variables';
 @import '_mixins';
 @import '_type';
-@import '_atomics';
 
 // global
 @import '_app';
@@ -21,3 +20,4 @@
 //components
 @import './components/_bubbles';
 @import './components/_card';
+@import './components/_cardColumn';

@@ -14,9 +14,9 @@
 
 #searchWrapper {
   z-index: 99;
-  position: absolute;
   left: $d-1;
   right: $d-1;
+
 }
 
 #searchbar {
@@ -26,11 +26,12 @@
 }
 
 #glass {
+  z-index: 51;
   @include flex-all-center;
-  height: 100%;
-  position: absolute;
-  left: .75rem;
-  top:0;
+  height: 36px;
+  position: fixed;
+  left: 1.75rem;
+  top:1rem;
   font-size: $t-3;
 }
 
@@ -50,11 +51,4 @@
 
 #button-collapseSidebar:hover {
   transform: translateX(-30px);
-}
-
-#cardColumn {
-  padding-top: 3rem;
-  overflow-y: scroll;
-  height: 100vh;
-  width: 100%;
 }

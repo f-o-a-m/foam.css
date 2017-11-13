@@ -4,22 +4,19 @@
   @include bg-copper-gradient;
   will-change: opacity;
   display: flex;
-}
-
-.button-closeDash {
-  position: absolute;
-  right: $d-2;
-  top: $d-1;
-  width: 2rem;
-  height: 2rem;
-  @include pill;
-  background-color: transparent;
-  color: white;
+  filter: none !important;
 }
 
 .dash-column-small {
   @include sidebar;
   will-change: transform;
+  padding-top: 4rem;
+}
+
+.dash-accountGlance{
+  background-color: $darkGrey;
+  @include radius-card;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
 }
 
 .dash-column-large {
@@ -40,27 +37,51 @@
   min-height: 600px;
 }
 
+.dash-heading{
+  @include flex-between;
+  margin-bottom: $d-1;
+
+}
+
 .dash-stats-hud {
   @include radius-card;
-  margin-top: $d-2;
+  margin-bottom: $d-1;
   padding: $d-2;
   width: 100%;
   min-height: 100px;
   background-color: black;
+  display: flex;
+}
+
+.statDatum-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-right: 2rem;
+}
+
+.statDatum-value {
+  font-size: $t-4;
+  display: flex;
+}
+
+.statDatum-unit {
+  opacity: 0.5;
+  display: flex;
+  font-size: $t-3;
+  margin-left: 0.25rem;
+}
+
+.stat-module {
+ display: flex;
+ margin-right: 2rem;
 }
 
 .dash-stats-d3{
-  margin-top: $d-2;
   position: relative;
 }
 
 .dash-stats-rangeControl{
-  display: flex;
-  width: 100%;
-  flex-direction: row-reverse;
-  position: relative;
-  right: 0;
-  margin-bottom: 0.5rem;
+
 }
 
 .dash-stats-rangeControl button {
@@ -84,38 +105,40 @@
   margin-top: 1em;
   padding-left: 2rem;
   padding-right: 2rem;
-  border-top: 1px solid $silver;
-  border-bottom: 1px solid $silver;
+  border-top: 1px solid $mediumGrey;
+  border-bottom: 1px solid $mediumGrey;
 }
+
 
 .dash-closed {
   z-index: -999;
   opacity: 0;
-  transition: opacity 400ms ease, z-index 300ms step-end;
+  transition: opacity $dash-transform-time ease, z-index $dash-transform-time step-end;
 }
 
 .dash-open {
   z-index: 999;
   opacity: 1;
-  transition: opacity 400ms ease, z-index 300ms step-start;
+  transition: opacity $dash-transform-time ease, z-index $dash-transform-time step-start;
 }
 
+
 .dash-closed .dash-column-large {
-  transform: translateX(100px);
+  transform: translate3d($dash-transform-delta,0px,0px);
   transition: transform 400ms;
 }
 
 .dash-open .dash-column-large {
-  transform: translateX(0px);
+  transform: translate3d(0px,0px,0px);
   transition: transform 400ms ease;
 }
 
 .dash-closed .dash-column-small {
-  transform: translateX(-100px);
+  transform: translate3d(-$dash-transform-delta,0px,0px);
   transition: transform 400ms;
 }
 
 .dash-open .dash-column-small {
-  transform: translateX(0px);
+  transform: translate3d(0px,0px,0px);
   transition: transform 400ms ease;
 }

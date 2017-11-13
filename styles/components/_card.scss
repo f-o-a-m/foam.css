@@ -32,37 +32,6 @@
   margin-top: $d-2;
 }
 
-.button-closeCard{
-  position: absolute;
-  right: .6rem;
-  top: .6rem;
-  pointer-events: all;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: transparent;
-  border: 1px solid transparent;
-  @include pill;
-  @include flex-all-center;
-  @include dim;
-  transition: 200ms;
-}
-
-.button-closeCard:hover {
-  background-color: $transparent_light;
-  border: 1px solid $transparent_light;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.button-closeCard span {
-  line-height: 0px;
-  transform: translateY(-1px);
-  font-size: 30px;
-  color: white;
-  padding: 0;
-  margin: 0;
-}
-
 .button-card{
   @include pill;
   @include shadow-l;
@@ -136,20 +105,28 @@
 .transaction-metadata {
   @include flex-between;
   width: 100%;
+  opacity: 0.5;
+  font-size: $t-1;
 }
 
 .transaction-title {
   font-weight: 500;
 }
 
-.transaction-balance {
-  i {
-    font-size: $t-1;
-  }
+.transactionDatum-wrapper{
+  display: flex;
+}
+
+.transactionDatum-value {
+
+}
+
+.transactionDatum-unit {
+  margin-left: 0.25rem;
+  opacity: 0.5;
 }
 
 .transaction-date {
-
 }
 
 .transaction-address {

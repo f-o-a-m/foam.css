@@ -128,10 +128,10 @@
 }
 
 @mixin bg-copper-gradient {
-  background-color: rgba(215,149,133,1);
-  background: -moz-linear-gradient(top, rgba(215,149,133,1) 0%, rgba(215,149,133,0.27) 98%, rgba(215,149,133,0.25) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(215,149,133,1) 0%,rgba(215,149,133,0.27) 98%,rgba(215,149,133,0.25) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(215,149,133,1) 0%,rgba(215,149,133,0.27) 98%,rgba(215,149,133,0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-color: $brassT;
+  background: -moz-linear-gradient(top, $brassT 0%,rgba($brassR, .7) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $brassT 0%,rgba($brassR, .7) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $brassT 0%,rgba($brassR, .7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 @mixin bg-glass-gradient {
