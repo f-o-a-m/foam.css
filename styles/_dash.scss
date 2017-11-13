@@ -108,5 +108,14 @@
 .dash-open .dash-column-large {
   transform: translateX(0px);
   transition: transform 400ms ease;
+}
 
+.dash-closed .dash-column-small {
+  transform: translateX(-100px);
+  transition: transform 400ms;
+}
+
+.dash-open .dash-column-small {
+  transform: translateX(0px);
+  transition: transform 400ms ease;
 }

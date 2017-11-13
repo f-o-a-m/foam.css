@@ -59,6 +59,11 @@
   flex-direction: column;
 }
 
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 // shadow
 @mixin shadow-s {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -123,7 +128,7 @@
 }
 
 @mixin bg-copper-gradient {
-  // background-color: rgba(215,149,133,1);
+  background-color: rgba(215,149,133,1);
   background: -moz-linear-gradient(top, rgba(215,149,133,1) 0%, rgba(215,149,133,0.27) 98%, rgba(215,149,133,0.25) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(215,149,133,1) 0%,rgba(215,149,133,0.27) 98%,rgba(215,149,133,0.25) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(215,149,133,1) 0%,rgba(215,149,133,0.27) 98%,rgba(215,149,133,0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -131,9 +136,9 @@
 
 @mixin bg-glass-gradient {
   background-color: rgba(51,51,51,1);
-  background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
 }
 
@@ -161,6 +166,8 @@ $sidebarWidth: 23rem;
   overflow: none;
 }
 
+$short-hover-time: 200ms;
+
 @mixin pill-glass {
   @include bg-glass-gradient;
   @include pill;
@@ -168,14 +175,15 @@ $sidebarWidth: 23rem;
   background-color: transparent;
   color: white;
   border: 1px solid $mediumGrey;
+  transition: background-color $short-hover-time;
 }
 
 @mixin hover-glass {
-  transition: background-position 150ms, background-color 150ms;
+  transition: background-color $short-hover-time;
   &:hover {
-    background-position:-120px;
-    background-color: $pendingBlue;
-    border-color: $pendingBlue;
-    color: white;
+    background: transparent;
+    background-color: white;
+    border-color: white;
+    color: black;
   }
 }

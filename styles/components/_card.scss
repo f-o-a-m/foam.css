@@ -108,7 +108,7 @@
   align-items: center;
   color: black;
   background-color: white;
-  border-radius: 0px 0px 1.8rem 1.8rem;
+  border-radius: 0px 0px 20px 20px;
   padding-top: 1rem;
   margin: 1.2rem -1.2rem -1.2rem -1.2rem;
 }
@@ -125,4 +125,34 @@
   margin-top: .4rem;
   margin-bottom: 1rem;
   font-size: inherit;
+}
+
+.transaction-heading {
+  @include flex-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.transaction-metadata {
+  @include flex-between;
+  width: 100%;
+}
+
+.transaction-title {
+  font-weight: 500;
+}
+
+.transaction-balance {
+  i {
+    font-size: $t-1;
+  }
+}
+
+.transaction-date {
+
+}
+
+.transaction-address {
+  overflow: hidden;
+  width: 50%;
 }
