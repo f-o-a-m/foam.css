@@ -30,6 +30,18 @@
   padding:0;
 }
 
+// structural
+@mixin fixed-full {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+}
+
 // flexbox
 @mixin flex-align-center {
   display: flex;
@@ -45,6 +57,11 @@
 @mixin flex-column {
   display: flex;
   flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 // shadow
@@ -77,8 +94,12 @@
   border-radius: 999px 0px 0px 999px;
 }
 
-@mixin radius-friendly {
-  border-radius: 1.8rem;
+@mixin radius-card {
+  border-radius: 20px;
+}
+
+@mixin radius-tile {
+  border-radius: 25px;
 }
 
 // color application
@@ -106,6 +127,63 @@
   fill: $pink;
 }
 
+@mixin bg-copper-gradient {
+  background-color: $brassT;
+  background: -moz-linear-gradient(top, $brassT 0%,rgba($brassR, .7) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $brassT 0%,rgba($brassR, .7) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $brassT 0%,rgba($brassR, .7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin bg-glass-gradient {
+  background-color: rgba(51,51,51,1);
+  // background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+}
+
 @mixin dim {
   opacity: .6;
+}
+
+// debug
+@mixin debug {
+  background-color: red;
+  border: 1px solid white;
+  opacity: 0.2;
+}
+
+// component-level
+$sidebarWidth: 23rem;
+@mixin sidebar {
+  display: block;
+  width: $sidebarWidth;
+  padding: $d-1;
+  height: 100vh;
+  color: white;
+  z-index: 800;
+  padding-top: 0;
+  overflow: none;
+}
+
+$short-hover-time: 200ms;
+
+@mixin pill-glass {
+  @include bg-glass-gradient;
+  @include pill;
+  @include shadow-l;
+  background-color: transparent;
+  color: white;
+  border: 1px solid $mediumGrey;
+  transition: background-color $short-hover-time;
+}
+
+@mixin hover-glass {
+  transition: background-color $short-hover-time;
+  &:hover {
+    background: transparent;
+    background-color: white;
+    border-color: white;
+    color: black;
+  }
 }

@@ -1,7 +1,6 @@
 #mapControlsContainer{
-  @include pill;
   @include shadow-s;
-  @include all-gray-bg;
+  @include pill-glass;
   position: fixed;
   bottom: $d-2;
   right: $d-1;
@@ -9,22 +8,33 @@
   display: flex;
 }
 
-.button-zenith, .button-zoomIn, .button-zoomOut{
+#mapControlsContainer button{
   @include flex-all-center;
+  @include hover-glass;
   font-size: $t-4;
   background-color: transparent;
   height: 2.25rem;
   width: 2.25rem;
 }
 
-.button-zoomIn {
+.button-layers {
   @include pill-l;
-  color: white;
   padding-left: $sub-5;
+  color: inherit;
+}
+
+.button-location {
+  width: auto !important;
+  font-size: $t-2 !important;
+  color: inherit;
+}
+
+.button-zoomIn {
+  color: inherit;
 }
 
 .button-zoomOut {
-  color: white;
+  color: inherit;
 }
 
 .button-zenith {
