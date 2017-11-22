@@ -51,7 +51,7 @@ input {
 	@include fixed-full;
 	z-index: 998;
 	background-color: black;
-	mix-blend-mode:saturation;
+	mix-blend-mode: saturation;
 	pointer-events: none;
 	opacity: 0;
 	will-change: opacity;

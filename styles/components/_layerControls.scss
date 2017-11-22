@@ -1,0 +1,65 @@
+#layerControlsContainer{
+  // @include shadow-s;
+  position: fixed;
+  bottom: $d-2;
+  left: $d-1;
+  z-index: 800;
+  display: flex;
+}
+
+#layerControlsContainer button{
+  @include hover-glass;
+  @include pill-glass;
+  @include padding-interface;
+  margin-right: 0.75rem;
+  height: $fixed-height-small;
+  div {
+    font-size: $t-2;
+  }
+}
+
+.layerContainer {
+  display: flex;
+}
+
+.layerControl-toggle {
+  @include hover-glass;
+  @include pill-glass;
+  @include flex-all-center;
+  height: $fixed-height-small;
+  .indicator {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-left: 0.5rem;
+    @include pill;
+    transition: background-color 100ms;
+  }
+}
+
+.indicatorOn {
+  @include all-blue-bg;
+}
+
+.indicatorHidden {
+  @include all-white-bg;
+}
+
+.indicatorOff {
+  @include all-gray-bg;
+}
+
+.layerTrayOpen{
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-start;
+}
+
+.layerTrayClosed {
+  transform: translateX(-40px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-end;
+}

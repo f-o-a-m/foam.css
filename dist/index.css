@@ -100,7 +100,7 @@ li, ol, ul {
 
 input {
   border-radius: 999px;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   font-size: inherit;
@@ -347,43 +347,45 @@ input {
   right: 0; }
 
 .button-newCSC {
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
+  background-size: 200% 100%;
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
   color: white;
-  border: 1px solid #828282;
+  border-top: 1px solid rgba(114, 114, 114, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
-  transition: background-color 200ms; }
+  background-position: left;
+  transition: background-position 200ms, background-color 200ms; }
   .button-newCSC:hover {
-    background: transparent;
-    background-color: white;
-    border-color: white;
-    color: black; }
+    background-position: right;
+    color: white; }
 
 .button-foam {
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
+  background-size: 200% 100%;
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
   color: white;
-  border: 1px solid #828282;
+  border-top: 1px solid rgba(114, 114, 114, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
-  transition: background-color 200ms;
+  background-position: left;
+  transition: background-position 200ms, background-color 200ms;
   margin-left: 1em; }
   .button-foam:hover {
-    background: transparent;
-    background-color: white;
-    border-color: white;
-    color: black; }
+    background-position: right;
+    color: white; }
 
 #sideBarContainer {
   display: block;
@@ -426,18 +428,21 @@ input {
 
 #button-collapseSidebar {
   position: absolute;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
+  background-size: 200% 100%;
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
   color: white;
-  border: 1px solid #828282;
+  border-top: 1px solid rgba(114, 114, 114, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
-  transition: background-color 200ms;
+  background-position: left;
+  transition: background-position 200ms, background-color 200ms;
   color: white;
   font-size: 1rem;
   margin-top: 1rem;
@@ -446,10 +451,8 @@ input {
   transform: translateX(-40px);
   z-index: 49; }
   #button-collapseSidebar:hover {
-    background: transparent;
-    background-color: white;
-    border-color: white;
-    color: black; }
+    background-position: right;
+    color: white; }
 
 #button-collapseSidebar:hover {
   transform: translateX(-30px); }
@@ -457,15 +460,18 @@ input {
 #mapControlsContainer {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
+  background-size: 200% 100%;
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
   color: white;
-  border: 1px solid #828282;
+  border-top: 1px solid rgba(114, 114, 114, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
+  background-position: left;
   position: fixed;
   bottom: 2rem;
   right: 1rem;
@@ -476,16 +482,14 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 200ms;
+  transition: background-position 200ms, background-color 200ms;
   font-size: 1.5rem;
   background-color: transparent;
   height: 2.25rem;
   width: 2.25rem; }
   #mapControlsContainer button:hover {
-    background: transparent;
-    background-color: white;
-    border-color: white;
-    color: black; }
+    background-position: right;
+    color: white; }
 
 .button-layers {
   border-radius: 999px 0px 0px 999px;
@@ -507,6 +511,98 @@ input {
   border-radius: 0px 999px 999px 0px;
   color: #2F80ED;
   padding-right: 0.8rem; }
+
+#layerControlsContainer {
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  z-index: 800;
+  display: flex; }
+
+#layerControlsContainer button {
+  transition: background-position 200ms, background-color 200ms;
+  background-color: #333333;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  border-radius: 999px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  color: white;
+  border-top: 1px solid rgba(114, 114, 114, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  transition: background-color 200ms;
+  background-position: left;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  margin-right: 0.75rem;
+  height: 2.25rem; }
+  #layerControlsContainer button:hover {
+    background-position: right;
+    color: white; }
+  #layerControlsContainer button div {
+    font-size: 1rem; }
+
+.layerContainer {
+  display: flex; }
+
+.layerControl-toggle {
+  transition: background-position 200ms, background-color 200ms;
+  background-color: #333333;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  border-radius: 999px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  color: white;
+  border-top: 1px solid rgba(114, 114, 114, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  transition: background-color 200ms;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.25rem; }
+  .layerControl-toggle:hover {
+    background-position: right;
+    color: white; }
+  .layerControl-toggle .indicator {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-left: 0.5rem;
+    border-radius: 999px;
+    transition: background-color 100ms; }
+
+.indicatorOn {
+  background-color: #2F80ED;
+  border-color: #2F80ED;
+  fill: #2F80ED; }
+
+.indicatorHidden {
+  background-color: white;
+  border-color: white;
+  fill: white; }
+
+.indicatorOff {
+  background-color: #242424;
+  border-color: #242424;
+  fill: #242424; }
+
+.layerTrayOpen {
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-start; }
+
+.layerTrayClosed {
+  transform: translateX(-40px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-end; }
 
 .mapboxgl-marker {
   width: 0;
@@ -545,19 +641,21 @@ input {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   position: absolute;
   color: inherit;
-  z-index: 9;
-  height: 100%;
+  z-index: 1;
+  height: calc(100% + 1px);
   width: auto;
   left: 13rem;
   padding-right: 1rem;
   padding-left: 4rem;
-  transform: translateX(-3.5rem); }
+  transform: translate3d(-3.5rem, -1px, -1px); }
 
 .green_bg .bubble-drawer {
-  background-color: #1e8449; }
+  background-color: #1e8449;
+  border-top: 1px solid #24a259; }
 
 .blue_bg .bubble-drawer {
-  background-color: #1366d6; }
+  background-color: #1366d6;
+  border-top: 1px solid #2177ec; }
 
 .bubble-container p {
   margin: 0;
@@ -656,7 +754,7 @@ input {
 
 .card-input {
   border-radius: 999px;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   width: 100%;
