@@ -73,7 +73,7 @@ h4 {
   font-size: 1.25rem;
   margin-top: 1rem;
   font-weight: 400;
-  color: #828282; }
+  color: #454545; }
 
 p {
   margin-bottom: 1rem;
@@ -113,6 +113,15 @@ input {
 #topBarContainer .img-ft {
   height: 0.875rem;
   padding-left: 1rem; }
+
+#mainFooter {
+  position: fixed;
+  z-index: 800;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  padding: 2rem 1rem; }
 
 .statDatum-wrapper .img-ft {
   height: 28px;
@@ -180,22 +189,30 @@ input {
   border-color: #2F80ED;
   fill: #2F80ED;
   color: white;
-  border-top: 1px solid #5094f0; }
-
-.blue_text {
-  color: #2F80ED !important; }
+  border-top: 1px solid #5597f0; }
 
 .green_bg {
   background-color: #27AE60;
   border-color: #27AE60;
   fill: #27AE60;
   color: white;
-  border-top: 1px solid #2ecb70; }
+  border-top: 1px solid #2ecf72; }
 
 .darkGrey_bg {
-  background-color: #242424;
-  border-top: 1px solid #363636;
+  background-color: #343332;
+  border-top: 1px solid #494746;
   color: white; }
+
+.darkestGrey_bg {
+  background-color: #191A1A;
+  border-top: 1px solid #2d2f2f;
+  color: white; }
+
+.blue-text {
+  color: #2F80ED; }
+
+.red-text {
+  color: #EB5757; }
 
 .hidden {
   opacity: 0.0;
@@ -235,7 +252,7 @@ input {
   padding-top: 4rem; }
 
 .dash-accountGlance {
-  background-color: #242424;
+  background-color: #191A1A;
   border-radius: 20px;
   padding: 1.5rem 1.2rem 1.2rem 1.2rem; }
 
@@ -252,7 +269,7 @@ input {
   border-radius: 25px;
   padding: 2rem;
   margin-bottom: 2rem;
-  background-color: #242424;
+  background-color: #191A1A;
   min-height: 600px; }
 
 .dash-heading {
@@ -309,8 +326,8 @@ input {
   margin-top: 1em;
   padding-left: 2rem;
   padding-right: 2rem;
-  border-top: 1px solid #828282;
-  border-bottom: 1px solid #828282; }
+  border-top: 1px solid #454545;
+  border-bottom: 1px solid #454545; }
 
 .dash-closed {
   z-index: -999;
@@ -356,12 +373,12 @@ input {
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
-  color: white;
+  color: #bbb;
   border-top: 1px solid rgba(114, 114, 114, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
   background-position: left;
-  transition: background-position 200ms, background-color 200ms; }
+  transition: border 200ms, background-position 200ms, background-color 200ms !important; }
   .button-newCSC:hover {
     background-position: right;
     color: white; }
@@ -376,12 +393,12 @@ input {
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
-  color: white;
+  color: #bbb;
   border-top: 1px solid rgba(114, 114, 114, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
   background-position: left;
-  transition: background-position 200ms, background-color 200ms;
+  transition: border 200ms, background-position 200ms, background-color 200ms !important;
   margin-left: 1em; }
   .button-foam:hover {
     background-position: right;
@@ -397,7 +414,7 @@ input {
   padding-top: 0;
   overflow: none;
   position: fixed;
-  transition: transform .3s ease; }
+  transition: background-color 250ms, transform 300ms ease; }
 
 #sideBarContainer.sidebar-closed {
   transform: translateX(calc(-23rem + 16px)); }
@@ -437,12 +454,12 @@ input {
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
-  color: white;
+  color: #bbb;
   border-top: 1px solid rgba(114, 114, 114, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
   background-position: left;
-  transition: background-position 200ms, background-color 200ms;
+  transition: border 200ms, background-position 200ms, background-color 200ms !important;
   color: white;
   font-size: 1rem;
   margin-top: 1rem;
@@ -467,22 +484,18 @@ input {
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
-  color: white;
+  color: #bbb;
   border-top: 1px solid rgba(114, 114, 114, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
   background-position: left;
-  position: fixed;
-  bottom: 2rem;
-  right: 1rem;
-  z-index: 800;
   display: flex; }
 
 #mapControlsContainer button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-position 200ms, background-color 200ms;
+  transition: border 200ms, background-position 200ms, background-color 200ms !important;
   font-size: 1.5rem;
   background-color: transparent;
   height: 2.25rem;
@@ -491,15 +504,11 @@ input {
     background-position: right;
     color: white; }
 
-.button-layers {
-  border-radius: 999px 0px 0px 999px;
-  padding-left: 0.8rem;
-  color: inherit; }
-
 .button-location {
   width: auto !important;
   font-size: 1rem !important;
-  color: inherit; }
+  color: inherit;
+  padding-left: 0.8rem; }
 
 .button-zoomIn {
   color: inherit; }
@@ -509,18 +518,14 @@ input {
 
 .button-zenith {
   border-radius: 0px 999px 999px 0px;
-  color: #2F80ED;
   padding-right: 0.8rem; }
 
 #layerControlsContainer {
-  position: fixed;
-  bottom: 2rem;
-  left: 1rem;
-  z-index: 800;
-  display: flex; }
+  display: flex;
+  flex-direction: row-reverse; }
 
 #layerControlsContainer button {
-  transition: background-position 200ms, background-color 200ms;
+  transition: border 200ms, background-position 200ms, background-color 200ms !important;
   background-color: #333333;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -529,7 +534,7 @@ input {
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
-  color: white;
+  color: #bbb;
   border-top: 1px solid rgba(114, 114, 114, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
@@ -547,7 +552,7 @@ input {
   display: flex; }
 
 .layerControl-toggle {
-  transition: background-position 200ms, background-color 200ms;
+  transition: border 200ms, background-position 200ms, background-color 200ms !important;
   background-color: #333333;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -556,7 +561,7 @@ input {
   border-radius: 999px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: transparent;
-  color: white;
+  color: #bbb;
   border-top: 1px solid rgba(114, 114, 114, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   transition: background-color 200ms;
@@ -578,19 +583,13 @@ input {
     transition: background-color 100ms; }
 
 .indicatorOn {
-  background-color: #2F80ED;
-  border-color: #2F80ED;
-  fill: #2F80ED; }
+  background-color: #2F80ED; }
 
 .indicatorHidden {
-  background-color: white;
-  border-color: white;
-  fill: white; }
+  background-color: white; }
 
 .indicatorOff {
-  background-color: #242424;
-  border-color: #242424;
-  fill: #242424; }
+  background-color: #454545; }
 
 .layerTrayOpen {
   transform: translateX(0px);
@@ -599,7 +598,7 @@ input {
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-start; }
 
 .layerTrayClosed {
-  transform: translateX(-40px);
+  transform: translateX(40px);
   opacity: 0;
   visibility: hidden;
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-end; }
@@ -792,6 +791,7 @@ input {
   width: 50%; }
 
 .cardColumn {
+  position: relative;
   overflow-y: scroll;
   height: 100%;
   width: 100%; }

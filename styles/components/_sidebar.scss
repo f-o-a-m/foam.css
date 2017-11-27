@@ -1,7 +1,10 @@
 #sideBarContainer {
   @include sidebar;
   position: fixed;
-  transition: transform .3s ease;
+  transition: background-color 250ms, transform 300ms ease;
+  // &:hover {
+  //   background-color: rgba(0,0,0,0.5);
+  // }
 }
 
 #sideBarContainer.sidebar-closed {
@@ -16,7 +19,6 @@
   z-index: 99;
   left: $d-1;
   right: $d-1;
-
 }
 
 #searchbar {

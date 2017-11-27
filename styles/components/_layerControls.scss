@@ -1,10 +1,6 @@
 #layerControlsContainer{
-  // @include shadow-s;
-  position: fixed;
-  bottom: $d-2;
-  left: $d-1;
-  z-index: 800;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 #layerControlsContainer button{
@@ -39,15 +35,15 @@
 }
 
 .indicatorOn {
-  @include all-blue-bg;
+  background-color: $pendingBlue;
 }
 
 .indicatorHidden {
-  @include all-white-bg;
+  background-color: $white;
 }
 
 .indicatorOff {
-  @include all-gray-bg;
+  background-color: $mediumGrey;
 }
 
 .layerTrayOpen{
@@ -58,7 +54,7 @@
 }
 
 .layerTrayClosed {
-  transform: translateX(-40px);
+  transform: translateX(40px);
   opacity: 0;
   visibility: hidden;
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-end;

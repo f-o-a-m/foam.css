@@ -41,6 +41,16 @@ input {
   padding-left: $d-1;
 }
 
+#mainFooter {
+	position: fixed;
+	z-index: 800;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	bottom: 0;
+	padding: $d-2 $d-1;
+}
+
 .statDatum-wrapper .img-ft {
   height: 28px;
 	align-self: flex-start;
@@ -107,11 +117,7 @@ input {
   border-color: $pendingBlue;
   fill: $pendingBlue;
   color: white;
-  border-top: 1px solid lighten($pendingBlue,7);
-}
-
-.blue_text {
-  color: $pendingBlue !important;
+  border-top: 1px solid lighten($pendingBlue,8);
 }
 
 .green_bg {
@@ -119,13 +125,28 @@ input {
   border-color: $activeGreen;
   fill: $activeGreen;
   color: white;
-  border-top: 1px solid lighten($activeGreen,7);
+  border-top: 1px solid lighten($activeGreen,8);
 }
 
 .darkGrey_bg {
   background-color: $darkGrey;
-  border-top: 1px solid lighten($darkGrey,7);
+  border-top: 1px solid lighten($darkGrey,8);
   color: white;
+}
+
+.darkestGrey_bg {
+  background-color: $darkestGrey;
+  border-top: 1px solid lighten($darkestGrey,8);
+  color: white;
+}
+
+
+.blue-text {
+  color: $pendingBlue;
+}
+
+.red-text {
+  color: $lossRed;
 }
 
 .hidden{

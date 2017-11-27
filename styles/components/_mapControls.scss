@@ -1,10 +1,6 @@
 #mapControlsContainer{
   @include shadow-s;
   @include pill-glass;
-  position: fixed;
-  bottom: $d-2;
-  right: $d-1;
-  z-index: 800;
   display: flex;
 }
 
@@ -17,16 +13,12 @@
   width: 2.25rem;
 }
 
-.button-layers {
-  @include pill-l;
-  padding-left: $sub-5;
-  color: inherit;
-}
-
 .button-location {
   width: auto !important;
   font-size: $t-2 !important;
   color: inherit;
+  padding-left: $sub-5;
+
 }
 
 .button-zoomIn {
@@ -39,6 +31,5 @@
 
 .button-zenith {
   @include pill-r;
-  color: $pendingBlue;
   padding-right: $sub-5;
 }

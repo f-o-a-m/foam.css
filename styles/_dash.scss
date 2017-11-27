@@ -14,7 +14,7 @@
 }
 
 .dash-accountGlance{
-  background-color: $darkGrey;
+  background-color: $darkestGrey;
   @include radius-card;
   padding: 1.5rem 1.2rem 1.2rem 1.2rem;
 }
@@ -33,7 +33,7 @@
   @include radius-tile;
   padding: $d-2;
   margin-bottom: $d-2;
-  background-color: $darkGrey;
+  background-color: $darkestGrey;
   min-height: 600px;
 }
 
