@@ -1,5 +1,9 @@
 // app-wide defaults and atomics
 
+html {
+	background-color: $darkGrey;
+}
+
 button {
 	outline: none;
 	border:none;
@@ -23,7 +27,7 @@ li, ol, ul {
 	padding-right: 0;
 }
 
-input {
+input[type='text'] {
 	@include pill;
   @include padding-interface;
 	@include inner-shadow;
@@ -71,6 +75,14 @@ input {
 .desat {
 	opacity: 1;
 }
+
+// .depth {
+// 	@include fixed-full;
+// 	z-index: 30;
+// 	pointer-events: none;
+// 	mix-blend-mode: overlay;
+// 	background: linear-gradient(to bottom, rgba(255,255,255,.5) 0%,rgba(255,255,255,0.0) 100%);
+// }
 
 .button-closeCard{
   position: absolute;

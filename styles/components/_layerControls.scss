@@ -1,61 +1,159 @@
-#layerControlsContainer{
+#layerControls-container{
   display: flex;
   flex-direction: row-reverse;
 }
 
-#layerControlsContainer button{
-  @include hover-glass;
-  @include pill-glass;
-  @include padding-interface;
-  margin-right: 0.75rem;
-  height: $fixed-height-small;
-  div {
-    font-size: $t-2;
-  }
-}
-
-.layerContainer {
+.layerToggles-container {
   display: flex;
 }
 
-.layerControl-toggle {
+.button-layers {
   @include hover-glass;
   @include pill-glass;
   @include flex-all-center;
   height: $fixed-height-small;
+  margin-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.layerControl-toggle {
+  @include pill-glass;
+  @include flex-all-center;
+  position: relative;
+  margin-right: 0.5rem;
+  height: $fixed-height-small;
+  button:first-of-type {
+    margin-left: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  button:nth-of-type(2) {
+    width: 1.75rem;
+    margin-right: 0.25rem;
+    @include flex-all-center;
+  }
+  button {
+    height: 1.75rem;
+    @include pill;
+    font-size: $t-2;
+    color: white;
+    background-color: transparent;
+    transition: background-color 200ms;
+  }
+  button:hover{
+    background-color: #000;
+  }
   .indicator {
     content: '';
     display: block;
     width: 10px;
     height: 10px;
-    margin-left: 0.5rem;
     @include pill;
     transition: background-color 100ms;
   }
 }
 
-.indicatorOn {
+.indicator-on {
   background-color: $pendingBlue;
 }
 
-.indicatorHidden {
+.indicator-hidden {
   background-color: $white;
 }
 
-.indicatorOff {
+.indicator-off {
   background-color: $mediumGrey;
 }
 
-.layerTrayOpen{
+.layerTray-open{
   transform: translateX(0px);
   opacity: 1;
   visibility: visible;
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-start;
 }
 
-.layerTrayClosed {
+.layerTray-closed {
   transform: translateX(40px);
   opacity: 0;
   visibility: hidden;
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-end;
+}
+
+.layer-popup-closed {
+  opacity: 0;
+  transform: translate(-50%, 10px) scale(0.95);
+}
+
+.layer-popup-open {
+  opacity: 1;
+  transform: translate(-50%, 0px) scale(1);
+}
+
+.layer-popup-container {
+  position: absolute;
+  width: 350px;
+  bottom: 3rem;
+  left: 50%;
+  @include radius-card;
+  @include shadow-l;
+  transition: transform 200ms, opacity 200ms;
+  will-change: transform, opacity;
+  h3 {
+    margin-bottom: 0;
+    font-size: $t-2;
+  }
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: black;
+    outline: none;
+    @include pill;
+  }
+  .slider::-webkit-slider-thumb {
+    @include pill;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: $pendingBlue;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+}
+
+.layer-popup-chevron {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.layer-popup-content {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-bottom: 1rem;
+  background-color: #1C1C1C;
+  @include radius-card;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  h3 {
+    color: grey;
+    margin-bottom: 0;
+    font-size: $t-1;
+  }
+}
+
+.layer-popup-header{
+  @include radius-card;
+  border-top: 1px solid #333;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: #000;
 }

@@ -79,6 +79,9 @@ p {
   margin-bottom: 1rem;
   font-size: 1rem; }
 
+html {
+  background-color: #343332; }
+
 button {
   outline: none;
   border: none;
@@ -98,7 +101,7 @@ li, ol, ul {
   padding-left: 0;
   padding-right: 0; }
 
-input {
+input[type='text'] {
   border-radius: 999px;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
@@ -366,7 +369,7 @@ input {
 .button-newCSC {
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
+  background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
   background-size: 200% 100%;
@@ -386,7 +389,7 @@ input {
 .button-foam {
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
+  background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
   background-size: 200% 100%;
@@ -447,7 +450,7 @@ input {
   position: absolute;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
+  background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
   background-size: 200% 100%;
@@ -477,7 +480,7 @@ input {
 #mapControlsContainer {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
+  background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
   background-size: 200% 100%;
@@ -520,41 +523,17 @@ input {
   border-radius: 0px 999px 999px 0px;
   padding-right: 0.8rem; }
 
-#layerControlsContainer {
+#layerControls-container {
   display: flex;
   flex-direction: row-reverse; }
 
-#layerControlsContainer button {
-  transition: border 200ms, background-position 200ms, background-color 200ms !important;
-  background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-repeat: no-repeat;
-  background-size: 200% 100%;
-  border-radius: 999px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-  background-color: transparent;
-  color: #bbb;
-  border-top: 1px solid rgba(114, 114, 114, 0.5);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
-  transition: background-color 200ms;
-  background-position: left;
-  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-  margin-right: 0.75rem;
-  height: 2.25rem; }
-  #layerControlsContainer button:hover {
-    background-position: right;
-    color: white; }
-  #layerControlsContainer button div {
-    font-size: 1rem; }
-
-.layerContainer {
+.layerToggles-container {
   display: flex; }
 
-.layerControl-toggle {
+.button-layers {
   transition: border 200ms, background-position 200ms, background-color 200ms !important;
   background-color: #333333;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.4) 50%, black 100%);
+  background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
   background-size: 200% 100%;
@@ -569,39 +548,148 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.25rem; }
-  .layerControl-toggle:hover {
+  height: 2.25rem;
+  margin-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; }
+  .button-layers:hover {
     background-position: right;
     color: white; }
+
+.layerControl-toggle {
+  background-color: #333333;
+  background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  border-radius: 999px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  color: #bbb;
+  border-top: 1px solid rgba(114, 114, 114, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  transition: background-color 200ms;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 0.5rem;
+  height: 2.25rem; }
+  .layerControl-toggle button:first-of-type {
+    margin-left: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+  .layerControl-toggle button:nth-of-type(2) {
+    width: 1.75rem;
+    margin-right: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .layerControl-toggle button {
+    height: 1.75rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    transition: background-color 200ms; }
+  .layerControl-toggle button:hover {
+    background-color: #000; }
   .layerControl-toggle .indicator {
     content: '';
     display: block;
     width: 10px;
     height: 10px;
-    margin-left: 0.5rem;
     border-radius: 999px;
     transition: background-color 100ms; }
 
-.indicatorOn {
+.indicator-on {
   background-color: #2F80ED; }
 
-.indicatorHidden {
+.indicator-hidden {
   background-color: white; }
 
-.indicatorOff {
+.indicator-off {
   background-color: #454545; }
 
-.layerTrayOpen {
+.layerTray-open {
   transform: translateX(0px);
   opacity: 1;
   visibility: visible;
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-start; }
 
-.layerTrayClosed {
+.layerTray-closed {
   transform: translateX(40px);
   opacity: 0;
   visibility: hidden;
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-end; }
+
+.layer-popup-closed {
+  opacity: 0;
+  transform: translate(-50%, 10px) scale(0.95); }
+
+.layer-popup-open {
+  opacity: 1;
+  transform: translate(-50%, 0px) scale(1); }
+
+.layer-popup-container {
+  position: absolute;
+  width: 350px;
+  bottom: 3rem;
+  left: 50%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 200ms, opacity 200ms;
+  will-change: transform, opacity; }
+  .layer-popup-container h3 {
+    margin-bottom: 0;
+    font-size: 1rem; }
+  .layer-popup-container .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: black;
+    outline: none;
+    border-radius: 999px; }
+  .layer-popup-container .slider::-webkit-slider-thumb {
+    border-radius: 999px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #2F80ED;
+    cursor: pointer; }
+    .layer-popup-container .slider::-webkit-slider-thumb:hover {
+      filter: brightness(1.2); }
+
+.layer-popup-chevron {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.layer-popup-content {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-bottom: 1rem;
+  background-color: #1C1C1C;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+  .layer-popup-content h3 {
+    color: grey;
+    margin-bottom: 0;
+    font-size: 0.875rem; }
+
+.layer-popup-header {
+  border-radius: 20px;
+  border-top: 1px solid #333;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: #000; }
 
 .mapboxgl-marker {
   width: 0;

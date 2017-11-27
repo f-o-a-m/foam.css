@@ -144,7 +144,7 @@
   background-color: rgba(51,51,51,1);
   // background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
   // background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.4) 50%, rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to left, rgba(20,20,20,0.9) 20%,rgba(30,30,30,0.9) 50%, rgba(20,20,20,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-repeat: no-repeat;
   background-size: 200% 100%;
 }
