@@ -508,7 +508,7 @@ input[type='text'] {
     color: white; }
 
 .button-location {
-  width: auto !important;
+  width: 148px !important;
   font-size: 1rem !important;
   color: inherit;
   padding-left: 0.8rem; }
