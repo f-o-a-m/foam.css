@@ -642,11 +642,15 @@ input[type='text'] {
 
 .layer-popup-closed {
   opacity: 0;
-  transform: translate(-50%, 10px) scale(0.95); }
+  transform: translate(-50%, 10px) scale(0.95);
+  visibility: hidden;
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-end; }
 
 .layer-popup-open {
   opacity: 1;
-  transform: translate(-50%, 0px) scale(1); }
+  transform: translate(-50%, 0px) scale(1);
+  visibility: visible;
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms step-start; }
 
 .layer-popup-container {
   position: absolute;
@@ -655,7 +659,6 @@ input[type='text'] {
   left: 50%;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-  transition: transform 200ms, opacity 200ms;
   will-change: transform, opacity; }
   .layer-popup-container h3 {
     margin-bottom: 0;
@@ -676,8 +679,6 @@ input[type='text'] {
     height: 16px;
     background: #2F80ED;
     cursor: pointer; }
-    .layer-popup-container .slider::-webkit-slider-thumb:hover {
-      filter: brightness(1.2); }
 
 .layer-popup-chevron {
   position: absolute;
@@ -686,10 +687,10 @@ input[type='text'] {
   transform: translateX(-50%); }
 
 .layer-popup-content {
+  overflow-x: hidden;
   width: 100%;
-  padding: 0.5rem 1rem;
-  padding-bottom: 1rem;
-  background-color: #1C1C1C;
+  padding: 1rem 1rem;
+  background-color: #1c1c1c;
   border-radius: 20px;
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
@@ -706,6 +707,21 @@ input[type='text'] {
   padding: 0.5rem 1rem;
   width: 100%;
   background-color: #000; }
+
+.scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+  position: relative; }
+
+.currentVal {
+  width: 200px;
+  transform: translateX(calc(-50% + 8px));
+  text-align: center;
+  position: absolute;
+  background: linear-gradient(to left, rgba(28, 28, 28, 0) 0%, #1c1c1c 50%, rgba(28, 28, 28, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
 .mapboxgl-marker {
   width: 0;
