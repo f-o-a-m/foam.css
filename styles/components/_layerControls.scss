@@ -3,11 +3,7 @@
   flex-direction: row-reverse;
 }
 
-.layerToggles-container {
-  display: flex;
-}
-
-.button-layers {
+.layers-tray-button {
   @include hover-glass;
   @include pill-glass;
   @include flex-all-center;
@@ -17,40 +13,65 @@
   padding-right: 0.75rem;
 }
 
-.layerControl-toggle {
+.layerToggles-container {
+  display: flex;
+}
+
+.layerControl-toggle-pill-container {
   @include pill-glass;
   @include flex-all-center;
-  position: relative;
-  margin-right: 0.5rem;
   height: $fixed-height-small;
-  button:first-of-type {
-    margin-left: 0.25rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  button:nth-of-type(2) {
-    width: 1.75rem;
-    margin-right: 0.25rem;
-    @include flex-all-center;
-  }
-  button {
-    height: 1.75rem;
-    @include pill;
-    font-size: $t-2;
-    color: white;
-    background-color: transparent;
-    transition: background-color 200ms;
-  }
-  button:hover{
+  position: relative;
+  height: 100%;
+  margin-right: 0.5rem;
+}
+
+.layer-name-button, .layer-toggle-button {
+  @include pill;
+  @include flex-all-center;
+  padding: 0;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 200ms;
+  font-size: $t-2;
+  color: white;
+}
+
+.layer-name-button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.layer-toggle-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 2rem;
+  &:hover{
     background-color: #000;
   }
-  .indicator {
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-    @include pill;
-    transition: background-color 100ms;
+   .indicator {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      @include pill;
+      transition: background-color 100ms;
+  }
+}
+
+.layer-hasSettings{
+  &:hover{
+    background-color: #000;
+  }
+}
+
+.layer-noSettings {
+  pointer-events: none;
+  cursor: pointer;
+  &:hover{
+    background-color: transparent;
   }
 }
 

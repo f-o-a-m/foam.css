@@ -527,10 +527,7 @@ input[type='text'] {
   display: flex;
   flex-direction: row-reverse; }
 
-.layerToggles-container {
-  display: flex; }
-
-.button-layers {
+.layers-tray-button {
   transition: border 200ms, background-position 200ms, background-color 200ms !important;
   background-color: #333333;
   background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
@@ -552,11 +549,14 @@ input[type='text'] {
   margin-right: 1rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem; }
-  .button-layers:hover {
+  .layers-tray-button:hover {
     background-position: right;
     color: white; }
 
-.layerControl-toggle {
+.layerToggles-container {
+  display: flex; }
+
+.layerControl-toggle-pill-container {
   background-color: #333333;
   background: linear-gradient(to left, rgba(20, 20, 20, 0.9) 20%, rgba(30, 30, 30, 0.9) 50%, rgba(20, 20, 20, 0.9) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -573,35 +573,51 @@ input[type='text'] {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 2.25rem;
   position: relative;
-  margin-right: 0.5rem;
-  height: 2.25rem; }
-  .layerControl-toggle button:first-of-type {
-    margin-left: 0.25rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem; }
-  .layerControl-toggle button:nth-of-type(2) {
-    width: 1.75rem;
-    margin-right: 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .layerControl-toggle button {
-    height: 1.75rem;
-    border-radius: 999px;
-    font-size: 1rem;
-    color: white;
-    background-color: transparent;
-    transition: background-color 200ms; }
-  .layerControl-toggle button:hover {
+  height: 100%;
+  margin-right: 0.5rem; }
+
+.layer-name-button, .layer-toggle-button {
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 200ms;
+  font-size: 1rem;
+  color: white; }
+
+.layer-name-button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; }
+
+.layer-toggle-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 2rem; }
+  .layer-toggle-button:hover {
     background-color: #000; }
-  .layerControl-toggle .indicator {
+  .layer-toggle-button .indicator {
     content: '';
     display: block;
     width: 10px;
     height: 10px;
     border-radius: 999px;
     transition: background-color 100ms; }
+
+.layer-hasSettings:hover {
+  background-color: #000; }
+
+.layer-noSettings {
+  pointer-events: none;
+  cursor: pointer; }
+  .layer-noSettings:hover {
+    background-color: transparent; }
 
 .indicator-on {
   background-color: #2F80ED; }
