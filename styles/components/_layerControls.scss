@@ -142,8 +142,15 @@
     appearance: none;
     width: 16px;
     height: 16px;
-    background: $pendingBlue;
     cursor: pointer;
+  }
+
+  .slider-on::-webkit-slider-thumb {
+    background: $pendingBlue;
+  }
+
+  .slider-hidden::-webkit-slider-thumb {
+    background: white;
   }
 }
 
