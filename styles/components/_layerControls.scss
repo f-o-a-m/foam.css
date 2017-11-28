@@ -4,13 +4,25 @@
 }
 
 .layers-tray-button {
+  @include flex-all-center;
   @include hover-glass;
   @include pill-glass;
-  @include flex-all-center;
   height: $fixed-height-small;
   margin-right: 1rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.layer-tray-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: transparent;
+  background-image: url(/icons/layers.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition: opacity 250ms;
+  margin-right: 0.75rem;
 }
 
 .layerToggles-container {
@@ -18,24 +30,23 @@
 }
 
 .layerControl-pill-container {
-  @include pill-glass;
-  @include hover-glass;
-  @include flex-all-center;
   height: $fixed-height-small;
   position: relative;
   height: 100%;
   margin-right: 0.5rem;
   user-select: none;
   cursor: pointer;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
-.toggle-wrapper{
-  position: absolute;
+.toggle-wrapper {
+  @include flex-all-center;
   width: 100%;
   height: 100%;
   z-index: 0;
+  @include hover-glass;
+  @include pill-glass;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .layer-indicator {
@@ -202,6 +213,7 @@
 
 .layer-popup-header{
   @include radius-card;
+  color: grey;
   border-top: 1px solid #333;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;

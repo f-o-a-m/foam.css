@@ -41,7 +41,6 @@
   position: absolute;
   @include padding-interface;
   @include pill-glass;
-  @include hover-glass;
   color: white;
   font-size: $t-2;
   margin-top: 1rem;
