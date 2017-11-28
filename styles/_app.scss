@@ -1,10 +1,15 @@
-// app-wide defaults
+// app-wide defaults and atomics
 
-button{
+html {
+	background-color: $darkGrey;
+}
+
+button {
 	outline: none;
 	border:none;
 	font-size: inherit;
 	user-select: none;
+	border-radius: 0;
 }
 
 button:hover{
@@ -12,7 +17,7 @@ button:hover{
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 li, ol, ul {
@@ -20,4 +25,143 @@ li, ol, ul {
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+input[type='text'] {
+	@include pill;
+  @include padding-interface;
+	@include inner-shadow;
+  @include shadow-l;
+	font-size: inherit;
+  pointer-events: all;
+	margin-top: 1rem;
+	border: 1px solid $silver;
+  outline: none;
+	width: 100%;
+}
+
+#topBarContainer .img-ft {
+  height: $t-1;
+  padding-left: $d-1;
+}
+
+#mainFooter {
+	position: fixed;
+	z-index: 800;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	bottom: 0;
+	padding: $d-2 $d-1;
+}
+
+.statDatum-wrapper .img-ft {
+  height: 28px;
+	align-self: flex-start;
+  padding-right: 0.25rem;
+}
+
+.desatFilter{
+	@include fixed-full;
+	z-index: 998;
+	background-color: black;
+	mix-blend-mode: saturation;
+	pointer-events: none;
+	opacity: 0;
+	will-change: opacity;
+	transition: opacity $dash-transform-time ease;
+}
+
+.desat {
+	opacity: 1;
+}
+
+// .depth {
+// 	@include fixed-full;
+// 	z-index: 30;
+// 	pointer-events: none;
+// 	mix-blend-mode: overlay;
+// 	background: linear-gradient(to bottom, rgba(255,255,255,.5) 0%,rgba(255,255,255,0.0) 100%);
+// }
+
+.button-closeCard{
+  position: absolute;
+  right: .6rem;
+  top: .6rem;
+  pointer-events: all;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  @include pill;
+  @include flex-all-center;
+  @include dim;
+  transition: 200ms;
+}
+
+.button-closeCard:hover {
+  background-color: $transparent_light;
+  border: 1px solid $transparent_light;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.button-closeCard span {
+  line-height: 0px;
+  transform: translateY(-1px);
+  font-size: 30px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.loss {
+  color: $lossRed;
+}
+
+.gain {
+  color: $activeGreen;
+}
+
+// atomic classes
+.blue_bg {
+  background-color: $pendingBlue;
+  border-color: $pendingBlue;
+  fill: $pendingBlue;
+  color: white;
+  border-top: 1px solid lighten($pendingBlue,8);
+}
+
+.green_bg {
+  background-color: $activeGreen;
+  border-color: $activeGreen;
+  fill: $activeGreen;
+  color: white;
+  border-top: 1px solid lighten($activeGreen,8);
+}
+
+.darkGrey_bg {
+  background-color: $darkGrey;
+  border-top: 1px solid lighten($darkGrey,8);
+  color: white;
+}
+
+.darkestGrey_bg {
+  background-color: $darkestGrey;
+  border-top: 1px solid lighten($darkestGrey,8);
+  color: white;
+}
+
+
+.blue-text {
+  color: $pendingBlue;
+}
+
+.red-text {
+  color: $lossRed;
+}
+
+.hidden{
+  opacity: 0.0;
+  visibility: hidden;
 }

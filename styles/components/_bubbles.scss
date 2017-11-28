@@ -1,5 +1,11 @@
 $bubbleWidth: 13rem; // since this only concerns the bubble this can be placed here
 
+.mapboxgl-marker {
+  width: 0;
+  height: 0;
+  transform: translate3d(0,0,0);
+}
+
 .bubble-container{
   @include pill;
   @include shadow-s;
@@ -7,11 +13,10 @@ $bubbleWidth: 13rem; // since this only concerns the bubble this can be placed h
   width: $bubbleWidth;
   height: $d-2;
   transform: translate(-22px, calc(-32px - 8px - 8px)); // Y: bubbleHeight - chevronHeight - offset, X:
-  cursor: pointer;
-}
-
-.bubble-container:hover{
-  filter: brightness(1.2);
+  &:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
 }
 
 .bubble-body{
@@ -23,40 +28,42 @@ $bubbleWidth: 13rem; // since this only concerns the bubble this can be placed h
   width: 100%;
   background-color: inherit;
   color: inherit;
-  padding: 0 $d-1 0 $d-1;
+  padding: 0 1rem 0 1rem;
   border-radius: inherit;
   z-index: 10;
 }
 
-.bubble-drawer{
+.bubble-drawer {
   @include flex-align-center;
   @include pill-r;
   @include shadow-s;
   position: absolute;
   color: inherit;
-  z-index: 9;
-  height: 100%;
+  z-index: 1;
+  height: calc(100% + 1px);
   width: auto;
   left: $bubbleWidth;
   padding-right: $d-1;
   padding-left: 4rem; //break scale for detail
-  transform: translateX(-3.5rem);
+  transform: translate3d(-3.5rem, -1px, -1px);
 }
 
-.green_bg .bubble-drawer{
+.green_bg .bubble-drawer {
   background-color: $activeGreen_dark;
+  border-top: 1px solid lighten($activeGreen_dark, 7)
 }
 
-.blue_bg .bubble-drawer{
+.blue_bg .bubble-drawer {
   background-color: $pendingBlue_dark;
+  border-top: 1px solid lighten($pendingBlue_dark, 7)
 }
 
-.bubble-container p{
+.bubble-container p {
   @include no-margin-padding;
   font-weight: 400;
 }
 
-.bubble-title{
+.bubble-title {
   max-width: $d-5;
   white-space: nowrap;
   overflow: hidden;
@@ -77,7 +84,7 @@ $bubbleWidth: 13rem; // since this only concerns the bubble this can be placed h
 .bubble-chevron{
   position: absolute;
   z-index: 8;
-  top: 2rem;
+  top: 31px;
   left: 1rem;
 }
 

@@ -25,7 +25,7 @@ body {
 // headings
 h1 {
   font-size: $t-5;
-  margin-bottom: $d-1;
+  margin-bottom: 0;
   font-weight: 400;
 }
 
@@ -39,6 +39,14 @@ h3 {
   font-size: $t-3;
   margin-bottom: $d-1;
   font-weight: 400;
+}
+
+// used on Dashboard
+h4 {
+  font-size: $t-3;
+  margin-top: $d-1;
+  font-weight: 400;
+  color: $mediumGrey;
 }
 
 p {
