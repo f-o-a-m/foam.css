@@ -17,61 +17,67 @@
   display: flex;
 }
 
-.layerControl-toggle-pill-container {
+.layerControl-pill-container {
   @include pill-glass;
+  @include hover-glass;
   @include flex-all-center;
   height: $fixed-height-small;
   position: relative;
   height: 100%;
   margin-right: 0.5rem;
-}
-
-.layer-name-button, .layer-toggle-button {
-  @include pill;
-  @include flex-all-center;
-  padding: 0;
-  height: 100%;
-  background-color: transparent;
-  transition: background-color 200ms;
-  font-size: $t-2;
-  color: white;
-}
-
-.layer-name-button {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  user-select: none;
+  cursor: pointer;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
-.layer-toggle-button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  width: 2rem;
-  &:hover{
-    background-color: #000;
-  }
- .indicator {
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-    @include pill;
-    transition: background-color 100ms;
-  }
+.toggle-wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
+.layer-indicator {
+   content: '';
+   display: block;
+   margin-right: 0.5rem;
+   width: 10px;
+   height: 10px;
+   @include pill;
+   transition: background-color 200ms;
+ }
+
 .layer-hasSettings{
-  &:hover{
-    background-color: #000;
+  .layer-param-button {
+    opacity: 0.7;
+    position: relative;
+    z-index: 1;
+    margin-left: 0.5rem;
+    margin-right: -0.25rem;
+    @include pill;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+    background-image: url(/icons/ellipsis.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 250ms;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
 .layer-noSettings {
-  pointer-events: none;
-  cursor: pointer;
-  &:hover{
-    background-color: transparent;
+  .layer-param-button {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    pointer-events: none;
+    cursor: pointer;
   }
 }
 
@@ -138,11 +144,13 @@
   }
   .slider::-webkit-slider-thumb {
     @include pill;
+    @include shadow-l;
     -webkit-appearance: none;
     appearance: none;
     width: 16px;
     height: 16px;
     cursor: pointer;
+    transition: 200ms background;
   }
 
   .slider-on::-webkit-slider-thumb {
@@ -151,6 +159,9 @@
 
   .slider-hidden::-webkit-slider-thumb {
     background: white;
+  }
+  .slider-off::-webkit-slider-thumb {
+    background: $darkGrey;
   }
 }
 
@@ -174,6 +185,19 @@
     margin-bottom: 0;
     font-size: $t-1;
   }
+  .scale {
+    @include flex-between;
+    margin-top: 1rem;
+    width: 100%;
+    position: relative;
+  }
+  .currentVal {
+    width: 200px;
+    transform: translateX(calc(-50% + 8px));
+    text-align: center;
+    position: absolute;
+    background: linear-gradient(to left, rgba(28,28,28,0) 0%,rgba(28,28,28,1) 50%, rgba(28,28,28,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
 }
 
 .layer-popup-header{
@@ -184,19 +208,4 @@
   padding: 0.5rem 1rem;
   width: 100%;
   background-color: #000;
-}
-
-.scale {
-  @include flex-between;
-  margin-top: 1rem;
-  width: 100%;
-  position: relative;
-}
-
-.currentVal {
-  width: 200px;
-  transform: translateX(calc(-50% + 8px));
-  text-align: center;
-  position: absolute;
-  background: linear-gradient(to left, rgba(28,28,28,0) 0%,rgba(28,28,28,1) 50%, rgba(28,28,28,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
