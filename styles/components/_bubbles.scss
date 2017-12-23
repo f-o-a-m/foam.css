@@ -95,3 +95,14 @@ $bubbleWidth: 13rem; // since this only concerns the bubble this can be placed h
 .blue_bg .bubble-chevron{
   fill: $pendingBlue_dark;
 }
+
+.mapDot {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #F48068;
+  display: block;
+  transform: translate3d(0.1px, 0.1px, 0.1px);
+  backface-visibility: hidden;
+  @include pill;
+}
