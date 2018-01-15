@@ -1,3 +1,9 @@
+// Topbar
+//
+// The stuff that goes into the topbar
+//
+// Style guide: foam.components.topbar
+
 #topBarContainer{
   display: block;
   padding: $d-1;
@@ -7,12 +13,26 @@
   right:0;
 }
 
+// .button-newCSC
+//
+// Creates button for new CSC
+//
+// Markup: markup/_button-newCSC.hbs
+//
+// Style guide: foam.components.button-newCSC
 .button-newCSC{
   @include padding-interface;
   @include pill-glass;
   @include hover-glass;
 }
 
+// .button-foam
+//
+// Creates button for showing FT balance
+//
+// Markup: markup/_button-foam.hbs
+//
+// Style guide: foam.components.button-foam
 .button-foam{
   @include padding-interface;
   @include pill-glass;
