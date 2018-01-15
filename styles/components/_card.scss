@@ -1,3 +1,11 @@
+// .cardContainer(@color)
+//
+// @color is the color of the card
+//
+// Markup:
+// <div class="cardContainer"><h1>hello</h1></div>
+//
+// Style guide: foam.components.cardContainer
 .cardContainer{
   @include shadow-l
   @include radius-card;
@@ -32,6 +40,15 @@
   margin-top: $d-2;
 }
 
+// .button-card
+//
+// :hover     - Highlight the button when hovered.
+// :active    - "Press" the button down when clicked.
+//
+// Markup:
+// <button class="button-card">A button</button>
+//
+// Style guide: foam.components.button-card
 .button-card{
   @include pill;
   @include shadow-l;
@@ -82,7 +99,9 @@
   margin: 1.2rem -1.2rem -1.2rem -1.2rem;
 }
 
-
+// .card-input
+//
+// Style guide: foam.card.card-input
 .card-input{
   @include pill;
   @include padding-interface;
