@@ -6,7 +6,7 @@
   "scripts": {
     "build-css": "./node_modules/.bin/node-sass styles -o dist",
     "postinstall": "npm run build-css",
-    "kss": "npm run build-css && cp dist/index.css styleguide && ./node_modules/.bin/kss --source styles --destination styleguide --css index.css ",
+    "kss": "npm run build-css && mkdir styleguide ; cp dist/index.css styleguide/ && ./node_modules/.bin/kss --source styles --destination styleguide --css index.css ",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
