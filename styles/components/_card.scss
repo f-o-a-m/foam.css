@@ -5,12 +5,12 @@
 // Style guide: foam.components.cards
 
 
-
 // .cardContainer(@color)
 //
 // @color is the color of the card
 //
-// Markup: markup/_bubbles.hbs
+// Markup:
+// <div class="cardContainer"><h1>hello</h1></div>
 //
 // Style guide: foam.components.cardContainer
 .cardContainer{
@@ -52,7 +52,8 @@
 // :hover     - Highlight the button when hovered.
 // :active    - "Press" the button down when clicked.
 //
-// Markup: markup/_card.hbs
+// Markup:
+// <button class="button-card">A button</button>
 //
 // Style guide: foam.components.button-card
 .button-card{
