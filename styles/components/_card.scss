@@ -3,7 +3,9 @@
 // @color is the color of the card
 //
 // Markup:
-// <div class="cardContainer"><h1>hello</h1></div>
+// <div class="cardContainer">
+//   <div class="card-lightWrap">this is inside a card</div>
+// </div>
 //
 // Style guide: foam.components.cardContainer
 .cardContainer{
@@ -101,7 +103,7 @@
 
 // .card-input
 //
-// Style guide: foam.card.card-input
+// Style guide: foam.components.card-input
 .card-input{
   @include pill;
   @include padding-interface;
