@@ -13,7 +13,7 @@
 //
 // Markup: <button class="button-newCSC">New CSC</button>
 //
-// Style guide: foam.components.button-newCSC
+// Style guide: foam.components.topbar.button-newCSC
 .button-newCSC{
   @include padding-interface;
   @include pill-glass;
@@ -26,7 +26,7 @@
 //
 // Markup: <button class="button-foam">5 FT</button>
 //
-// Style guide: foam.components.button-foam
+// Style guide: foam.components.topbar.button-foam
 .button-foam{
   @include padding-interface;
   @include pill-glass;

@@ -3,6 +3,14 @@
   flex-direction: row-reverse;
 }
 
+// .layers-tray-button
+//
+// Markup:
+// <button class="layers-tray-button">
+//   A tray button
+// </button>
+//
+// Style guide: foam.components.layerControls.layers-tray-button
 .layers-tray-button {
   @include flex-all-center;
   @include hover-glass;

@@ -3,11 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "watch": {
+    "serve-kss": {
+      "patterns": [
+        "styles", "custom-builder/kss-assets"
+      ],
+      "extensions": "md, scss",
+      "quiet": false
+    }
+  },
   "scripts": {
     "build-css": "./node_modules/.bin/node-sass styles -o dist",
     "postinstall": "npm run build-css",
-    "kss": "npm run build-css && mkdir styleguide ; cp dist/index.css styleguide/ && ./node_modules/.bin/kss --source styles --destination styleguide --css index.css --homepage styleguide.md",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "prepare-kss": "./node_modules/.bin/node-sass --output-style compressed custom-builder/kss-assets/kss.scss custom-builder/kss-assets/kss.css",
+    "kss": "npm run prepare-kss && npm run build-css && mkdir styleguide ; cp dist/index.css styleguide/ && ./node_modules/.bin/kss --source styles --destination styleguide --css index.css --homepage styleguide.md --builder custom-builder",
+    "serve-kss": "npm run kss && serve styleguide",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
@@ -20,7 +32,9 @@
   },
   "homepage": "https://github.com/f-o-a-m/foam.css#readme",
   "dependencies": {
-    "node-sass": "^4.6.0"
+    "node-sass": "^4.6.0",
+    "npm-watch": "^0.3.0",
+    "serve": "^6.4.8"
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.18"

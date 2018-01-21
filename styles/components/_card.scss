@@ -1,13 +1,11 @@
-// .cardContainer(@color)
-//
-// @color is the color of the card
+// .cardContainer
 //
 // Markup:
 // <div class="cardContainer">
 //   <div class="card-lightWrap">this is inside a card</div>
 // </div>
 //
-// Style guide: foam.components.cardContainer
+// Style guide: foam.components.card.cardContainer
 .cardContainer{
   @include shadow-l
   @include radius-card;
@@ -48,9 +46,9 @@
 // :active    - "Press" the button down when clicked.
 //
 // Markup:
-// <button class="button-card">A button</button>
+//   <button class="button-card">A button</button>
 //
-// Style guide: foam.components.button-card
+// Style guide: foam.components.card.button-card
 .button-card{
   @include pill;
   @include shadow-l;
@@ -103,7 +101,7 @@
 
 // .card-input
 //
-// Style guide: foam.components.card-input
+// Style guide: foam.components.card.card-input
 .card-input{
   @include pill;
   @include padding-interface;

@@ -123,7 +123,14 @@ input[type='text'] {
   color: $activeGreen;
 }
 
-// atomic classes
+// .blue_bg
+//
+// Markup:
+// <div class="blue_bg">
+//   This is in blue 
+// </div>
+//
+// Style guide: foam.app.blue_bg
 .blue_bg {
   background-color: $pendingBlue;
   border-color: $pendingBlue;
@@ -132,6 +139,14 @@ input[type='text'] {
   border-top: 1px solid lighten($pendingBlue,8);
 }
 
+// .green_bg
+//
+// Markup:
+// <div class="green_bg">
+//   This is in green 
+// </div>
+//
+// Style guide: foam.app.green_bg
 .green_bg {
   background-color: $activeGreen;
   border-color: $activeGreen;
@@ -140,18 +155,33 @@ input[type='text'] {
   border-top: 1px solid lighten($activeGreen,8);
 }
 
+// .darkGrey_bg
+//
+// Markup:
+// <div class="darkGrey_bg">
+//   This is in darkGrey
+// </div>
+//
+// Style guide: foam.app.darkGrey_bg
 .darkGrey_bg {
   background-color: $darkGrey;
   border-top: 1px solid lighten($darkGrey,8);
   color: white;
 }
 
+// .darkestGrey_bg
+//
+// Markup:
+// <div class="darkestGrey_bg">
+//   This is in darkestGrey
+// </div>
+//
+// Style guide: foam.app.darkestGrey_bg
 .darkestGrey_bg {
   background-color: $darkestGrey;
   border-top: 1px solid lighten($darkestGrey,8);
   color: white;
 }
-
 
 .blue-text {
   color: $pendingBlue;

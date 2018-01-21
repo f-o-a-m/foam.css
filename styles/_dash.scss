@@ -1,3 +1,11 @@
+// #dash-container
+//
+// Markup:
+// <div class="dash-container">
+//      more
+// </div>
+//
+// Style guide: foam.dash.dash-container
 #dash-container {
   @include fixed-full;
   color: white;
@@ -28,6 +36,14 @@
   will-change: transform;
 }
 
+// .dash-tile
+//
+// Markup:
+// <div class="dash-tile">
+//   something
+// </div>
+//
+// Style guide: foam.dash.dash-tile
 .dash-tile {
   @include shadow-l;
   @include radius-tile;
@@ -43,6 +59,14 @@
 
 }
 
+// .dash-stats-hud
+//
+// Markup:
+// <div class="dash-stats-hud">
+//   something
+// </div>
+//
+// Style guide: foam.components.dash-stats-hud
 .dash-stats-hud {
   @include radius-card;
   margin-bottom: $d-1;
