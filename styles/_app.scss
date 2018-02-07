@@ -132,6 +132,14 @@ input[type='text'] {
   border-top: 1px solid lighten($pendingBlue,8);
 }
 
+.pink_bg {
+  background-color: $pink;
+  border-color: $pink;
+  fill: $pink;
+  color: white;
+  border-top: 1px solid lighten($pink,8);
+}
+
 .green_bg {
   background-color: $activeGreen;
   border-color: $activeGreen;
