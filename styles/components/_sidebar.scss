@@ -15,6 +15,20 @@
   transform: translateX(0px);
 }
 
+.searchResults.open {
+    display: block;
+}
+.searchResults.closed {
+    display: none;
+}
+.cardColumn.open {
+    display: block;
+}
+.cardColumn.closed {
+    display: none;
+}
+
+
 #searchWrapper {
   z-index: 99;
   left: $d-1;
