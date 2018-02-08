@@ -11,6 +11,7 @@
   @include sidebar;
   will-change: transform;
   padding-top: 4rem;
+  overflow-y: scroll;
 }
 
 .dash-accountGlance{
