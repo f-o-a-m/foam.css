@@ -1,6 +1,7 @@
 #sideBarContainer {
   @include sidebar;
   position: fixed;
+  overflow-y: scroll;
   transition: background-color 250ms, transform 300ms ease;
   // &:hover {
   //   background-color: rgba(0,0,0,0.5);

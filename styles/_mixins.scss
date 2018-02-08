@@ -165,7 +165,8 @@ $sidebarWidth: 23rem;
 @mixin sidebar {
   display: block;
   width: $sidebarWidth;
-  padding: $d-1;
+  padding-left: $d-1;
+  padding-right: $d-2;
   height: 100vh;
   color: white;
   z-index: 800;
