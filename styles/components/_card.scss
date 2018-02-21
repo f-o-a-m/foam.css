@@ -32,6 +32,11 @@
   margin-top: $d-2;
 }
 
+.auth-button{
+  width: 60%;
+  text-align: center;
+}
+
 .button-card{
   @include pill;
   @include shadow-l;
