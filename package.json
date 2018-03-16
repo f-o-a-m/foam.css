@@ -6,7 +6,8 @@
   "watch": {
     "serve-kss": {
       "patterns": [
-        "styles", "custom-builder/kss-assets"
+        "styles",
+        "custom-builder/kss-assets"
       ],
       "extensions": "md, scss",
       "quiet": false
@@ -32,6 +33,7 @@
   },
   "homepage": "https://github.com/f-o-a-m/foam.css#readme",
   "dependencies": {
+    "hexo-theme-doc": "^0.1.2",
     "node-sass": "^4.6.0",
     "npm-watch": "^0.3.0",
     "serve": "^6.4.8"

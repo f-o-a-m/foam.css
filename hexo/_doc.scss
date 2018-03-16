@@ -1,0 +1,6 @@
+
+// TEST
+$doc-color-primary: red; // set primary color to "red"
+
+// To override variables you should declare them before including theme core styles
+@import "../node_modules/hexo-theme-doc/_doc.scss"
