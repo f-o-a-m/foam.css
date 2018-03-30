@@ -37,6 +37,10 @@
   text-align: center;
 }
 
+.wide {
+    width: 100%;
+}
+
 .button-card{
   @include pill;
   @include shadow-l;
