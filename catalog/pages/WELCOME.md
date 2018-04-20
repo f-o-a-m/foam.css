@@ -1,5 +1,6 @@
 ```image
-src: catalog_logo.svg
+span: 3
+src: devportal.png
 plain: true
 ```
 

@@ -1,58 +1,24 @@
 {
-  "name": "foam.css",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "watch": {
-    "serve-kss": {
-      "patterns": [
-        "styles",
-        "custom-builder/kss-assets"
-      ],
-      "extensions": "md, scss",
-      "quiet": false
-    }
-  },
+  "private": true,
   "scripts": {
-    "build-css": "./node_modules/.bin/node-sass styles -o catalog/static/dist",
-    "postinstall": "npm run build-css",
-    "prepare-kss": "./node_modules/.bin/node-sass --output-style compressed custom-builder/kss-assets/kss.scss custom-builder/kss-assets/kss.css",
-    "kss": "npm run prepare-kss && npm run build-css && mkdir styleguide ; cp dist/index.css styleguide/ && ./node_modules/.bin/kss --source styles --destination styleguide --css index.css --homepage styleguide.md --builder custom-builder",
-    "serve-kss": "npm run kss && serve styleguide",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "watch": "npm-watch",
-    "catalog-start": "catalog start",
-    "catalog-build": "catalog build"
+    "css": "node-sass ./styles/ --output ./catalog/static/dist/",
+    "watch": "node-sass -w -r ./styles/ --output ./catalog/static/dist/",
+    "start": "catalog start",
+    "build": "catalog build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/f-o-a-m/foam.css.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/f-o-a-m/foam.css/issues"
-  },
-  "homepage": "https://github.com/f-o-a-m/foam.css#readme",
   "dependencies": {
-    "catalog": "^3.0.0-rc.4",
+    "catalog": "~3.5.2",
     "highlight.js": "^9.12.0",
     "lowlight": "^1.9.1",
     "markdown-it": "^8.4.1",
     "markdown-react-js": "^1.0.0",
     "marked": "^0.3.17",
-    "node-sass": "^4.6.0",
-    "npm-watch": "^0.3.0",
+    "node-sass": "^4.8.3",
     "prismjs": "^1.13.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-lowlight": "^2.0.0",
     "react-markdown": "^3.3.0",
-    "react-markdown-it": "^1.0.2",
-    "react-scripts": "1.1.1",
-    "serve": "^6.4.8"
-  },
-  "devDependencies": {
-    "kss": "^3.0.0-beta.18"
+    "react-markdown-it": "^1.0.2"
   }
 }
