@@ -6,8 +6,8 @@ node_modules/*
 /coverage
 
 # production
-/build
 /catalog/build/
+/catalog/static/dist/
 
 # misc
 .DS_Store
@@ -15,7 +15,6 @@ node_modules/*
 .env.development.local
 .env.test.local
 .env.production.local
-styleguide/
 
 
 npm-debug.log*
