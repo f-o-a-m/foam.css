@@ -1,0 +1,21 @@
+@import "settings";
+
+.u-shadow-s, .u-shadow-s\@hover:hover { box-shadow: 0.2rem 0.2rem 0.4rem color(blackish, $alpha: 0.2); }
+.u-shadow-m, .u-shadow-m\@hover:hover { box-shadow: 0.0rem 0.4rem 1.5rem color(blackish, $alpha: 0.25); }
+.u-shadow-l, .u-shadow-l\@hover:hover { box-shadow: 0.0rem 0.4rem 2.5rem color(blackish, $alpha: 0.25); }
+
+.u-borderRounded { border-radius: 99rem; }
+.u-borderRadius-m { border-radius: 2rem; }
+
+.u-background-blackish { background-color: color(blackish); }
+.u-background-pinkish { background-color: color(pinkish); }
+.u-background-blueish { background-color: color(blueish); }
+.u-background-greenish { background-color: color(greenish); }
+.u-background-grayish { background-color: color(grayish); }
+
+.u-color-whitish, .u-color-whitish\@hover:hover { color: color(whitish); }
+.u-color-whitishDim, .u-color-whitishDim\@hover:hover { color: color(whitish, $alpha: 0.6); }
+.u-color-blueish, .u-color-blueish\@hover:hover { color: color(blueish); }
+
+.u-padding-s { padding: 1rem; }
+.u-padding-m { padding: 2rem; }

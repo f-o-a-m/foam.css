@@ -7,6 +7,15 @@
 
 See styleguide: https://f-o-a-m.github.io/foam.css/
 
-Notes:
-+ To rebuild use `npm run kss` or even better `npm run watch` and edit away
-+ Because our theme is dark, we've had to modify [`node-kss`](https://github.com/kss-node/kss-node)'s default CSS as well - that's what's inside `custom-build/`. Everything still looks pretty 90s but it is at least readable.
+## scripts
+
+- `npm start` start webserver serving `/catalog`, also watches for changes made in `/catalog`
+- `npm run css` compile `/styles/*.sass` into `/catalog/static/dist`
+- `npm run watch` watches for changes made in `/styles` and compiles changed styles into `/catalog/static/dist`
+- `npm run build` builds the styleguide into `/catalog/build`
+
+
+## note
+
+- `/catalog/static/fonts` is a symbolic link to `/fonts`
+- `/catalog/static/assets` is a symbolic link to `/assets`
