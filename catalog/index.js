@@ -1,24 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
-import MarkdownPage from './pages/MarkdownPage'
 
 const pages =
   [ { path: "/"
     , title: "Welcome"
     , content: pageLoader(() => import("./pages/WELCOME.md"))
     }
-  , { path: "/components"
-    , title: "Components"
-    , content: pageLoader(() => import("./pages/COMPONENTS.md"))
+  , { path: "/utils"
+    , title: "Utils"
+    , content: pageLoader(() => import("./pages/utils.md"))
     }
-  , { path: '/markdown'
-    , styles:
-        [ "/dist/markdown.css"
-        , "https://cdn.jsdelivr.net/highlight.js/9.1.0/styles/github.min.css" 
-        ]
-    , title: 'Markdown'
-    , component: MarkdownPage
+  , { path: "/button"
+    , title: "Button"
+    , content: pageLoader(() => import("./pages/button.md"))
+    }
+  , { path: "/icon"
+    , title: "Icon"
+    , content: pageLoader(() => import("./pages/icon.md"))
     }
   ]
 
@@ -62,6 +61,6 @@ ReactDOM.render(
     title="FOAM Styleguide"
     pages={pages}
     theme={foamTheme}
-  />,
+    />,
   document.getElementById("root")
 )

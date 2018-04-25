@@ -1,0 +1,54 @@
+
+// hsl(0,0%,0%) #000
+// hsl(0,0%,96%) #f5f5f5
+// hsl(0,0%,93%) #eee
+// hsl(0,0%,87%) #ddd
+// hsl(0,0%,80%) #ccc
+// hsl(0,0%,20%) #333
+// hsl(0,0%,7%) #111111
+// hsl(343,37%,96%) #f9f2f4
+// hsl(345,69%,46%) #c7254e
+
+// $black: hsl(0,0%,0%) 
+// $white: hsl(0,0%,100%) 
+// $silver: hsl(0,0%,75%) 
+// $lightGrey: hsl(0,0%,74%) 
+// $mediumGrey: hsl(0,0%,28%) 
+// $activeGreen_dark: darken($activeGreen, 10%) 
+// $pendingBlue_dark: darken($pendingBlue, 10%) 
+// $pink_Dark: darken($pink, 10%) 
+// $lossRed: hsl(0,79%,64%) 
+// $pendingBlue: hsl(215,85%,56%) 
+// $activeGreen: hsl(146,64%,42%) 
+// $darkGrey: hsl(31,2%,20%) 
+// $pink: hsl(11,87%,69%) 
+// $brassR: hsl(13,33%,38%) 
+// $brassT: hsl(13,53%,69%) 
+// $brassL: hsl(12,26%,43%) 
+
+$__colors: (
+  // blackLight: hsl(0, 0%, 10%),
+  // grayDark: hsl(0, 0%, 30%),
+  // gray: hsl(0, 0%, 50%),
+  // grayLight: hsl(0, 0%, 70%),
+  // whiteDarker: hsl(0, 0%, 85%),
+  // whiteDark: hsl(0, 0%, 95%),
+  transparent: hsla(0, 0%, 0%, 0),
+  whitish: hsl(0, 0%, 100%),
+  blackish: hsl(0, 0%, 13%),
+  pinkish: hsl(10, 86%, 68%),
+  blueish: hsl(214, 84%, 56%),
+  greenish: hsl(145, 63%, 42%),
+  grayish: hsl(0, 0%, 37%),
+);
+
+@function color($key, $alpha: null) {
+  $res: map-get($__colors, $key);
+  @if $res == null {
+    @error "there is no color for key: #{$key}";
+  }
+  @if $alpha != null {
+    $res: rgba($res, $alpha);
+  }
+  @return $res;
+}

@@ -1,0 +1,11 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+@import "base/normalize";
+@import "base/reset";
+@import "base/page";
+
+body {
+  font-family: 'Inter UI', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
