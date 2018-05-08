@@ -19,3 +19,29 @@
 
 .u-padding-s { padding: 1rem; }
 .u-padding-m { padding: 2rem; }
+.u-padding-l { padding: 3rem; }
+
+.u-align {
+  vertical-align: top;
+}
+.u-type-s {
+  font-size: .75rem;
+  line-height: 1.5rem;
+}
+
+.u-type-l {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.u-border-s {
+  border-radius: 99rem;
+}
+
+.map-utils {
+  background-color: color(blackish);
+  vertical-align: top;
+  border-radius: 99rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}

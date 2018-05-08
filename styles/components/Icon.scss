@@ -1,6 +1,6 @@
 .Icon {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -20,7 +20,7 @@
 }
 
 .Icon--altTC:after{
-  line-height: 1em;
+  line-height: 2em;
 }
 
 .Icon--plus:after { content: "+"}

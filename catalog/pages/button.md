@@ -1,9 +1,7 @@
 # `Button`
 
-By default all `Button`s have animation of background-color on interaction. see 
-`Button--withTransform` and `Button--withShadow` for more animations.
-
-
+By default all `Button`s have animation of background-color on interaction.
+See`Button--withTransform` and `Button--withShadow` for more animations.
 
 ```html
 span: 2
@@ -28,7 +26,6 @@ dark: true
   Button
 </a>
 ```
-
 
 ```html
 span: 2
@@ -72,7 +69,6 @@ dark: true
 </a>
 ```
 
-
 ```html
 span: 2
 dark: true
@@ -85,8 +81,8 @@ dark: true
   Button
 </div>
 ```
-## `Button--withShadow`
 
+## `Button--withShadow`
 
 Adds shadow animation on interaction.
 
@@ -113,7 +109,6 @@ span: 2
   Button
 </a>
 ```
-
 
 ```html
 span: 2
@@ -155,7 +150,6 @@ dark: true
 </a>
 ```
 
-
 ```html
 span: 2
 dark: true
@@ -169,9 +163,7 @@ dark: true
 </div>
 ```
 
-
-# Examples
-
+## Examples
 
 ```html
 span: 2
@@ -390,8 +382,6 @@ dark: true
 </div>
 ```
 
-
-
 ```html
 span: 2
 plain: true
@@ -435,4 +425,3 @@ plain: true
   </button>
 </div>
 ```
-

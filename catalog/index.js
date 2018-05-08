@@ -19,6 +19,18 @@ const pages =
     , title: "Icon"
     , content: pageLoader(() => import("./pages/icon.md"))
     }
+  , { path: "/user-widget"
+    , title: "User Widget"
+    , content: pageLoader(() => import("./pages/user-widget.md"))
+    }
+  , { path: "/map-utils"
+    , title: "Map Utils"
+    , content: pageLoader(() => import("./pages/map-utils.md"))
+    }
+  , { path: "/create-poi-card"
+    , title: "Create POI Card"
+    , content: pageLoader(() => import("./pages/create-poi-card.md"))
+    }
   ]
 
 // See `DefaultTheme.js` for more contamination options:

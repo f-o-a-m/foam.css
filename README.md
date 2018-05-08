@@ -5,7 +5,7 @@
 
 ## style guide
 
-See styleguide: https://f-o-a-m.github.io/foam.css/
+See styleguide: <https://f-o-a-m.github.io/foam.css/>
 
 ## scripts
 
@@ -13,7 +13,6 @@ See styleguide: https://f-o-a-m.github.io/foam.css/
 - `npm run css` compile `/styles/*.sass` into `/catalog/static/dist`
 - `npm run watch` watches for changes made in `/styles` and compiles changed styles into `/catalog/static/dist`
 - `npm run build` builds the styleguide into `/catalog/build`
-
 
 ## note
 
