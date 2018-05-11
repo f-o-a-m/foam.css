@@ -49,7 +49,7 @@ const foamTheme =
 
   // Used in Menu and PageHeader to make sure the top parts have
   // the same height.
-  , pageHeadingHeight: 120
+  , pageHeadingHeight: 100
 
   // Used for navigation bar
   , navBarBackground: '#eee'

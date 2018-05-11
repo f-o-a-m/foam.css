@@ -112,7 +112,7 @@ span: 3
 span: 3
 ---
 <div class="
-  u-padding-s
+  u-pad-1
   u-borderRounded
   u-background-blackish
   u-color-whitish">
@@ -124,10 +124,151 @@ span: 3
 span: 3
 ---
 <div class="
-  u-padding-m
+  u-pad-4
   u-borderRounded
   u-background-blackish
   u-color-whitish">
   u-padding-m u-borderRadius-m u-background-blackish u-color-whitish
 </div>
 ```
+
+
+```
+```
+
+```
+```
+
+```
+```
+
+# Modular Padding
+
+```html
+span: 2
+---
+<div class="
+  u-pad-1
+  u-background-blackish
+  u-borderRounded
+  u-color-whitish">
+  u-pad-1 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+### u-pad-1
+
+```html
+span: 2
+
+---
+<div class="
+  u-background-blackish
+  u-pad-3
+  u-color-whitish
+  u-borderRounded">
+  u-pad-3 u-background-blackish u-color-whitish
+  u-borderRounded</br>
+</div>
+```
+
+
+```html
+span: 2
+---
+<div class="
+  u-background-blackish
+  u-pad-4
+  u-color-whitish
+  u-borderRounded
+  ">
+  u-pad-4 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+
+```html
+span: 3
+---
+<div class="
+  u-background-blackish
+  u-pad-5
+  u-color-whitish
+  u-borderRounded
+  ">
+  u-pad-5 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+
+```html
+span: 3
+---
+<div class="
+  u-background-blackish
+  u-pad-7
+  u-color-whitish
+  u-borderRounded
+  ">
+  u-pad-7 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+
+```html
+span: 3
+---
+<div class="
+  u-background-blackish
+  u-pad-t-7
+  u-color-whitish
+  u-borderRounded
+  ">
+  u-pad-t-7 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+
+
+```html
+span: 3
+---
+<div class="
+  u-background-blackish
+  u-pad-b-7
+  u-color-whitish
+  u-borderRounded
+  ">
+  u-pad-t-7 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+
+```html
+span: 3
+---
+<div class="
+  u-background-blackish
+  u-pad-h-7
+  u-color-whitish
+  u-borderRounded
+  ">
+  u-pad-h-7 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+
+```html
+span: 3
+---
+<div class="
+  u-background-blackish
+  u-pad-v-7
+  u-color-whitish
+  u-borderRounded
+  ">
+  u-pad-v-7 u-background-blackish u-color-whitish
+  u-borderRounded
+</div>
+```
+

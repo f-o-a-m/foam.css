@@ -8,27 +8,25 @@ span: 3
 dark: true
 ---
 <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
-<h1 class="
-  bg-black
-  br-pill
-  u-padding-s">
+<div class="
+map-utils u-background-grayish">
   <button class="
-    f1 dim br-pill ph3 pv3 ml3 mb1 dib white bg-black
+    dib f3 br-pill ph3 pv3 ml2 mt2 mb1 white
   ">
-    Lat, Long
+    43.245, 31.438
   </button>
   <button class="
-    f1 dim br-pill ph3 pv3 ml3 mb1 dib white bg-black
+    f1 dim br-100 ph3 pv1 ml2 mt2 mb1 dib white
   ">
     -
   </button>
   <button class="
-    f1 dim br-pill ph3 pv2 ml3 mb1 dib white bg-black
+    f1 dim br-100 ph3 pv1 ml2 mt2 mb1 dib white
   ">
     +
   </button>
   <button class="
-    f1 dim br-pill ph3 pv2 ml3 mb1 dib blue bg-black
+    f1 dim br-pill ph3 pv1 ml3 mr2 mt2 mb1 dib blue
   ">
     ⦿
   </button>
@@ -36,33 +34,31 @@ dark: true
 ```
 
 ```html
-span: 3
+span: 6
 dark: false
 ---
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
-<h1 class="
-  bg-black
-  br-pill
-  u-padding-s">
-  <button class="
-    f1 dim br-pill ph3 pv3 ml3 mb1 dib white bg-black
+<footer class="
+  map-utils u-background-grayish
   ">
-    Lat, Long
+  <button class="
+    map-util-btn f3 ph3 pv3 mt3 ml2 white fl
+  ">
+    43.245, 31.438
   </button>
   <button class="
-    f1 dim br-pill ph3 pv3 ml3 mb1 dib white bg-black
+    Icon f1 dim br-100 ph3 pv1 ml2 mt2 mb1 dib white
   ">
     -
   </button>
   <button class="
-    f1 dim br-pill ph3 pv2 ml3 mb1 dib white bg-black
+    Icon f1 dim br-100 ph3 pv1 ml2 mt2 mb1 dib white map-util-btn
   ">
     +
   </button>
   <button class="
-    f1 dim br-pill ph3 pv2 ml3 mb1 dib blue bg-black
+    Icon f1 dim br-pill blue map-util-btn
   ">
     ⦿
   </button>
-</h1>
-``` 
+</p>
+```

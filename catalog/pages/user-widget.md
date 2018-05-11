@@ -55,7 +55,7 @@ dark: false
 
 ```html
 span: 3
-dark: false
+dark: true
 ---
 <!-- <div class="
   u-align
