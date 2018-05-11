@@ -1,7 +1,9 @@
-# `Button`
+# Button Components
 
 By default all `Button`s have animation of background-color on interaction.
 See`Button--withTransform` and `Button--withShadow` for more animations.
+
+## Button
 
 ```html
 span: 2
@@ -9,37 +11,31 @@ dark: true
 ---
 <button class="
   Button
-  u-padding-s
-  u-color-whitishDim">
+  u-bdr-pill
+  u-p-h-3
+  u-p-v-5
+  u-bg-whiteish
+  u-c-whitishDim">
   Button
 </button>
 ```
 
-```html
+```code
 span: 2
 dark: true
 ---
-<a href="#" class="
+<button class="
   Button
-  u-padding-s
-  u-color-whitishDim">
+  u-p-h-3
+  u-p-v-5
+  u-c-whitishDim">
   Button
-</a>
+</button>
 ```
 
-```html
-span: 2
-dark: true
----
-<div href="#" class="
-  Button
-  u-padding-s
-  u-color-whitishDim">
-  Button
-</div>
-```
+## Button with transform
 
-## `Button--withTransform`
+`Button Button--withTransform u-p-h-3 u-p-v-5 u-c-whitishDim`
 
 Adds transform animation on interaction.
 
@@ -50,39 +46,30 @@ dark: true
 <button class="
   Button
   Button--withTransform
-  u-padding-s
-  u-color-whitishDim">
+  u-p-h-3
+  u-p-v-5
+  u-c-whitishDim">
   Button
 </button>
 ```
 
-```html
+```code
 span: 2
 dark: true
 ---
-<a href="#" class="
+<button class="
   Button
   Button--withTransform
-  u-padding-s
-  u-color-whitishDim">
+  u-p-h-3
+  u-p-v-5
+  u-c-whitishDim">
   Button
-</a>
+</button>
 ```
 
-```html
-span: 2
-dark: true
----
-<div href="#" class="
-  Button
-  Button--withTransform
-  u-padding-s
-  u-color-whitishDim">
-  Button
-</div>
-```
+## Button with Shadow
 
-## `Button--withShadow`
+`Button Button--withTransform u-p-h-3 u-p-v-5 u-bg-blueish u-c-whitishDim`
 
 Adds shadow animation on interaction.
 
@@ -91,9 +78,11 @@ span: 2
 ---
 <button class="
   Button
-  Button--withShadow
-  u-padding-s
-  u-color-blueish">
+  u-shadow-s
+  u-p-h-3
+  u-p-v-5
+  u-bg-blueish
+  u-c-whitish">
   Button
 </button>
 ```
@@ -101,13 +90,15 @@ span: 2
 ```html
 span: 2
 ---
-<a href="#" class="
+<button class="
   Button
   Button--withShadow
-  u-padding-s
-  u-color-blueish">
+  u-p-h-3
+  u-p-v-5
+  u-bg-pinkish
+  u-c-whitish">
   Button
-</a>
+</button>
 ```
 
 ```html
