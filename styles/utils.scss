@@ -13,9 +13,20 @@
 .u-bg-greenish { background-color: color(greenish); }
 .u-bg-grayish { background-color: color(grayish); }
 
+.u-c-blackish, .u-c-blackish\@hover:hover { color: color(blackish); }
 .u-c-whitish, .u-c-whitish\@hover:hover { color: color(whitish); }
 .u-c-whitishDim, .u-c-whitishDim\@hover:hover { color: color(whitish, $alpha: 0.6); }
 .u-c-blueish, .u-c-blueish\@hover:hover { color: color(blueish); }
+
+// border scale
+.u-bdr-pill {
+  border-radius: 999rem;
+}
+
+
+.u-dib {
+  display: inline-block;
+}
 
 // paddding scale
 .u-p-1 { padding: 3rem; }
@@ -186,45 +197,107 @@
 .u-align-l { vertical-align: left; }
 .u-align-r { vertical-align: right; }
 
+// letter spacing
+.u-t-tracked       { letter-spacing:  .1em; }
+.u-t-tracked-tight { letter-spacing: -.05em; }
+.u-t-tracked-mega  { letter-spacing:  .25em; }
+
+// paragraph measure
+.u-t-measure-wide { max-width: 34; }
+.u-t-measure { max-width: 30em}
+.u-t-measure-narrow { max-width: 20em; }
+
 // type scale
-.u-type-1 {
+.u-t-1 {
   font-size: 3rem;
   line-height: 3.5rem;
 }
 
-.u-type-2 {
+.u-t-2 {
   font-size: 2.5rem;
   line-height: 3rem;
 }
 
-.u-type-3 {
+.u-t-3 {
   font-size: 2rem;
   line-height: 2.5rem;
 }
 
-.u-type-4 {
+.u-t-4 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.u-type-5 {
+.u-t-5 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.u-type-6 {
+.u-t-6 {
   font-size: .75rem;
   line-height: 1rem;
 }
 
-.u-type-7 {
+.u-t-7 {
   font-size: .5rem;
   line-height: .75rem;
 }
 
-// border scale
-.u-border-s {
-  border-radius: 99rem;
+.u-t-reg {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 400;
+  src: url("Inter-UI-Regular.woff2") format("woff2"), url("Inter-UI-Regular.woff") format("woff");
 }
 
-.u-dib { display: inline-block; }
+.u-t-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 400;
+  src: url("Inter-UI-Italic.woff2") format("woff2"), url("Inter-UI-Italic.woff") format("woff");
+}
+
+.u-t-med {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 500;
+  src: url("Inter-UI-Medium.woff2") format("woff2"), url("Inter-UI-Medium.woff") format("woff");
+}
+
+.u-t-med-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 500;
+  src: url("Inter-UI-MediumItalic.woff2") format("woff2"), url("Inter-UI-MediumItalic.woff") format("woff");
+}
+
+.u-t-bold {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 700;
+  src: url("Inter-UI-Bold.woff2") format("woff2"), url("Inter-UI-Bold.woff") format("woff");
+}
+
+.u-t-bold-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 700;
+  src: url("Inter-UI-BoldItalic.woff2") format("woff2"), url("Inter-UI-BoldItalic.woff") format("woff");
+}
+
+.u-t-black {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 900;
+  src: url("Inter-UI-Black.woff2") format("woff2"), url("Inter-UI-Black.woff") format("woff");
+}
+
+.u-t-black-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 900;
+  src: url("Inter-UI-BlackItalic.woff2") format("woff2"), url("Inter-UI-BlackItalic.woff") format("woff");
+}
+
+
+

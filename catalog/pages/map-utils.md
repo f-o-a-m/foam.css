@@ -11,7 +11,7 @@ dark: true
 <div class="
 map-utils u-background-grayish">
   <button class="
-    dib f3 br-pill ph3 pv3 ml2 mt2 mb1 white
+    dib f3 br-pill u-pad-3 ml2 mt2 mb1 white
   ">
     43.245, 31.438
   </button>

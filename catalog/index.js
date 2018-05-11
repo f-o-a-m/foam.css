@@ -7,6 +7,10 @@ const pages =
     , title: "Welcome"
     , content: pageLoader(() => import("./pages/WELCOME.md"))
     }
+  , { path: "/typography"
+    , title: "Typography"
+    , content: pageLoader(() => import("./pages/typography.md"))
+    }
   , { path: "/utils"
     , title: "Utils"
     , content: pageLoader(() => import("./pages/utils.md"))

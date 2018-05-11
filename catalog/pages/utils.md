@@ -8,154 +8,116 @@ Here you can see some utility classes in various combinations.
 Take a look at source codes of examples (especially from other pages) to see how they are used in "wild"
 ```
 
-```html
-span: 2
----
-<div class="
-  u-padding-m
-  u-borderRadius-m
-  u-background-blackish
-  u-color-whitish
-  u-shadow-s
-  u-shadow-l@hover">
-  u-padding-m<br>
-  u-borderRadius-m<br>
-  u-background-blackish<br>
-  u-color-whitish<br>
-  u-shadow-s<br>
-  u-shadow-l@hover
-</div>
-```
-
-```html
-span: 2
----
-<div class="
-  u-padding-m
-  u-borderRadius-m
-  u-background-pinkish
-  u-color-whitish
-  u-shadow-m
-  u-shadow-l@hover">
-  u-padding-m<br>
-  u-borderRadius-m<br>
-  u-background-pinkish<br>
-  u-color-whitish<br>
-  u-shadow-m<br>
-  u-shadow-l@hover
-</div>
-```
-
-```html
-span: 2
----
-<div class="
-  u-padding-m
-  u-borderRadius-m
-  u-background-blueish
-  u-color-whitish
-  u-shadow-l
-  u-shadow-s@hover">
-  u-padding-m<br>
-  u-borderRadius-m<br>
-  u-background-blueish<br>
-  u-color-whitish<br>
-  u-shadow-l<br>
-  u-shadow-s@hover
-</div>
-```
-
-```html
-span: 3
----
-<div class="
-  u-padding-m
-  u-borderRadius-m
-  u-background-greenish
-  u-color-whitishDim
-  u-color-whitish@hover
-  u-shadow-l
-  u-shadow-s@hover">
-  u-padding-m<br>
-  u-borderRadius-m<br>
-  u-background-greenish<br>
-  u-color-whitishDim<br>
-  u-color-whitish@hover<br>
-  u-shadow-l<br>
-  u-shadow-s@hover
-</div>
-```
-
-```html
-span: 3
----
-<div class="
-  u-padding-m
-  u-borderRadius-m
-  u-background-grayish
-  u-color-whitishDim
-  u-color-whitish@hover
-  u-shadow-l
-  u-shadow-s@hover">
-  u-padding-m<br>
-  u-borderRadius-m<br>
-  u-background-grayish<br>
-  u-color-whitishDim<br>
-  u-color-whitish@hover<br>
-  u-shadow-l<br>
-  u-shadow-s@hover
-</div>
-```
-
-
-```html
-span: 3
----
-<div class="
-  u-pad-1
-  u-borderRounded
-  u-background-blackish
-  u-color-whitish">
-  u-padding-s u-borderRadius-m u-background-blackish u-color-whitish
-</div>
-```
-
-```html
-span: 3
----
-<div class="
-  u-pad-4
-  u-borderRounded
-  u-background-blackish
-  u-color-whitish">
-  u-padding-m u-borderRadius-m u-background-blackish u-color-whitish
-</div>
-```
-
-
-```
-```
-
-```
-```
-
 ```
 ```
 
 # Modular Padding
 
+`u-p-1 `
 ```html
-span: 2
+span: 4
 ---
 <div class="
-  u-pad-1
-  u-background-blackish
-  u-borderRounded
-  u-color-whitish">
-  u-pad-1 u-background-blackish u-color-whitish
-  u-borderRounded
+  u-p-1
+  u-bg-blackish
+  u-bdr-pill
+  u-c-whitish">
+  u-p-1 u-bg-blackish u-c-whitish
+  u-br-pill
 </div>
 ```
+
+`u-p-2`
+
+```html
+span: 4
+---
+<div class="
+  u-p-2
+  u-bg-blackish
+  u-bdr-pill
+  u-c-whitish">
+  u-p-2 u-bg-blackish u-c-whitish
+  u-br-pill
+</div>
+```
+
+`u-p-3`
+
+```html
+span: 4
+---
+<div class="
+  u-p-3
+  u-bg-blackish
+  u-bdr-pill
+  u-c-whitish">
+  u-p-3 u-bg-blackish u-c-whitish
+  u-br-pill
+</div>
+```
+
+`u-p-4`
+
+```html
+span: 4
+---
+<div class="
+  u-p-4
+  u-bg-blackish
+  u-bdr-pill
+  u-c-whitish">
+  u-p-4 u-bg-blackish u-c-whitish
+  u-br-pill
+</div>
+```
+
+`u-p-5`
+```html
+span: 4
+---
+<div class="
+  u-p-5
+  u-bg-blackish
+  u-bdr-pill
+  u-c-whitish">
+  u-p-5 u-bg-blackish u-c-whitish
+  u-br-pill
+</div>
+```
+
+`u-p-6`
+
+```html
+span: 4
+---
+<div class="
+  u-p-6
+  u-bg-blackish
+  u-bdr-pill
+  u-c-whitish">
+  u-p-6 u-bg-blackish u-c-whitish
+  u-br-pill
+</div>
+```
+
+
+`u-p-7`
+
+```html
+span: 4
+---
+<div class="
+  u-p-7
+  u-bg-blackish
+  u-bdr-pill
+  u-c-whitish">
+  u-p-7 u-bg-blackish u-c-whitish
+  u-br-pill
+</div>
+```
+
+
 ### u-pad-1
 
 ```html
