@@ -1,0 +1,117 @@
+// letter spacing
+.type-tracked {
+  letter-spacing: .1em;
+}
+
+.type-tracked-tight {
+  letter-spacing: -.05em;
+}
+
+.type-tracked-mega {
+  letter-spacing: .25em;
+}
+
+// paragraph measure
+.type-measure-wide {
+  max-width: 34;
+}
+
+.type-measure {
+  max-width: 30em
+}
+
+.type-measure-narrow {
+  max-width: 20em;
+}
+
+// type scale
+.type-s-1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.type-s-2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.type-s-3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.type-s-4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.type-s-5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.type-s-6 {
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.type-s-7 {
+  font-size: .5rem;
+  line-height: .75rem;
+}
+
+.type-reg {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 400;
+  src: url("Inter-UI-Regular.woff2") format("woff2"), url("Inter-UI-Regular.woff") format("woff");
+}
+
+.type-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 400;
+  src: url("Inter-UI-Italic.woff2") format("woff2"), url("Inter-UI-Italic.woff") format("woff");
+}
+
+.type-med {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 500;
+  src: url("Inter-UI-Medium.woff2") format("woff2"), url("Inter-UI-Medium.woff") format("woff");
+}
+
+.type-med-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 500;
+  src: url("Inter-UI-MediumItalic.woff2") format("woff2"), url("Inter-UI-MediumItalic.woff") format("woff");
+}
+
+.type-bold {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 700;
+  src: url("Inter-UI-Bold.woff2") format("woff2"), url("Inter-UI-Bold.woff") format("woff");
+}
+
+.type-bold-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 700;
+  src: url("Inter-UI-BoldItalic.woff2") format("woff2"), url("Inter-UI-BoldItalic.woff") format("woff");
+}
+
+.type-black {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 900;
+  src: url("Inter-UI-Black.woff2") format("woff2"), url("Inter-UI-Black.woff") format("woff");
+}
+
+.type-black-ital {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 900;
+  src: url("Inter-UI-BlackItalic.woff2") format("woff2"), url("Inter-UI-BlackItalic.woff") format("woff");
+}

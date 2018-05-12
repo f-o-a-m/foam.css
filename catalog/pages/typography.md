@@ -1,100 +1,188 @@
 
 ## Inter UI Bold Italic
 
-`u-t-black-ital`
+`type-black-ital`
 
 ```html
 span: 5
 ---
 <div class="
-  u-t-1 u-t-black-ital u-p-v-7">
+  type-s-1 type-black-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-black-ital u-p-v-7">
+  type-s-2 type-black-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-black-ital u-p-v-7">
+  type-s-3 type-black-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-black-ital u-p-v-7">
+  type-s-4 type-black-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
+
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-black-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-black-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-black-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-black-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
 
 ## Inter UI Bold Italic
 
-`u-t-black`
+`type-black`
 
 ```html
 span: 5
 ---
 <div class="
-  u-t-1 u-t-black u-p-v-7">
+  type-s-1 type-black pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-black u-p-v-7">
+  type-s-2 type-black pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-black u-p-v-7">
+  type-s-3 type-black pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-black u-p-v-7">
+  type-s-4 type-black pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
+
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-black pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-black pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-black pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-black pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
 
 ## Inter UI Bold Italic
 
-`u-t-bold-ital`
+`type-bold-ital`
 
 ```html
 span: 5
 ---
 <div class="
-  u-t-1 u-t-bold-ital u-p-v-7">
+  type-s-1 type-bold-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-bold-ital u-p-v-7">
+  type-s-2 type-bold-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-bold-ital u-p-v-7">
+  type-s-3 type-bold-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-bold-ital u-p-v-7">
+  type-s-4 type-bold-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
+
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-bold-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-bold-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-bold-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-bold-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
 
 ## Inter UI Bold
 
-`u-t-bold`
+`type-bold`
 
 ```html
 span: 5
 ---
 <div class="
-  u-t-1 u-t-bold u-p-v-7">
+  type-s-1 type-bold pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-bold u-p-v-7">
+  type-s-2 type-bold pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-bold u-p-v-7">
+  type-s-3 type-bold pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-bold u-p-v-7">
+  type-s-4 type-bold pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
+
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-bold pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-bold pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-bold pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-bold pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
@@ -105,96 +193,182 @@ span: 5
 span: 5
 ---
 <div class="
-  u-t-1 u-t-med-ital u-p-v-7">
+  type-s-1 type-med-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-med-ital u-p-v-7">
+  type-s-2 type-med-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-med-ital u-p-v-7">
+  type-s-3 type-med-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-med-ital u-p-v-7">
+  type-s-4 type-med-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
+
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-med-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-med-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-med-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-med-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
 
 ## Inter UI Medium
 
-`u-t-med`
+`type-med`
 
 ```html
 span: 5
 ---
 <div class="
-  u-t-1 u-t-med u-p-v-7">
+  type-s-1 type-med pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-med u-p-v-7">
+  type-s-2 type-med pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-med u-p-v-7">
+  type-s-3 type-med pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-med u-p-v-7">
+  type-s-4 type-med pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
+
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-med pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-med pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-med pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-med pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
 
 ## Inter UI Italic
 
-`u-t-ital`
+`type-ital`
 
 ```html
 span: 5
 ---
 <div class="
-  u-t-1 u-t-ital u-p-v-7">
+  type-s-1 type-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-ital u-p-v-7">
+  type-s-2 type-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-ital u-p-v-7">
+  type-s-3 type-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-ital u-p-v-7">
+  type-s-4 type-ital pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
 
-
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-ital pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
 
 ## Inter UI Regular
 
-`u-t-reg`
+`type-reg`
 
 ```html
 span: 5
 ---
 <div class="
-  u-t-1 u-t-reg u-p-v-7">
+  type-s-1 type-reg pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-2 u-t-reg u-p-v-7">
+  type-s-2 type-reg pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-3 u-t-reg u-p-v-7">
+  type-s-3 type-reg pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 <div class="
-  u-t-4 u-t-reg u-p-v-7">
+  type-s-4 type-reg pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+```
+
+```code
+span: 5
+dark: true
+---
+<div class="
+  type-s-1 type-reg pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-2 type-reg pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-3 type-reg pad-v-7">
+  The quick brown fox jumped over the lazy dog
+</div>
+<div class="
+  type-s-4 type-reg pad-v-7">
   The quick brown fox jumped over the lazy dog
 </div>
 ```
