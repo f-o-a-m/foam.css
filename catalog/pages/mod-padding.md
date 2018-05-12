@@ -7,10 +7,10 @@ span: 4
 ---
 <div class="
   pad-1
-  u-bg-blackish
+  bg-blackish
   u-bdr-pill
-  u-c-whitish">
-  pad-1 u-bg-blackish u-c-whitish
+  color-whitish">
+  pad-1 bg-blackish color-whitish
   u-br-pill
 </div>
 ```
@@ -22,10 +22,10 @@ span: 4
 ---
 <div class="
   pad-2
-  u-bg-blackish
+  bg-blackish
   u-bdr-pill
-  u-c-whitish">
-  pad-2 u-bg-blackish u-c-whitish
+  color-whitish">
+  pad-2 bg-blackish color-whitish
   u-br-pill
 </div>
 ```
@@ -37,10 +37,10 @@ span: 4
 ---
 <div class="
   pad-3
-  u-bg-blackish
+  bg-blackish
   u-bdr-pill
-  u-c-whitish">
-  pad-3 u-bg-blackish u-c-whitish
+  color-whitish">
+  pad-3 bg-blackish color-whitish
   u-br-pill
 </div>
 ```
@@ -52,10 +52,10 @@ span: 4
 ---
 <div class="
   pad-4
-  u-bg-blackish
+  bg-blackish
   u-bdr-pill
-  u-c-whitish">
-  pad-4 u-bg-blackish u-c-whitish
+  color-whitish">
+  pad-4 bg-blackish color-whitish
   u-br-pill
 </div>
 ```
@@ -67,10 +67,10 @@ span: 4
 ---
 <div class="
   pad-5
-  u-bg-blackish
+  bg-blackish
   u-bdr-pill
-  u-c-whitish">
-  pad-5 u-bg-blackish u-c-whitish
+  color-whitish">
+  pad-5 bg-blackish color-whitish
   u-br-pill
 </div>
 ```
@@ -82,10 +82,10 @@ span: 4
 ---
 <div class="
   pad-6
-  u-bg-blackish
+  bg-blackish
   u-bdr-pill
-  u-c-whitish">
-  pad-6 u-bg-blackish u-c-whitish
+  color-whitish">
+  pad-6 bg-blackish color-whitish
   u-br-pill
 </div>
 ```
@@ -97,9 +97,10 @@ span: 4
 ---
 <div class="
   pad-7
-  u-bg-blackish
+  bg-blackish
   u-bdr-pill
-  u-c-whitish">
-  pad-7 u-bg-blackish u-c-whitish
+  color-whitish">
+  pad-7 bg-blackish color-whitish
   u-br-pill
 </div>
+```

@@ -7,16 +7,15 @@ See`Button--withTransform` and `Button--withShadow` for more animations.
 span: 3
 dark: true
 ---
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
 <div class="
   User-Widget
-  u-padding-m">
+  pad-4">
   <button class="
     Icon-Widget
-    u-border-s
-    u-padding-s
-    u-color-whitishDim
-    u-background-blackish">
+    u-bdr-pill
+    pad-5
+    color-whitishDim
+    bg-blackish">
     <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
     height="20" width="22">
   </button>
@@ -32,7 +31,6 @@ dark: true
 span: 3
 dark: false
 ---
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
 <div class="
   User-Widget
   u-padding-m">
