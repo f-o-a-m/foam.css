@@ -31,9 +31,9 @@ const pages =
     , title: "User Widget"
     , content: pageLoader(() => import("./pages/user-widget.md"))
     }
-  , { path: "/map-utils"
-    , title: "Map Utils"
-    , content: pageLoader(() => import("./pages/map-utils.md"))
+  , { path: "/map-controls"
+    , title: "Map Controls"
+    , content: pageLoader(() => import("./pages/map-controls.md"))
     }
   , { path: "/create-poi-card"
     , title: "Create POI Card"

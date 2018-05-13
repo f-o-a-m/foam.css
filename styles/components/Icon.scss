@@ -6,6 +6,22 @@
   position: relative;
 }
 
+.Icon-s {
+  width: .5em;
+  height: .5em;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.Icon-ss {
+  width: .25em;
+  height: .25em;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
 .Icon--altBL:after, .Icon--altTC:after {
   position: absolute;
   left: 0; right: 0;

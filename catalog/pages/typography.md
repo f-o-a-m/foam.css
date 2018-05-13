@@ -1,4 +1,3 @@
-
 ## Inter UI Bold Italic
 
 `type-black-ital`
