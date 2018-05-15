@@ -13,7 +13,7 @@ dark: true
   Button
   u-bdr-pill
   u-p-h-3
-  u-p-v-5
+  pad-v-5
   u-bg-whiteish
   u-c-whitishDim">
   Button
@@ -26,8 +26,8 @@ dark: true
 ---
 <button class="
   Button
-  u-p-h-3
-  u-p-v-5
+  pad-h-3
+  pad-v-5
   u-c-whitishDim">
   Button
 </button>
@@ -35,7 +35,7 @@ dark: true
 
 ## Button with transform
 
-`Button Button--withTransform u-p-h-3 u-p-v-5 u-c-whitishDim`
+`Button Button--withTransform pad-h-3 pad-v-5 u-c-whitishDim`
 
 Adds transform animation on interaction.
 
@@ -46,8 +46,8 @@ dark: true
 <button class="
   Button
   Button--withTransform
-  u-p-h-3
-  u-p-v-5
+  pad-h-3
+  pad-v-5
   u-c-whitishDim">
   Button
 </button>
@@ -60,8 +60,8 @@ dark: true
 <button class="
   Button
   Button--withTransform
-  u-p-h-3
-  u-p-v-5
+  pad-h-3
+  pad-v-5
   u-c-whitishDim">
   Button
 </button>
@@ -69,7 +69,7 @@ dark: true
 
 ## Button with Shadow
 
-`Button Button--withTransform u-p-h-3 u-p-v-5 u-bg-blueish u-c-whitishDim`
+`Button Button--withTransform pad-h-3 pad-v-5 u-bg-blueish u-c-whitishDim`
 
 Adds shadow animation on interaction.
 
@@ -79,8 +79,8 @@ span: 2
 <button class="
   Button
   u-shadow-s
-  u-p-h-3
-  u-p-v-5
+  pad-h-3
+  pad-v-5
   u-bg-blueish
   u-c-whitish">
   Button
@@ -93,8 +93,8 @@ span: 2
 <button class="
   Button
   Button--withShadow
-  u-p-h-3
-  u-p-v-5
+  pad-h-3
+  pad-v-5
   u-bg-pinkish
   u-c-whitish">
   Button

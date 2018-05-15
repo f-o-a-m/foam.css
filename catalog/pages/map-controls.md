@@ -1,14 +1,14 @@
-# `Map Utils`
+# `Map Controls`
 
-By default the Map Utils have animation of background-color on interaction.
+By default the Map Controls have animation of background-color on interaction.
 See`Button--withTransform` and `Button--withShadow` for more animations.
 
 ```html
 span: 8
 dark: false
 ---
-<div class="
-map-controls u-width-40 u-dib border-pill pad-7 bg-blackish">
+<div class=" Map Control
+u-dib border-pill pad-7 bg-blackish">
   <button class="
     u-dib u-align-t type-s-3 pad-7 mar-t-6 mar-l-6 color-whitish
   ">
@@ -35,8 +35,8 @@ map-controls u-width-40 u-dib border-pill pad-7 bg-blackish">
 ``` code
 span 6
 ___
-<div class="
-map-controls u-width-40 u-dib border-pill pad-7 bg-blackish">
+<div class=" Map Control
+u-dib border-pill pad-7 bg-blackish">
   <button class="
     u-dib u-align-t type-s-3 pad-7 mar-t-6 mar-l-6 color-whitish
   ">

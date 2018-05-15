@@ -1,13 +1,12 @@
-.map-control {
+.Map-Control {
   position:relative;
   display: inline-block;
   border-radius: 9999px;
-  width:200px;
-  right: 0px;
-  bottom: 0px;
+  width:10em;
+  height: 8em;
 }
 
-.map-cantrol-btn {
+.Map-Control-btn {
   position: relative;
   display: inline-block;
   padding-left: .75rem;
