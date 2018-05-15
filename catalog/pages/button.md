@@ -7,15 +7,13 @@ See`Button--withTransform` and `Button--withShadow` for more animations.
 
 ```html
 span: 2
-dark: true
+dark: false
 ---
 <button class="
   Button
-  u-bdr-pill
-  u-p-h-3
+  pad-h-3
   pad-v-5
-  u-bg-whiteish
-  u-c-whitishDim">
+  bg-blueish">
   Button
 </button>
 ```

@@ -1,19 +1,13 @@
 .Map-Control {
-  position:relative;
-  display: inline-block;
-  border-radius: 9999px;
-  width:18em;
+  border-radius: 9999rem;
+  width:10em;
   height: 9em;
 }
 
-.Map-Control-btn {
-  position: relative;
-  display: inline-block;
-  padding-left: .75rem;
-  padding-right: .75rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 1.25rem;
-  margin-top: .75rem;
-  margin-bottom: .675rem;
+.Map-Control-LatLong {
+  vertical-align: top;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: white;
+  padding-left: 20px;
 }
