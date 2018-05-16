@@ -5,56 +5,37 @@
 span: 8
 dark: false
 ---
-<div class=" Map-Control
-u-dib border-pill bg-blackish">
-  <button class="
-    Map-Control-LatLong u-align-t color-whitish type-s-3 u-mar-t-6 u-mar-b-6 u-mar-l-5
+<div class="
+  u-dib
+  u-pad-h-6
+  u-border-pill
+  u-bg-blackish">
+  <span class="
+    u-pad-v-5
+    u-pad-h-7
+    u-dib
+    u-color-whitishDim
+    type-reg
   ">
-    43.245, 31.438
-  </button>
-  <button class="
-    u-align-t u-mar-l-6 u-mar-r-7 type-s-0 color-whitish
-  ">
-    -
-  </button>
-  <button class="
-    u-align-t u-mar-l-6 u-mar-r-7 type-s-0 color-whitish
-  ">
-    +
-  </button>
-  <button class="
-    u-align-t u-mar-r-6 type-s-0 color-blueish
-  ">
-    ⦿
-  </button>
+    41.6952, 44.7939
+  </span><!--
+--><button class="
+    u-pad-h-7
+    u-pad-v-5
+    u-color-whitish
+    u-color-whitishDim:hover
+  "><span class="Icon Icon--minus"></span></button><!--
+--><button class="
+    u-pad-h-7
+    u-pad-v-5
+    u-color-whitish
+    u-color-whitishDim:hover
+  "><span class="Icon Icon--plus"></span></button><!--
+--><button class="
+    u-pad-h-7
+    u-pad-v-5
+    u-color-blueish
+    u-color-whitish:hover
+  "><span class="Icon Icon--circle"></span></button>
 </div>
-```
-
-``` code
-span 6
-___
-<div class=" Map-Control
-u-dib border-pill bg-blackish">
-  <button class="
-    Map-Control-LatLong u-align-t color-whitish type-s-3 u-mar-t-6 u-mar-b-6 u-mar-l-5
-  ">
-    43.245, 31.438
-  </button>
-  <button class="
-    u-align-t u-mar-l-6 u-mar-r-7 type-s-0 color-whitish
-  ">
-    -
-  </button>
-  <button class="
-    u-align-t u-mar-l-6 u-mar-r-7 type-s-0 color-whitish
-  ">
-    +
-  </button>
-  <button class="
-    u-align-t u-mar-r-6 type-s-0 color-blueish
-  ">
-    ⦿
-  </button>
-</div>
-
 ```
