@@ -1,4 +1,4 @@
-# `User Widget`
+# `User Widget - Default`
 
 ```html
 span: 3
@@ -6,20 +6,262 @@ dark: false
 ---
 <div class="
   User-Widget
-  pad-4">
+  u-display-inline-block
+  u-padding-4
+  ">
   <button class="
     Icon-Widget
     border-pill
-    pad-6
-    color-whitishDim
-    bg-blackish">
-    <img   src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
-    height="20" width="22" class="pad-t-7">
+    u-display-inherit
+    u-padding-5
+    gradient-default">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
   </button>
   <button class="
-    f2 dim border-pill pad-h-4 pad-v-5 ml2 mb2 dib white bg-blackish color-whitish
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
   ">
-    0.00 <span class="u-type-s">FST</span>
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
+  </button>
+</div>
+```
+
+```code
+<div class="
+  User-Widget
+  u-display-inline-block
+  u-padding-4
+  ">
+  <button class="
+    Icon-Widget
+    border-pill
+    u-display-inherit
+    u-padding-5
+    gradient-default">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
+  </button>
+  <button class="
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
+  ">
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
+  </button>
+</div>
+```
+
+# `User Widget - Pending`
+
+```html
+span: 3
+dark: false
+---
+<div class="
+  User-Widget
+  u-display-inline-block
+  u-padding-4
+  ">
+  <button class="
+    Icon-Widget
+    border-pill
+    u-display-inherit
+    u-padding-5
+    gradient-pending">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
+  </button>
+  <button class="
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
+  ">
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
+  </button>
+</div>
+```
+
+```code
+<div class="
+  User-Widget
+  u-display-inline-block
+  u-padding-4
+  ">
+  <button class="
+    Icon-Widget
+    border-pill
+    u-display-inherit
+    u-padding-5
+    gradient-pending">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
+  </button>
+  <button class="
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
+  ">
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
+  </button>
+</div>
+```
+
+# `User Widget - Challenge`
+
+```html
+span: 3
+dark: false
+---
+<div class="
+  User-Widget
+  u-display-inline-block
+  u-padding-4
+  ">
+  <button class="
+    Icon-Widget
+    border-pill
+    u-display-inherit
+    u-padding-5
+    gradient-challenge">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
+  </button>
+  <button class="
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
+  ">
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
+  </button>
+</div>
+```
+
+```code
+<div class="
+  User-Widget
+  u-display-inline-block
+  u-padding-4
+  ">
+  <button class="
+    Icon-Widget
+    border-pill
+    u-display-inherit
+    u-padding-5
+    gradient-challenge">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
+  </button>
+  <button class="
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
+  ">
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
+  </button>
+</div>
+```
+
+# `User Widget - Valid`
+
+```html
+span: 3
+dark: false
+---
+<div class="
+  User-Widget
+  u-display-inline-block
+  u-padding-4
+  ">
+  <button class="
+    Icon-Widget
+    border-pill
+    u-display-inherit
+    u-padding-5
+    gradient-valid">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
+  </button>
+  <button class="
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
+  ">
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
+  </button>
+</div>
+```
+
+```code
+<div class="
+  User-Widget
+  u-display-inline-block
+  u-padding-4
+  ">
+  <button class="
+    Icon-Widget
+    border-pill
+    u-display-inherit
+    u-padding-5
+    gradient-valid">
+    <img src="https://raw.githubusercontent.com/f-o-a-m/foam.css/master/assets/foam_token.png"
+    height="20" width="20">
+  </button>
+  <button class="
+    border-pill
+    u-display-inherit
+    u-verticalAlign-top
+    u-padding-horizontal-4
+    u-padding-vertical-5
+    u-margin-left-5
+    type-size-3
+    bg-blackish
+    color-whitish
+  ">
+    0.00 <span class="u-margin-left-7 type-size-8">FST</span>
   </button>
 </div>
 ```
