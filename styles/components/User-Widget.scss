@@ -1,55 +1,58 @@
 @import "../settings";
-
-.Button {
+.User-Widget {
   box-sizing: border-box;
   border-radius: 99rem;
-  background-color: color(whitish, $alpha: 0.1);
-  border: 1px solid color(whitish, $alpha: 0.1);
-  font-weight: 600;
-  font-size: 2.5rem;
   position: relative;
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  transition: 0.25s;
+  position: absolute;
+  border: 1px solid #4F4F4F;
+  box-sizing: border-box;
 }
 
-.Button:focus {
+.Icon-Widget {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  padding: 10px;
+
+}
+.Balance {
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+}
+
+.Widget:focus {
   outline: none;
 }
 
-//.Button:hover {
-//  background-color: color(whitish, $alpha: 0.2);
-//}
 
-.Button:active {
-  background-color: color(whitish, $alpha: 0.25);
-}
-
-
-.Button--asBlock {
+.Widget--asBlock {
   width: 100%;
   display: block;
 }
 
-
-.Button--withShadow:hover {
+.Widget--withShadow:hover {
   box-shadow: 0.0rem 0.4rem 2.5rem color(blackish, $alpha: 0.25);
 }
 
-.Button--withShadow, .Button--withShadow:active {
+.Widget--withShadow,
+.Widget--withShadow:active {
   box-shadow: 0.0rem 0.4rem 1.5rem color(blackish, $alpha: 0.25);
 }
 
-
-.Button--withTransform:hover {
+.Widget--withTransform:hover {
   transform: translateY(-0.3rem);
 }
 
-.Button--withTransform, .Button--withTransform:active {
+.Button--withTransform,
+.Button--withTransform:active {
   transform: translateY(0rem);
 }
-
 
 // If you hover on button from bottom border it moves up and loses
 // hover and then goes down, which is fixed with this trick.

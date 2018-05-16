@@ -1,48 +1,39 @@
-# `Button`
+# Button Components
 
-By default all `Button`s have animation of background-color on interaction. see 
-`Button--withTransform` and `Button--withShadow` for more animations.
+By default all `Button`s have animation of background-color on interaction.
+See`Button--withTransform` and `Button--withShadow` for more animations.
 
-
+## Button
 
 ```html
+span: 2
+dark: false
+---
+<button class="
+  Button
+  pad-h-3
+  pad-v-5
+  bg-blueish">
+  Button
+</button>
+```
+
+```code
 span: 2
 dark: true
 ---
 <button class="
   Button
-  u-padding-s
-  u-color-whitishDim">
+  pad-h-3
+  pad-v-5
+  u-c-whitishDim">
   Button
 </button>
 ```
 
-```html
-span: 2
-dark: true
----
-<a href="#" class="
-  Button
-  u-padding-s
-  u-color-whitishDim">
-  Button
-</a>
-```
+## Button with transform
 
-
-```html
-span: 2
-dark: true
----
-<div href="#" class="
-  Button
-  u-padding-s
-  u-color-whitishDim">
-  Button
-</div>
-```
-
-## `Button--withTransform`
+`Button Button--withTransform pad-h-3 pad-v-5 u-c-whitishDim`
 
 Adds transform animation on interaction.
 
@@ -53,40 +44,30 @@ dark: true
 <button class="
   Button
   Button--withTransform
-  u-padding-s
-  u-color-whitishDim">
+  pad-h-3
+  pad-v-5
+  u-c-whitishDim">
   Button
 </button>
 ```
 
-```html
+```code
 span: 2
 dark: true
 ---
-<a href="#" class="
+<button class="
   Button
   Button--withTransform
-  u-padding-s
-  u-color-whitishDim">
+  pad-h-3
+  pad-v-5
+  u-c-whitishDim">
   Button
-</a>
+</button>
 ```
 
+## Button with Shadow
 
-```html
-span: 2
-dark: true
----
-<div href="#" class="
-  Button
-  Button--withTransform
-  u-padding-s
-  u-color-whitishDim">
-  Button
-</div>
-```
-## `Button--withShadow`
-
+`Button Button--withTransform pad-h-3 pad-v-5 u-bg-blueish u-c-whitishDim`
 
 Adds shadow animation on interaction.
 
@@ -95,9 +76,11 @@ span: 2
 ---
 <button class="
   Button
-  Button--withShadow
-  u-padding-s
-  u-color-blueish">
+  u-shadow-s
+  pad-h-3
+  pad-v-5
+  u-bg-blueish
+  u-c-whitish">
   Button
 </button>
 ```
@@ -105,15 +88,16 @@ span: 2
 ```html
 span: 2
 ---
-<a href="#" class="
+<button class="
   Button
   Button--withShadow
-  u-padding-s
-  u-color-blueish">
+  pad-h-3
+  pad-v-5
+  u-bg-pinkish
+  u-c-whitish">
   Button
-</a>
+</button>
 ```
-
 
 ```html
 span: 2
@@ -155,7 +139,6 @@ dark: true
 </a>
 ```
 
-
 ```html
 span: 2
 dark: true
@@ -169,9 +152,7 @@ dark: true
 </div>
 ```
 
-
-# Examples
-
+## Examples
 
 ```html
 span: 2
@@ -390,8 +371,6 @@ dark: true
 </div>
 ```
 
-
-
 ```html
 span: 2
 plain: true
@@ -435,4 +414,3 @@ plain: true
   </button>
 </div>
 ```
-

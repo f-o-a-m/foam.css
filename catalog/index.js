@@ -7,6 +7,14 @@ const pages =
     , title: "Welcome"
     , content: pageLoader(() => import("./pages/WELCOME.md"))
     }
+  , { path: "/typography"
+    , title: "Typography"
+    , content: pageLoader(() => import("./pages/typography.md"))
+    }
+  , { path: "/mod-padding"
+    , title: "Modular Padding"
+    , content: pageLoader(() => import("./pages/mod-padding.md"))
+    }
   , { path: "/utils"
     , title: "Utils"
     , content: pageLoader(() => import("./pages/utils.md"))
@@ -18,6 +26,18 @@ const pages =
   , { path: "/icon"
     , title: "Icon"
     , content: pageLoader(() => import("./pages/icon.md"))
+    }
+  , { path: "/user-widget"
+    , title: "User Widget"
+    , content: pageLoader(() => import("./pages/user-widget.md"))
+    }
+  , { path: "/map-controls"
+    , title: "Map Controls"
+    , content: pageLoader(() => import("./pages/map-controls.md"))
+    }
+  , { path: "/create-poi-card"
+    , title: "Create POI Card"
+    , content: pageLoader(() => import("./pages/create-poi-card.md"))
     }
   ]
 
@@ -37,7 +57,7 @@ const foamTheme =
 
   // Used in Menu and PageHeader to make sure the top parts have
   // the same height.
-  , pageHeadingHeight: 120
+  , pageHeadingHeight: 100
 
   // Used for navigation bar
   , navBarBackground: '#eee'
