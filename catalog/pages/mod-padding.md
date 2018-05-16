@@ -6,7 +6,7 @@
 span: 4
 ---
 <div class="
-  pad-1
+  u-padding-1
   bg-blackish
   border-pill
   color-whitish">
@@ -21,7 +21,7 @@ span: 4
 span: 4
 ---
 <div class="
-  pad-2
+  u-padding-2
   bg-blackish
   border-pill
   color-whitish">
@@ -36,7 +36,7 @@ span: 4
 span: 4
 ---
 <div class="
-  pad-3
+  u-padding-3
   bg-blackish
   border-pill
   color-whitish">
@@ -51,7 +51,7 @@ span: 4
 span: 4
 ---
 <div class="
-  pad-4
+  u-padding-4
   bg-blackish
   border-pill
   color-whitish">
@@ -66,7 +66,7 @@ span: 4
 span: 4
 ---
 <div class="
-  pad-5
+  u-padding-5
   bg-blackish
   border-pill
   color-whitish">
@@ -81,7 +81,7 @@ span: 4
 span: 4
 ---
 <div class="
-  pad-6
+  u-padding-6
   bg-blackish
   border-pill
   color-whitish">
@@ -96,7 +96,7 @@ span: 4
 span: 4
 ---
 <div class="
-  pad-7
+  u-padding-7
   bg-blackish
   border-pill
   color-whitish">
