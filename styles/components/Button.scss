@@ -1,52 +1,60 @@
 @import "../settings";
 
 .Button {
-  box-sizing: border-box;
-  border-radius: 99rem;
-  background-color: color(whitish, $alpha: 0.1);
-  border: 1px solid color(whitish, $alpha: 0.1);
   font-weight: 600;
-  font-size: 2.5rem;
   position: relative;
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  // See https://stackoverflow.com/a/20852489/1798418
+  transform: translateY(0rem);
+}
+
+// The ::before element is styled this way so we can set `background-color` on `Button` and still get it changed
+.Button, .Button:before {
+  box-sizing: border-box;
+  border-radius: 99rem;
   transition: 0.25s;
+}
+
+.Button:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid color(whitish, $alpha: 0.1);
+  background-color: color(whitish, $alpha: 0.1);
+  z-index: -1;
 }
 
 .Button:focus {
   outline: none;
 }
 
-//.Button:hover {
-//  background-color: color(whitish, $alpha: 0.2);
-//}
-
-.Button:active {
-  background-color: color(whitish, $alpha: 0.25);
+.Button:focus:before {
+  border: 1px solid color(whitish, $alpha: 0.3);
 }
 
+.Button:hover:before {
+  background-color: color(whitish, $alpha: 0.2);
+}
+
+.Button:active:before {
+  background-color: color(whitish, $alpha: 0.25);
+}
 
 .Button--asBlock {
   width: 100%;
   display: block;
 }
 
-
-.Button--withShadow:hover {
-  box-shadow: 0.0rem 0.4rem 2.5rem color(blackish, $alpha: 0.25);
-}
-
-.Button--withShadow, .Button--withShadow:active {
-  box-shadow: 0.0rem 0.4rem 1.5rem color(blackish, $alpha: 0.25);
-}
-
-
 .Button--withTransform:hover {
   transform: translateY(-0.3rem);
 }
 
-.Button--withTransform, .Button--withTransform:active {
+.Button--withTransform:active {
   transform: translateY(0rem);
 }
 
