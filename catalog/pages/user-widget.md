@@ -4,7 +4,7 @@
 span: 3
 dark: false
 ---
-<div class="type-s-3 u-mar-b-3 u-dif">
+<div class="type-s-3 u-dif">
   <div class="
     u-color-grayDark
     u-shadow-border

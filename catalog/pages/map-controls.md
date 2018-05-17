@@ -6,7 +6,7 @@ span: 8
 dark: false
 ---
 <div class="
-  u-dib
+  type-s-3 u-dif
   u-pad-h-6
   u-border-pill
   u-bg-blackish">
@@ -18,20 +18,20 @@ dark: false
     type-reg
   ">
     41.6952, 44.7939
-  </span><!--
---><button class="
+  </span>
+  <button class="
     u-pad-h-7
     u-pad-v-5
     u-color-whitish
     u-color-whitishDim:hover
-  "><span class="Icon Icon--minus"></span></button><!--
---><button class="
+  "><span class="Icon Icon--minus"></span></button>
+  <button class="
     u-pad-h-7
     u-pad-v-5
     u-color-whitish
     u-color-whitishDim:hover
-  "><span class="Icon Icon--plus"></span></button><!--
---><button class="
+  "><span class="Icon Icon--plus"></span></button>
+  <button class="
     u-pad-h-7
     u-pad-v-5
     u-color-blueish
