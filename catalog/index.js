@@ -17,6 +17,10 @@ const pages =
           , title: "Typography"
           , content: pageLoader(() => import("./pages/typography.md"))
           }
+        , { path: "/colors"
+          , title: "Colors"
+          , content: pageLoader(() => import("./pages/colors.md"))
+          }
         , { path: "/spacing"
           , title: "Spacing"
           , content: pageLoader(() => import("./pages/spacing.md"))
