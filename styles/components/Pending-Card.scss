@@ -1,0 +1,73 @@
+.Pending-Card {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  background-color: hsl(214, 84%, 56%);
+  width: 380px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.Pending-Card-Header {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: color(whitish);
+  transition: 0.25s;
+}
+
+.Pending-Card-Title {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  font-size: 24px;
+  color: color(whitish);
+}
+
+.Pending-Card-Cancel {
+  display: inline-block;
+  position: relative;
+  float: right;
+  border: none;
+  padding-right: 20px;
+  font-size: 24px;
+  color: #fff;
+  background-color: hsl(214, 84%, 56%);
+}
+
+.Pending-Card-Section {
+  display: block;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.Pending-Card-Section-Name {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.Pending-Card-Section-Content {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  max-width: 37ch;
+  word-break: normal;
+}
+
+.Pending-Card-Location-Name {
+  font-size: 16px;
+}
+
+.Pending-Card-Location-Sub-Title {
+  display: block;
+  padding-top:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+}

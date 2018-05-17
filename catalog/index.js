@@ -15,10 +15,20 @@ const pages =
     , title: "Button"
     , content: pageLoader(() => import("./pages/button.md"))
     }
-  , { path: "/icon"
+  , {
+    path: "/icon"
     , title: "Icon"
     , content: pageLoader(() => import("./pages/icon.md"))
     }
+  , { path: "/poi-proposal"
+    , title: "POI Proposal"
+    , content: pageLoader(() => import("./pages/poi-proposal.md"))
+    }
+  , { path: "/poi-pending"
+    , title: "POI Pending"
+    , content: pageLoader(() =>
+      import ("./pages/poi-pending.md"))
+  }
   ]
 
 // See `DefaultTheme.js` for more contamination options:
