@@ -7,3 +7,5 @@ Here you can see some utility classes in various combinations.
 ```hint|neutral
 Take a look at source codes of examples (especially from other pages) to see how they are used in "wild"
 ```
+
+TODO (safareli) restore some util examples
