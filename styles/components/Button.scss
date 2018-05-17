@@ -50,18 +50,18 @@
   display: block;
 }
 
-.Button--withTransform:hover {
+.Button--withTransition:hover {
   transform: translateY(-0.3rem);
 }
 
-.Button--withTransform:active {
+.Button--withTransition:active {
   transform: translateY(0rem);
 }
 
 
 // If you hover on button from bottom border it moves up and loses
 // hover and then goes down, which is fixed with this trick.
-.Button--withTransform:hover:after {
+.Button--withTransition:hover:after {
   content: "";
   position: absolute;
   display: block;
