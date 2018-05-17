@@ -1,14 +1,14 @@
-.Pending-Card {
+.Valid-Card {
   display: inline-block;
   position: relative;
   color: #fff;
-  background-color: hsl(214, 84%, 56%);
+  background-color: #27AE60;
   width: 380px;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
-.Pending-Card-header {
+.Valid-Card-header {
   display: block;
   position: relative;
   margin-top: 20px;
@@ -17,7 +17,7 @@
   transition: 0.25s;
 }
 
-.Pending-Card-title {
+.Valid-Card-title {
   display: inline-block;
   position: relative;
   padding-left: 20px;
@@ -25,7 +25,7 @@
   color: color(whitish);
 }
 
-.Pending-Card-cancel {
+.Valid-Card-cancel {
   display: inline-block;
   position: relative;
   float: right;
@@ -33,23 +33,23 @@
   margin-right: 20px;
   font-size: 24px;
   color: #fff;
-  background-color: hsl(214, 84%, 56%);
+  background-color: #27AE60;
 }
 
-.Pending-Card-cancel:hover {
+.Valid-Card-cancel:hover {
   border: 0.25px solid rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.09);
   border-radius: 999rem;
 }
 
-.Pending-Card-section {
+.Valid-Card-section {
   display: block;
   position: relative;
   padding-bottom: 20px;
 }
 
-.Pending-Card-sectionName {
+.Valid-Card-sectionName {
   display: block;
   position: relative;
   padding-left: 20px;
@@ -57,7 +57,7 @@
   font-size: 16px;
 }
 
-.Pending-Card-sectionContent {
+.Valid-Card-sectionContent {
   display: block;
   position: relative;
   padding-left: 20px;
@@ -67,11 +67,11 @@
   word-break: normal;
 }
 
-.Pending-Card-locationName {
+.Valid-Card-locationName {
   font-size: 16px;
 }
 
-.Pending-Card-locationSubTitle {
+.Valid-Card-locationSubTitle {
   display: block;
   padding-top:10px;
   padding-left: 20px;

@@ -20,15 +20,25 @@ const pages =
     , title: "Icon"
     , content: pageLoader(() => import("./pages/icon.md"))
     }
-  , { path: "/poi-proposal"
-    , title: "POI Proposal"
-    , content: pageLoader(() => import("./pages/poi-proposal.md"))
+  , { path: "/poi-proposal-form"
+    , title: "POI Proposal Form"
+    , content: pageLoader(() => import("./pages/poi-proposal-form.md"))
     }
-  , { path: "/poi-pending"
-    , title: "POI Pending"
+  , { path: "/poi-pending-card"
+    , title: "POI Pending Card"
     , content: pageLoader(() =>
-      import ("./pages/poi-pending.md"))
-  }
+      import ("./pages/poi-pending-card.md"))
+    }
+  , { path: "/poi-challege-card"
+    , title: "POI Challenge Card"
+    , content: pageLoader(() =>
+      import ("./pages/poi-challenge-card.md"))
+    }
+  , { path: "/poi-valid-card"
+    , title: "POI Valid Card"
+    , content: pageLoader(() =>
+      import ("./pages/poi-valid-card.md"))
+    }
   ]
 
 // See `DefaultTheme.js` for more contamination options:

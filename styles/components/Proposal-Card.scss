@@ -8,7 +8,7 @@
   border-radius: 10px;
 }
 
-.Proposal-Card-Header {
+.Proposal-Card-header {
   display: block;
   position: relative;
   margin-top: 20px;
@@ -17,7 +17,7 @@
   transition: 0.25s;
 }
 
-.Proposal-Card-Title {
+.Proposal-Card-title {
   display: inline-block;
   position: relative;
   padding-left: 20px;
@@ -25,24 +25,31 @@
   color: color(whitish);
 }
 
-.Proposal-Card-Cancel {
+.Proposal-Card-cancel {
   display: inline-block;
   position: relative;
   border: none;
   float: right;
-  padding-right: 20px;
+  margin-right: 20px;
   font-size: 24px;
   color: #fff;
   background-color: hsl(214, 84%, 56%);
 }
 
-.Proposal-Card-Section {
+.Proposal-Card-cancel:hover {
+  border: 0.25px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 999rem;
+}
+
+.Proposal-Card-section {
   display: block;
   position: relative;
   padding-bottom: 20px;
 }
 
-.Proposal-Card-Section-Name {
+.Proposal-Card-sectionName {
   display: block;
   position: relative;
   padding-left: 20px;
@@ -50,8 +57,8 @@
   font-size: 16px;
 }
 
-.Proposal-Card-Field {
-  display: block;
+.Proposal-Card-field {
+  display: inline-block;
   position: relative;
   width: 340px;
   padding: 10px;
@@ -65,19 +72,49 @@
   border-radius: 10px;
 }
 
-.--Description {
+.Proposal-Card-field--description {
+  display: inline-block;
+  position: relative;
+  width: 340px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #c4c4c4;
+  border: 0.25px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
   word-wrap: break-word;
   word-break: break-all;
   resize: vertical;
 }
 
-.Proposal-Card-Tag {
+.Proposal-Card-tagContainer {
   display: inline-block;
-  padding: 10px;
+  background-color: #f2f2f2;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: 20px;
-  background-color: #c4c4c4;
+  background: #F2F2F2;
   border: 0.25px solid rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.09);
-  border-radius: 999rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.Proposal-Card-tag {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  appearance: none;
+}
+
+.Proposal-Card-tagName {
+  display: inline-block;
+  color: #333;
 }
