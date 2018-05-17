@@ -156,7 +156,7 @@ span: 2
   u-paddingHorizontal-l
   u-paddingVertical-m
   u-marginBottom-l
-  u-bg-blueish
+  u-backgroundColor-blueish
   u-color-whitish">
   Button
 </button>
@@ -167,7 +167,7 @@ span: 2
   u-shadow-l:hover
   u-paddingHorizontal-l
   u-paddingVertical-m
-  u-bg-blueish
+  u-backgroundColor-blueish
   u-color-blackish">
   Button
 </button>
@@ -185,7 +185,7 @@ span: 2
   u-paddingHorizontal-l
   u-paddingVertical-m
   u-marginBottom-l
-  u-bg-pinkish
+  u-backgroundColor-pinkish
   u-color-whitish">
   Button
 </a>
@@ -197,7 +197,7 @@ span: 2
   u-paddingHorizontal-l
   u-paddingVertical-m
   u-marginBottom-l
-  u-bg-pinkish
+  u-backgroundColor-pinkish
   u-color-blackish">
   Button
 </a>
@@ -215,7 +215,7 @@ span: 2
   u-paddingHorizontal-l
   u-paddingVertical-m
   u-marginBottom-l
-  u-bg-greenish
+  u-backgroundColor-greenish
   u-color-whitish">
   Button
 </div>
@@ -226,7 +226,7 @@ span: 2
   u-shadow-l:hover
   u-paddingHorizontal-l
   u-paddingVertical-m
-  u-bg-greenish
+  u-backgroundColor-greenish
   u-color-blackish">
   Button
 </div>
@@ -239,7 +239,7 @@ span: 2
 dark: true
 ---
 <div class="
-  u-bg-blackish
+  u-backgroundColor-blackish
   u-padding-l">
   <button class="
     Button
@@ -285,7 +285,7 @@ span: 2
 dark: true
 ---
 <div class="
-  u-bg-pinkish
+  u-backgroundColor-pinkish
   u-padding-l">
   <button class="
     Button
@@ -335,7 +335,7 @@ span: 2
 dark: true
 ---
 <div class="
-  u-bg-blueish
+  u-backgroundColor-blueish
   u-padding-l">
   <button class="
     Button
@@ -381,7 +381,7 @@ span: 2
 dark: true
 ---
 <div class="
-  u-bg-greenish
+  u-backgroundColor-greenish
   u-padding-l">
   <button class="
     Button
@@ -428,7 +428,7 @@ span: 2
 dark: true
 ---
 <div class="
-  u-bg-grayish
+  u-backgroundColor-grayish
   u-padding-l">
   <button class="
     Button
@@ -476,7 +476,7 @@ span: 2
 dark: true
 ---
 <div class="
-  u-bg-whitish
+  u-backgroundColor-whitish
   u-padding-l">
   <button class="
     Button

@@ -1,191 +1,136 @@
-## Inter UI Black Italic
+## Subscript and Superscripts
 
 ```html
-span: 5
----
-<div class="
-  type-s-1 type-h-1 type-black type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-black type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-black type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-black type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
+<p>THE QUICK <sub>BROWN</sub> FOX <sup>JUMPED</sup> OVER <span class="u-sup">THE</span> LAZY DOG</p>
 ```
-
-
-## Inter UI Black
-
+## Inter UI Regular
 
 ```html
-span: 5
----
-<div class="
-  type-s-1 type-h-1 type-black pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-black pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-black pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-black pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
+<div class="u-fontSize-xl u-fontWeight-regular u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-xl u-fontWeight-regular u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-regular u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-regular u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-regular u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-regular u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-regular u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-regular u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
 ```
-
-
-## Inter UI Bold Italic
-
-```html
-span: 5
----
-<div class="
-  type-s-1 type-h-1 type-bold type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-bold type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-bold type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-bold type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-```
-
-
-## Inter UI Bold
-
-```html
-span: 5
----
-<div class="
-  type-s-1 type-h-1 type-bold pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-bold pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-bold pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-bold pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-```
-
-
-## Inter UI Medium Italic
-
-```html
-span: 5
----
-<div class="
-  type-s-1 type-h-1 type-med type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-med type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-med type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-med type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-```
-
 
 ## Inter UI Medium
 
 ```html
-span: 5
----
-<div class="
-  type-s-1 type-h-1 type-med pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-med pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-med pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-med pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
+<div class="u-fontSize-xl u-fontWeight-medium u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-xl u-fontWeight-medium u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-medium u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-medium u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-medium u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-medium u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-medium u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-medium u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+```
+
+## Inter UI Bold
+
+```html
+<div class="u-fontSize-xl u-fontWeight-bold u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-xl u-fontWeight-bold u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-bold u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-bold u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-bold u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-bold u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-bold u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-bold u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+```
+
+## Inter UI Black
+
+```html
+<div class="u-fontSize-xl u-fontWeight-black u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-xl u-fontWeight-black u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-black u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-l u-fontWeight-black u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-black u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-m u-fontWeight-black u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-black u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
+<div class="u-fontSize-s u-fontWeight-black u-fontStyle-italic u-lineHeight-m">The quick brown fox jumped over the lazy dog</div>
 ```
 
 
-## Inter UI Regular Italic
+
+# Line height, and font size combinations
+
 
 ```html
-span: 5
 ---
-<div class="
-  type-s-1 type-h-1 type-reg type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-reg type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-reg type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-reg type-italic pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-```
-
-
-## Inter UI Regular
-
-```html
-span: 5
----
-<div class="
-  type-s-1 type-h-1 type-reg pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-2 type-h-2 type-reg pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-3 type-h-3 type-reg pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
-<div class="
-  type-s-4 type-h-4 type-reg pad-v-7">
-  The quick brown fox jumped over the lazy dog
-</div>
+<table>
+  <tr class="u-fontSize-xl">
+    <td valign="top" class=" u-lineHeight-s u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+    <td valign="top" class=" u-lineHeight-m u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+    <td valign="top" class=" u-lineHeight-l u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+  </tr>
+  <tr class="u-fontSize-l">
+    <td valign="top" class="u-lineHeight-s u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+    <td valign="top" class="u-lineHeight-m u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+    <td valign="top" class="u-lineHeight-l u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+  </tr>
+  <tr class="u-fontSize-m">
+    <td valign="top" class="u-lineHeight-s u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+    <td valign="top" class="u-lineHeight-m u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+    <td valign="top" class="u-lineHeight-l u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+  </tr>
+  <tr class="u-fontSize-s">
+    <td valign="top" class="u-lineHeight-s u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+    </td>
+    <td valign="top" class="u-lineHeight-m u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+    <td valign="top" class="u-lineHeight-l u-marginBottom-l">
+      Lorem ipsum dolor sit amet, ut sit aperiam lobortis pericula, meis quas euismod ea
+      per, vix ut aliquam iudicabit. Id solet docendi vel, has at epicuri persequeris,
+      et mea feugiat antiopam.
+  </td>
+  </tr
+>
+</table>
 ```

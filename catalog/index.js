@@ -17,9 +17,9 @@ const pages =
           , title: "Typography"
           , content: pageLoader(() => import("./pages/typography.md"))
           }
-        , { path: "/mod-padding"
-          , title: "Modular Padding"
-          , content: pageLoader(() => import("./pages/mod-padding.md"))
+        , { path: "/spacing"
+          , title: "Spacing"
+          , content: pageLoader(() => import("./pages/spacing.md"))
           }
         ]
       }

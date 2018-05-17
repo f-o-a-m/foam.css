@@ -6,39 +6,34 @@ span: 8
 dark: false
 ---
 <div class="
-  u-dif
+  u-display-inlineFlex
   u-paddingHorizontal-m
   u-border-pill
-  u-bg-blackish">
+  u-backgroundColor-blackish">
   <span class="
     u-padding-m
-    type-s-4
-    type-h-4
-    type-reg
+    u-lineHeight-m
     u-color-whitishDim
   ">
     41.6952, 44.7939
   </span>
   <button class="
-    type-s-3
     u-paddingHorizontal-s
     u-paddingVertical-m
     u-color-whitish
     u-color-whitishDim:hover
-  "><span class="Icon Icon--minus"></span></button>
+  "><span class="Icon Icon--minus u-fontSize-l"></span></button>
   <button class="
-    type-s-3
     u-paddingHorizontal-s
     u-paddingVertical-m
     u-color-whitish
     u-color-whitishDim:hover
-  "><span class="Icon Icon--plus"></span></button>
+  "><span class="Icon Icon--plus u-fontSize-l"></span></button>
   <button class="
-    type-s-3
     u-paddingHorizontal-s
     u-paddingVertical-m
     u-color-blueish
     u-color-whitish:hover
-  "><span class="Icon Icon--circle"></span></button>
+  "><span class="Icon Icon--circle u-fontSize-l"></span></button>
 </div>
 ```
