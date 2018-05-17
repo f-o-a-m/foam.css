@@ -1,106 +1,57 @@
 # Modular Padding
 
-`pad-1`
-
 ```html
-span: 4
+span: 5
 ---
-<div class="
-  pad-1
-  bg-blackish
-  border-pill
-  color-whitish">
-  pad-1 bg-blackish color-whitish
-  border-pill
+<div class="u-pad-1 u-bg-blackish">
+  <div class="u-pad-1 u-bg-pinkish">u-pad-1</div>
 </div>
 ```
 
-`pad-2`
-
 ```html
-span: 4
+span: 5
 ---
-<div class="
-  pad-2
-  bg-blackish
-  border-pill
-  color-whitish">
-  pad-2 bg-blackish color-whitish
-  border-pill
+<div class="u-pad-2 u-bg-blackish">
+  <div class="u-pad-2 u-bg-pinkish">u-pad-2</div>
 </div>
 ```
 
-`pad-3`
-
 ```html
-span: 4
+span: 5
 ---
-<div class="
-  pad-3
-  bg-blackish
-  border-pill
-  color-whitish">
-  pad-3 bg-blackish color-whitish
-  border-pill
+<div class="u-pad-3 u-bg-blackish">
+  <div class="u-pad-3 u-bg-pinkish">u-pad-3</div>
 </div>
 ```
 
-`pad-4`
-
 ```html
-span: 4
+span: 5
 ---
-<div class="
-  pad-4
-  bg-blackish
-  border-pill
-  color-whitish">
-  pad-4 bg-blackish color-whitish
-  border-pill
+<div class="u-pad-4 u-bg-blackish">
+  <div class="u-pad-4 u-bg-pinkish">u-pad-4</div>
 </div>
 ```
 
-`pad-5`
-
 ```html
-span: 4
+span: 5
 ---
-<div class="
-  pad-5
-  bg-blackish
-  border-pill
-  color-whitish">
-  pad-5 bg-blackish color-whitish
-  border-pill
+<div class="u-pad-5 u-bg-blackish">
+  <div class="u-pad-5 u-bg-pinkish">u-pad-5</div>
 </div>
 ```
 
-`pad-6`
-
 ```html
-span: 4
+span: 5
 ---
-<div class="
-  pad-6
-  bg-blackish
-  border-pill
-  color-whitish">
-  pad-6 bg-blackish color-whitish
-  border-pill
+<div class="u-pad-6 u-bg-blackish">
+  <div class="u-pad-6 u-bg-pinkish">u-pad-6</div>
 </div>
 ```
 
-`pad-7`
-
 ```html
-span: 4
+span: 5
 ---
-<div class="
-  pad-7
-  bg-blackish
-  border-pill
-  color-whitish">
-  pad-7 bg-blackish color-whitish
-  border-pill
+<div class="u-pad-7 u-bg-blackish">
+  <div class="u-pad-7 u-bg-pinkish">u-pad-7</div>
 </div>
 ```
