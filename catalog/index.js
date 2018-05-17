@@ -35,10 +35,6 @@ const pages =
     , title: "Map Controls"
     , content: pageLoader(() => import("./pages/map-controls.md"))
     }
-  , { path: "/create-poi-card"
-    , title: "Create POI Card"
-    , content: pageLoader(() => import("./pages/create-poi-card.md"))
-    }
   ]
 
 // See `DefaultTheme.js` for more contamination options:
