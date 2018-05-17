@@ -7,11 +7,19 @@
 .u-bg-grayish { background-color: color(grayish); }
 .u-bg-whitish { background-color: color(whitish); }
 
+.u-color-grayDark { color: color(grayDark); }
 .u-color-blackish { color: color(blackish); }
 .u-color-whitish { color: color(whitish); }
 .u-color-whitishDim { color: color(whitish, $alpha: 0.6); } 
 .u-color-blueish { color: color(blueish); }
+
+.u-color-grayDark\:hover:hover { color: color(grayDark); }
 .u-color-blackish\:hover:hover { color: color(blackish); }
 .u-color-whitish\:hover:hover { color: color(whitish); }
 .u-color-whitishDim\:hover:hover { color: color(whitish, $alpha: 0.6); } 
 .u-color-blueish\:hover:hover { color: color(blueish); }
+
+.u-bg-gradient-default { background: linear-gradient(#7C4E42, #C17966); }
+.u-bg-gradient-pending { background: linear-gradient(#2F80ED, #C17966); }
+.u-bg-gradient-challenge { background: linear-gradient(#F48068, #C17966); }
+.u-bg-gradient-valid { background: linear-gradient(#27AE60, #C17966); }

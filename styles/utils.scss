@@ -6,6 +6,7 @@
 @import "utils/margin";
 @import "utils/padding";
 
+.u-shadow-border { box-shadow: inset 0 0 0 0.1rem currentColor; }
 .u-shadow-s { box-shadow: 0.2rem 0.2rem 0.4rem color(blackish, $alpha: 0.2); }
 .u-shadow-m { box-shadow: 0.0rem 0.4rem 1.5rem color(blackish, $alpha: 0.25); }
 .u-shadow-l { box-shadow: 0.0rem 0.4rem 2.5rem color(blackish, $alpha: 0.25); }
@@ -16,6 +17,7 @@
 .u-shadow-m\:active:active { box-shadow: 0.0rem 0.4rem 1.5rem color(blackish, $alpha: 0.25); }
 .u-shadow-l\:active:active { box-shadow: 0.0rem 0.4rem 2.5rem color(blackish, $alpha: 0.25); }
 
+.u-dif { display: inline-flex; }
 .u-dib { display: inline-block; }
 .u-width-50 { width: 50% }
 .u-width-40 { width: 40%; }
