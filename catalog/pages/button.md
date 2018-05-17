@@ -1,9 +1,7 @@
-# `Button`
 
-By default all `Button`s have animation of background-color on interaction. see 
-`Button--withTransform` and `Button--withShadow` for more animations.
+## `Button`
 
-
+By default all `Button`s have animation of background-color on interaction.
 
 ```html
 span: 2
@@ -11,7 +9,8 @@ dark: true
 ---
 <button class="
   Button
-  u-padding-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </button>
@@ -23,7 +22,8 @@ dark: true
 ---
 <a href="#" class="
   Button
-  u-padding-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </a>
@@ -36,15 +36,17 @@ dark: true
 ---
 <div href="#" class="
   Button
-  u-padding-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </div>
 ```
 
-## `Button--withTransform`
 
-Adds transform animation on interaction.
+## `Button--withTransition`
+
+Adds transition animation on interaction.
 
 ```html
 span: 2
@@ -52,8 +54,9 @@ dark: true
 ---
 <button class="
   Button
-  Button--withTransform
-  u-padding-s
+  Button--withTransition
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </button>
@@ -65,8 +68,9 @@ dark: true
 ---
 <a href="#" class="
   Button
-  Button--withTransform
-  u-padding-s
+  Button--withTransition
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </a>
@@ -79,56 +83,19 @@ dark: true
 ---
 <div href="#" class="
   Button
-  Button--withTransform
-  u-padding-s
+  Button--withTransition
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </div>
 ```
-## `Button--withShadow`
 
-
-Adds shadow animation on interaction.
-
-```html
-span: 2
----
-<button class="
-  Button
-  Button--withShadow
-  u-padding-s
-  u-color-blueish">
-  Button
-</button>
-```
-
-```html
-span: 2
----
-<a href="#" class="
-  Button
-  Button--withShadow
-  u-padding-s
-  u-color-blueish">
-  Button
-</a>
-```
-
-
-```html
-span: 2
----
-<div href="#" class="
-  Button
-  Button--withShadow
-  u-padding-s
-  u-color-blueish">
-  Button
-</div>
-```
 
 ## `Button--asBlock`
 
+Sets display to block and stretches the button.
+
 ```html
 span: 2
 dark: true
@@ -136,7 +103,8 @@ dark: true
 <button class="
   Button
   Button--asBlock
-  u-padding-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </button>
@@ -149,12 +117,12 @@ dark: true
 <a href="#" class="
   Button
   Button--asBlock
-  u-padding-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </a>
 ```
-
 
 ```html
 span: 2
@@ -163,27 +131,121 @@ dark: true
 <div href="#" class="
   Button
   Button--asBlock
-  u-padding-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
   u-color-whitishDim">
   Button
 </div>
 ```
 
 
-# Examples
+## What about shadows, background, color?
 
+You can use utility classes for that:
+
+```html
+span: 2
+---
+<button class="
+  Button
+  Button--asBlock
+  u-shadow-m
+  u-shadow-m:active
+  u-shadow-l:hover
+  u-shadow-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-marginBottom-l
+  u-backgroundColor-blueish
+  u-color-whitish">
+  Button
+</button>
+<button class="
+  Button
+  u-shadow-m
+  u-shadow-m:active
+  u-shadow-l:hover
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-backgroundColor-blueish
+  u-color-blackish">
+  Button
+</button>
+```
+
+```html
+span: 2
+---
+<a href="#" class="
+  Button
+  Button--asBlock
+  u-shadow-m
+  u-shadow-m:active
+  u-shadow-l:hover
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-marginBottom-l
+  u-backgroundColor-pinkish
+  u-color-whitish">
+  Button
+</a>
+<a href="#" class="
+  Button
+  u-shadow-m
+  u-shadow-m:active
+  u-shadow-l:hover
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-marginBottom-l
+  u-backgroundColor-pinkish
+  u-color-blackish">
+  Button
+</a>
+```
+
+```html
+span: 2
+---
+<div class="
+  Button
+  Button--asBlock
+  u-shadow-m
+  u-shadow-m:active
+  u-shadow-l:hover
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-marginBottom-l
+  u-backgroundColor-greenish
+  u-color-whitish">
+  Button
+</div>
+<div class="
+  Button
+  u-shadow-m
+  u-shadow-m:active
+  u-shadow-l:hover
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-backgroundColor-greenish
+  u-color-blackish">
+  Button
+</div>
+```
+
+## Examples
 
 ```html
 span: 2
 dark: true
 ---
 <div class="
-  u-background-blackish
-  u-padding-m">
+  u-backgroundColor-blackish
+  u-padding-l">
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish">
     Button
   </button>
@@ -191,7 +253,8 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim">
     Button
   </button>
@@ -199,16 +262,18 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim">
     Button
   </button>
   <br>
   <button class="
     Button
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish">
     Button
   </button>
@@ -220,12 +285,13 @@ span: 2
 dark: true
 ---
 <div class="
-  u-background-pinkish
-  u-padding-m">
+  u-backgroundColor-pinkish
+  u-padding-l">
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-shadow-s
     u-color-whitish">
     Button
@@ -234,7 +300,8 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-shadow-m
     u-color-whitishDim">
     Button
@@ -243,8 +310,9 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-shadow-l
     u-color-whitishDim">
     Button
@@ -252,8 +320,9 @@ dark: true
   <br>
   <button class="
     Button
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-shadow-s
     u-color-whitish">
     Button
@@ -266,12 +335,13 @@ span: 2
 dark: true
 ---
 <div class="
-  u-background-blueish
-  u-padding-m">
+  u-backgroundColor-blueish
+  u-padding-l">
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish">
     Button
   </button>
@@ -279,7 +349,8 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim">
     Button
   </button>
@@ -287,16 +358,18 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim">
     Button
   </button>
   <br>
   <button class="
     Button
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish">
     Button
   </button>
@@ -308,12 +381,13 @@ span: 2
 dark: true
 ---
 <div class="
-  u-background-greenish
-  u-padding-m">
+  u-backgroundColor-greenish
+  u-padding-l">
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish">
     Button
   </button>
@@ -321,25 +395,28 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim
-    u-color-whitish@hover">
+    u-color-whitish:hover">
     Button
   </button>
   <br>
   <button class="
     Button
     Button--asBlock
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim">
     Button
   </button>
   <br>
   <button class="
     Button
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish">
     Button
   </button>
@@ -351,12 +428,13 @@ span: 2
 dark: true
 ---
 <div class="
-  u-background-grayish
-  u-padding-m">
+  u-backgroundColor-grayish
+  u-padding-l">
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish
     ">
     Button
@@ -365,74 +443,88 @@ dark: true
   <button class="
     Button
     Button--asBlock
-    u-padding-s
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim
-    u-color-whitish@hover">
+    u-color-whitish:hover">
     Button
   </button>
   <br>
   <button class="
     Button
     Button--asBlock
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitishDim">
     Button
   </button>
   <br>
   <button class="
     Button
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-whitish">
     Button
   </button>
 </div>
 ```
 
-
-
 ```html
 span: 2
-plain: true
+dark: true
 ---
-<div class="u-padding-m">
+<div class="
+  u-backgroundColor-whitish
+  u-padding-l">
   <button class="
     Button
-    Button--withShadow
     Button--asBlock
-    u-padding-s
+    u-shadow-m
+    u-shadow-m:active
+    u-shadow-l:hover
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-blueish">
     Button
   </button>
   <br>
   <button class="
     Button
-    Button--withShadow
     Button--asBlock
-    u-padding-s
+    u-shadow-m
+    u-shadow-m:active
+    u-shadow-l:hover
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-blueish">
     Button
   </button>
   <br>
   <button class="
     Button
-    Button--withShadow
     Button--asBlock
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-shadow-m
+    u-shadow-m:active
+    u-shadow-l:hover
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-blueishDim">
     Button
   </button>
   <br>
   <button class="
     Button
-    Button--withShadow
-    Button--withTransform
-    u-padding-s
+    Button--withTransition
+    u-shadow-m
+    u-shadow-m:active
+    u-shadow-l:hover
+    u-paddingHorizontal-l
+    u-paddingVertical-m
     u-color-blueish">
     Button
   </button>
 </div>
 ```
-

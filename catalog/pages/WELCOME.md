@@ -4,13 +4,27 @@ src: devportal.png
 plain: true
 ```
 
-We use BEM like naming convention:
+
+```html
+<div class="u-padding-l u-backgroundColor-greenish u-color-whitish u-border-pill">
+  Move cursor to the top right corner of this and any similar block, to see `<>` button, which on click will display source code of the block.
+</div>
+```
+
+
+# Naming convention
+
+We use BEM like naming convention for components:
 
 ```
-Block { ... }
-Block--blockModifier { ... }
-Block-element { ... }
-Block-element--elementModifier { ... }
+ComponentName { ... }
+ComponentName--componentModifier { ... }
+ComponentName-someElement { ... }
+ComponentName-someElement--elementModifier { ... }
+```
+
+```hint|info
+component `ComponentName` should be located at `styles/components/ComponentName.scss`
 ```
 
 For utility classes we use naming convention like this:

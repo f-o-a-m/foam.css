@@ -9,7 +9,7 @@
  */
 
  html {
-  line-height: 1.15; /* 1 */
+  line-height: 1; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -155,8 +155,8 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  font-size: inherit; /* 1 */
+  line-height: inherit; /* 1 */
   margin: 0; /* 2 */
 }
 
@@ -233,7 +233,7 @@ legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
-  max-width: 100%; /* 1 */
+  //max-width: 100%; /* 1 */
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }

@@ -7,17 +7,49 @@ const pages =
     , title: "Welcome"
     , content: pageLoader(() => import("./pages/WELCOME.md"))
     }
-  , { path: "/utils"
-    , title: "Utils"
-    , content: pageLoader(() => import("./pages/utils.md"))
+    , { title: "Utils"
+      , pages:
+        [ { path: "/utils"
+          , title: "Overview"
+          , content: pageLoader(() => import("./pages/utils.md"))
+          }
+        , { path: "/typography"
+          , title: "Typography"
+          , content: pageLoader(() => import("./pages/typography.md"))
+          }
+        , { path: "/colors"
+          , title: "Colors"
+          , content: pageLoader(() => import("./pages/colors.md"))
+          }
+        , { path: "/spacing"
+          , title: "Spacing"
+          , content: pageLoader(() => import("./pages/spacing.md"))
+          }
+        ]
+      }
+  , { title: "Components"
+    , pages:
+      [ { path: "/button"
+        , title: "Button"
+        , content: pageLoader(() => import("./pages/button.md"))
+        }
+      , { path: "/icon"
+        , title: "Icon"
+        , content: pageLoader(() => import("./pages/icon.md"))
+        }
+      ]
     }
-  , { path: "/button"
-    , title: "Button"
-    , content: pageLoader(() => import("./pages/button.md"))
-    }
-  , { path: "/icon"
-    , title: "Icon"
-    , content: pageLoader(() => import("./pages/icon.md"))
+  , { title: "Templates"
+    , pages:
+      [ { path: "/user-widget"
+        , title: "User Widget"
+        , content: pageLoader(() => import("./pages/user-widget.md"))
+        }
+      , { path: "/map-controls"
+        , title: "Map Controls"
+        , content: pageLoader(() => import("./pages/map-controls.md"))
+        }
+      ]
     }
   ]
 
