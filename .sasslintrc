@@ -1,0 +1,22 @@
+options:
+  merge-default-rules: false
+files:
+  include: './styles/**/*.s+(a|c)ss'
+rules:
+  no-extends: 2
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-important: 2
+  no-trailing-whitespace: 2
+  no-invalid-hex: 2
+  indentation: [ 2, size: 2 ]
+  nesting-depth: [ 2, max-depth: 0 ]
+  space-between-parens: [ 2, include: false ]
+  space-before-colon: [ 2, include: false ]
+  space-before-brace: [ 2, include: true ]
+  space-before-bang: [ 2, include: true ]
+  space-after-bang: [ 2, include: false ]
+  space-around-operator: [ 2, include: true ]
+  space-after-comma: [ 2, include: true ]
+  space-after-colon: [ 2, include: true ]
