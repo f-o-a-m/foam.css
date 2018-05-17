@@ -1,5 +1,4 @@
-# `Map Controls`
-
+# Map Controls
 
 ```html
 span: 8
