@@ -107,14 +107,28 @@
 
 .Proposal-Card-tag {
   display: inline-block;
+  position: relative;
+  vertical-align: top;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 2.5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   appearance: none;
+  user-select: none;
 }
 
-.Proposal-Card-tagName {
-  display: inline-block;
-  color: #333;
+.Proposal-Card-tag input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Proposal-Card-tag:hover {
+  background-color: #000;
 }

@@ -15,8 +15,7 @@ const pages =
     , title: "Button"
     , content: pageLoader(() => import("./pages/button.md"))
     }
-  , {
-    path: "/icon"
+  , { path: "/icon"
     , title: "Icon"
     , content: pageLoader(() => import("./pages/icon.md"))
     }

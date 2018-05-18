@@ -18,11 +18,11 @@
 }
 
 .Button:hover {
-  background-color: color(whitish, $alpha: 0.2);
+  opacity: 0.4;
 }
 
 .Button:active {
-  background-color: color(whitish, $alpha: 0.25);
+  opacity: 0.4;
 }
 
 
@@ -31,6 +31,13 @@
   display: block;
 }
 
+.Button--asInlineBlock {
+  width: 340px;
+  height: 40px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
 .Button--withShadow:hover {
   box-shadow: 0.0rem 0.4rem 2.5rem color(blackish, $alpha: 0.25);
