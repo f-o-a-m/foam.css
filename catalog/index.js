@@ -19,6 +19,10 @@ const pages =
     , title: "Icon"
     , content: pageLoader(() => import("./pages/icon.md"))
     }
+  , { path: "/points"
+    , title: "Points"
+    , content: pageLoader(() => import("./pages/points.md"))
+    }
   ]
 
 // See `DefaultTheme.js` for more contamination options:
