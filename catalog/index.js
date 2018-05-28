@@ -53,6 +53,10 @@ const pages =
         , title: "Map Controls"
         , content: pageLoader(() => import("./pages/map-controls.md"))
         }
+      , { path: "/point-of-interest"
+        , title: "Point of interest"
+        , content: pageLoader(() => import("./pages/point-of-interest.md"))
+        }
       ]
     }
   ]
