@@ -94,3 +94,21 @@
 @include utils('.u-paddingBottom-', (padding-bottom), $spacing);
 @include utils('.u-paddingVertical-', (padding-top, padding-bottom), $spacing);
 @include utils('.u-paddingHorizontal-', (padding-left, padding-right), $spacing);
+
+@include utils('.u-width-', (width), (
+  'auto': auto,
+  0: 0%,
+  full: 100%,
+  '1\\\/12': 8.333333%,
+  '2\\\/12': 16.366666%,
+  '3\\\/12': 25%,
+  '4\\\/12': 33.333333%,
+  '5\\\/12': 41.366666%,
+  '6\\\/12': 50%,
+  '7\\\/12': 58.333333%,
+  '8\\\/12': 66.366666%,
+  '9\\\/12': 75%,
+  '10\\\/12': 83.333333%,
+  '11\\\/12': 91.366666%,
+  '12\\\/12': 100%,
+));

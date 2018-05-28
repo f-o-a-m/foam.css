@@ -37,6 +37,10 @@ const pages =
         , title: "Icon"
         , content: pageLoader(() => import("./pages/icon.md"))
         }
+      , { path: "/grid"
+        , title: "Grid"
+        , content: pageLoader(() => import("./pages/grid.md"))
+        }
       ]
     }
   , { title: "Templates"
