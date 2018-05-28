@@ -18,3 +18,13 @@ See styleguide: <https://f-o-a-m.github.io/foam.css/>
 
 - `/catalog/static/fonts` is a symbolic link to `/fonts`
 - `/catalog/static/assets` is a symbolic link to `/assets`
+
+## icons
+
+When adding new icon make sure they are cleaned up.
+
+```
+./cleanup-icons.sh assets/icons/my_icon.svg
+```
+
+Note: the script depends on [Inkscape](https://inkscape.org/en/release/0.92.2/) and `svgo` (`npm i -g svgo@1.0.3`).
