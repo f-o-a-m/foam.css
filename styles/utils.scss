@@ -42,16 +42,15 @@
 
 //# ===TYPOGRAPHY===
 
-
 .u-fontSize-xxl { font-size: 2.4rem; }
 .u-fontSize-xl { font-size: 2.4rem; }
 .u-fontSize-l { font-size: 2rem; }
 .u-fontSize-m { font-size: 1.6rem; } // default size
 .u-fontSize-s { font-size: 1rem; }
 
-.u-lineHeight-s { line-height: 1em; } // default height
-.u-lineHeight-m { line-height: 1.2em; } // = 100% in sigma
-.u-lineHeight-l { line-height: 1.4375em; } // ~ 120% in sigma
+.u-lineHeight-s { line-height: 1; } // default height
+.u-lineHeight-m { line-height: 1.2; } // = 100% in sigma
+.u-lineHeight-l { line-height: 1.4375; } // ~ 120% in sigma
 
 .u-fontStyle-italic { font-style: italic; }
 
