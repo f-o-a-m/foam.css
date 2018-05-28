@@ -45,9 +45,8 @@
   background-color: rgba(color(whitish), $alpha: 0.25);
 }
 
-.Button--asBlock {
+.Button--full {
   width: 100%;
-  display: block;
 }
 
 .Button--withTransition:hover {
