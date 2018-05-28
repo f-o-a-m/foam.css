@@ -6,14 +6,15 @@
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  border-radius: 99rem;
+  overflow: hidden; // clips ::before node so no need to border-radius on that too
+  border: 1px solid rgba(color(whitish), $alpha: 0.2);
   // See https://stackoverflow.com/a/20852489/1798418
   transform: translateY(0rem);
 }
 
 // The ::before element is styled this way so we can set `background-color` on `Button` and still get it changed
 .Button, .Button:before {
-  box-sizing: border-box;
-  border-radius: 99rem;
   transition: 0.25s;
 }
 
@@ -24,7 +25,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  border: 1px solid rgba(color(whitish), $alpha: 0.1);
   background-color: rgba(color(whitish), $alpha: 0.1);
   z-index: -1;
 }
@@ -33,12 +33,15 @@
   outline: none;
 }
 
-.Button:focus:before {
+.Button:focus {
   border: 1px solid currentColor;
 }
 
 .Button:hover:before {
   background-color: rgba(color(whitish), $alpha: 0.2);
+}
+.Button:hover {
+  border: 1px solid rgba(color(whitish), $alpha: 0.3);
 }
 
 .Button:active:before {
