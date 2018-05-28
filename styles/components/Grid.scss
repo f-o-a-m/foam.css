@@ -10,6 +10,7 @@
   display: inline-flex;
 }
 
+// sass-lint:disable indentation
 @include utils('.Grid-', (flex-wrap), (
   wrap: wrap,
   nowrap: nowrap,
@@ -37,12 +38,13 @@
  * @default stretch
  * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg
  */
- @include utils('.Grid--align', (align-items), (
-  Start    : flex-start,
-  End      : flex-end,
-  Center   : center,
-  Baseline : baseline,
-  Stretch  : stretch
+// sass-lint:disable indentation
+@include utils('.Grid--align', (align-items), (
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Baseline: baseline,
+  Stretch: stretch
 ));
 
 
@@ -51,12 +53,13 @@
  * @default flex-start
  * @see https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content.svg
  */
+// sass-lint:disable indentation
 @include utils('.Grid--space', (justify-content), (
-  Start   : flex-start,     //align start
-  End     : flex-end,       //align end
-  Center  : center,         //align center
-  Between : space-between,  //space between
-  Around  : space-around    //space around
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Between: space-between,
+  Around: space-around
 ));
 
 /**
@@ -64,12 +67,13 @@
  * @default flex-start
  * @see https://cdn.css-tricks.com/wp-content/uploads/2013/04/align-content.svg
  */
+// sass-lint:disable indentation
 @include utils('.Grid--content', (align-content), (
-  Start   : flex-start,     //align start
-  End     : flex-end,       //align end
-  Center  : center,         //align center
-  Between : space-between,  //space between
-  Around  : space-around    //space around
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Between: space-between,
+  Around: space-around
 ));
 
 /**
@@ -77,12 +81,13 @@
  * same as .Grid--align* but for block
  * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-self.svg
  */
+// sass-lint:disable indentation
 @include utils('.Grid-block--align', (align-self), (
-  Start     : flex-start,
-  End       : flex-end,
-  Center    : center,
-  Baseline  : baseline,
-  Stretch   : stretch
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Baseline: baseline,
+  Stretch: stretch
 ));
 
 
@@ -90,13 +95,14 @@
  * Block weight in row
  * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg
  */
+// sass-lint:disable indentation
 @include utils('.Grid-block--weight', (flex-grow, flex-shrink), (
-  1 : 1,
-  2 : 2,
-  3 : 3,
-  4 : 4,
-  5 : 5,
-  6 : 6,
-  7 : 7,
-  8 : 8
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8
 ));

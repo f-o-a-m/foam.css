@@ -16,12 +16,14 @@
 
 //# ===DISPLAY===
 
+// sass-lint:disable indentation
 @include utils('.u-display-', (display), (
   flex: flex,
   block: block,
   inlineFlex: inline-flex,
   inlineBlock: inline-block,
 ));
+
 
 //# ===ALIGNMENT===
 
@@ -42,6 +44,7 @@
 @include utils('.u-backgroundColor-', (background-color), $color);
 @include utils('.u-color-', (color), $color, (hover));
 
+// sass-lint:disable indentation
 @include utils('.u-opacity', (opacity), (
   1: 1,
   '\\.5': 0.5,
@@ -84,8 +87,8 @@
 @include utils('.u-marginTop-', (margin-top), $spacing);
 @include utils('.u-marginBottom-', (margin-bottom), $spacing);
 
-// # ===PADDING===
 
+// # ===PADDING===
 
 @include utils('.u-padding-', (padding), $spacing);
 @include utils('.u-paddingLeft-', (padding-left), $spacing);
@@ -95,6 +98,7 @@
 @include utils('.u-paddingVertical-', (padding-top, padding-bottom), $spacing);
 @include utils('.u-paddingHorizontal-', (padding-left, padding-right), $spacing);
 
+// sass-lint:disable indentation
 @include utils('.u-width-', (width), (
   'auto': auto,
   0: 0%,
