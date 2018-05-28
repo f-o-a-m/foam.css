@@ -24,8 +24,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  border: 1px solid color(whitish, $alpha: 0.1);
-  background-color: color(whitish, $alpha: 0.1);
+  border: 1px solid rgba(color(whitish), $alpha: 0.1);
+  background-color: rgba(color(whitish), $alpha: 0.1);
   z-index: -1;
 }
 
@@ -38,11 +38,11 @@
 }
 
 .Button:hover:before {
-  background-color: color(whitish, $alpha: 0.2);
+  background-color: rgba(color(whitish), $alpha: 0.2);
 }
 
 .Button:active:before {
-  background-color: color(whitish, $alpha: 0.25);
+  background-color: rgba(color(whitish), $alpha: 0.25);
 }
 
 .Button--asBlock {
