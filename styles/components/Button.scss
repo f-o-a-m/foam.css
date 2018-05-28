@@ -34,7 +34,7 @@
 }
 
 .Button:focus:before {
-  border: 1px solid color(whitish, $alpha: 0.3);
+  border: 1px solid currentColor;
 }
 
 .Button:hover:before {
