@@ -55,7 +55,7 @@ $color: (
 );
 
 $shadow: (
-  s: 0.2rem 0.2rem 0.4rem rgba(color(blackish), $alpha: 0.2),
+  s: 0.0rem 0.2rem 0.4rem rgba(color(blackish), $alpha: 0.25),
   m: 0.0rem 0.4rem 1.5rem rgba(color(blackish), $alpha: 0.25),
   l: 0.0rem 0.4rem 2.5rem rgba(color(blackish), $alpha: 0.25),
 );
@@ -68,21 +68,21 @@ $spacing: (
   xxl: 4.0rem
 );
 
-// addopted from https://github.com/safareli/responsive-utils/blob/master/responsive-utils.scss
-@mixin util($selector, $pseudos){
-  .u-#{$selector}{
+// adopted from https://github.com/safareli/responsive-utils/blob/master/responsive-utils.scss
+@mixin util($selector, $pseudos) {
+  #{$selector} {
     @content;
   }
   @each $pseudo in $pseudos {
-    .u-#{$selector}\:#{$pseudo}:#{$pseudo} {
+    #{$selector}\:#{$pseudo}:#{$pseudo} {
       @content;
     }
   }
 }
 
-@mixin utils($name, $props, $values, $pseudos: ()){  
+@mixin utils($name, $props, $values, $pseudos: ()) {
     @each $valueName, $value in $values {
-      @include util(#{$name}-#{$valueName}, $pseudos) {
+    @include util(#{$name}#{$valueName}, $pseudos) {
         @each $prop in $props {
           #{$prop}: $value;
         }
