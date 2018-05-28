@@ -4,10 +4,12 @@
     "lint": "sass-lint -q -v",
     "css": "node-sass ./styles/ --output ./catalog/static/dist/",
     "watch": "node-sass -wr ./styles/ --output ./catalog/static/dist/",
+    "icons": "svg-sprite --symbol --symbol-dest=assets --symbol-sprite=icons.svg icons/*.svg",
     "start": "catalog start",
     "build": "catalog build"
   },
   "dependencies": {
+    "svg-sprite": "^1.4.0",
     "ajv": "^6.4.0",
     "catalog": "~3.5.2",
     "node-sass": "^4.8.3",

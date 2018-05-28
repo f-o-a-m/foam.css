@@ -36,12 +36,12 @@ figure,
 p,
 pre {
   margin: 0;
+  font-weight: inherit;
 }
 
 button {
   cursor: pointer;
   background: transparent;
-  border: 0;
   padding: 0;
 }
 
@@ -84,4 +84,13 @@ ul {
 
 hr {
   margin: 0;
+}
+
+
+// Resets border on all elements so we can create borders by just setting border-width
+// https://github.com/safareli/tailwindcss/blob/6493bda15b5d63186f6f5e1f838d6f4828562451/css/preflight.css#L530-L551
+*, img, button {
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
 }

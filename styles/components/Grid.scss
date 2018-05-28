@@ -1,0 +1,108 @@
+@import "../settings";
+
+/* in case of bugs see https://github.com/philipwalton/flexbugs */
+
+.Grid {
+  display: flex;
+}
+
+.Grid--inline {
+  display: inline-flex;
+}
+
+// sass-lint:disable indentation
+@include utils('.Grid-', (flex-wrap), (
+  wrap: wrap,
+  nowrap: nowrap,
+))
+
+/**
+ * 1. Set `max-width:100%` to prevent
+ *    overflow.
+ * 2. Set `box-sizing:border-box` if
+ *    needed to account for padding
+ *    and border size.
+ * 3. by default block takes 0px so "weight" classes work properly
+ */
+.Grid-block {
+  flex: 0 0 auto; /* [3] */
+  width: 0px; /* [3] */
+  min-width: 0px; /* [3] */
+  min-height: 0px; /* [3] */
+  box-sizing: border-box; /* [2] */
+  max-width: 100%; /* [1] */
+}
+
+/**
+ * Alignment per grid for cross axis(vertical)
+ * @default stretch
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg
+ */
+// sass-lint:disable indentation
+@include utils('.Grid--align', (align-items), (
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Baseline: baseline,
+  Stretch: stretch
+));
+
+
+/**
+ * space per grid for main axis(horizontal)
+ * @default flex-start
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content.svg
+ */
+// sass-lint:disable indentation
+@include utils('.Grid--space', (justify-content), (
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Between: space-between,
+  Around: space-around
+));
+
+/**
+ * aligne grid rows
+ * @default flex-start
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2013/04/align-content.svg
+ */
+// sass-lint:disable indentation
+@include utils('.Grid--content', (align-content), (
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Between: space-between,
+  Around: space-around
+));
+
+/**
+ * Alignment per block
+ * same as .Grid--align* but for block
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-self.svg
+ */
+// sass-lint:disable indentation
+@include utils('.Grid-block--align', (align-self), (
+  Start: flex-start,
+  End: flex-end,
+  Center: center,
+  Baseline: baseline,
+  Stretch: stretch
+));
+
+
+/**
+ * Block weight in row
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg
+ */
+// sass-lint:disable indentation
+@include utils('.Grid-block--weight', (flex-grow, flex-shrink), (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8
+));

@@ -1,4 +1,3 @@
-
 // hsl(0,0%,0%) #000
 // hsl(0,0%,96%) #f5f5f5
 // hsl(0,0%,93%) #eee
@@ -26,45 +25,67 @@
 // $brassT: hsl(13,53%,69%)
 // $brassL: hsl(12,26%,43%)
 
-$__colors: (
-  // blackLight: hsl(0, 0%, 10%),
+@function _safe_read($dict, $key, $name) {
+  $res: map-get($dict, $key);
+  @if $res == null { @error "there is no #{$name} for key: #{$key}"; }
+  @return $res;
+}
+
+@function color($key) { @return _safe_read($color, $key, "color"); }
+@function spacing($key) { @return _safe_read($spacing, $key, "spacing"); }
+@function shadow($key) { @return _safe_read($shadow, $key, "shadow"); }
+
+$color: (
+  black: hsl(0, 0%, 0%),
+  blackish: hsl(0, 0%, 13%),
   grayDark: hsl(0, 0%, 30%),
   gray: hsl(0, 0%, 50%),
   // grayLight: hsl(0, 0%, 70%),
   // whiteDarker: hsl(0, 0%, 85%),
   // whiteDark: hsl(0, 0%, 95%),
   transparent: hsla(0, 0%, 0%, 0),
+  whitishDark: hsl(0, 0%, 90%),
   whitish: hsl(0, 0%, 100%),
-  blackish: hsl(0, 0%, 13%),
+  'whitish\\.1': hsla(0, 0%, 100%, 0.1),
+  whitishDim: hsla(0, 0%, 100%, 0.6),
   pinkish: hsl(10, 86%, 68%),
   blueish: hsl(214, 84%, 56%),
   greenish: hsl(145, 63%, 42%),
   grayish: hsl(0, 0%, 37%)
 );
 
-@function color($key, $alpha: null) {
-  $res: map-get($__colors, $key);
-  @if $res == null {
-    @error "there is no color for key: #{$key}";
-  }
-  @if $alpha != null {
-    $res: rgba($res, $alpha);
-  }
-  @return $res;
-}
+$shadow: (
+  s: 0.0rem 0.2rem 0.4rem rgba(color(blackish), $alpha: 0.25),
+  m: 0.0rem 0.4rem 1.5rem rgba(color(blackish), $alpha: 0.25),
+  l: 0.0rem 0.4rem 2.5rem rgba(color(blackish), $alpha: 0.25),
+);
 
-$__spacing: (
+$spacing: (
   s: 0.5rem,
   m: 1.0rem,
   l: 2.0rem,
-  xl: 3.0rem
+  xl: 3.0rem,
+  xxl: 4.0rem
 );
 
-@function spacing($key) {
-  $res: map-get($__spacing, $key);
-  @if $res == null {
-    @error "there is no spacing for key: #{$key}";
+// adopted from https://github.com/safareli/responsive-utils/blob/master/responsive-utils.scss
+@mixin util($selector, $pseudos) {
+  #{$selector} {
+    @content;
   }
-  @return $res;
+  @each $pseudo in $pseudos {
+    #{$selector}\:#{$pseudo}:#{$pseudo} {
+      @content;
+    }
+  }
 }
 
+@mixin utils($name, $props, $values, $pseudos: ()) {
+  @each $valueName, $value in $values {
+    @include util(#{$name}#{$valueName}, $pseudos) {
+      @each $prop in $props {
+        #{$prop}: $value;
+      }
+    }
+  }
+}

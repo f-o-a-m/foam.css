@@ -1,48 +1,112 @@
 # `Icon`
 
-An Icon is a square with side-length of `1em`, it's an `inline-block`, and using it's modifier classes different character will be inserted as it's content, which is centered horizontally and sits on **baseline**. if baseline is not fine, `Icon--altLH` or `Icon--altTC` could be used to center an Icon vertically.
+Icon is a square with side-length of `1em`, it's an `inline-block`
 
+## `caretDown.svg`
 ```html
-<div style="font-size:2em">
-  Some + - ⦿ 🔎 < fluffy
-  <span class="Icon Icon--plus u-background-pinkish"></span>
-  <span class="Icon Icon--minus u-background-pinkish"></span>
-  <span class="Icon Icon--circle u-background-pinkish"></span>
-  <span class="Icon Icon--magnifier u-background-pinkish"></span>
-  <span class="Icon Icon--arrowLeft u-background-pinkish"></span>
-  around
-</div>
-```
-
-## `Icon--altLH`
-
-By using this class an Icon will be to centered vertically using `line-height: 1em`
-
-```html
-<div style="font-size:2em">
-  Some + - ⦿ 🔎 < fluffy
-  <span class="Icon Icon--altLH Icon--plus u-background-pinkish"></span>
-  <span class="Icon Icon--altLH Icon--minus u-background-pinkish"></span>
-  <span class="Icon Icon--altLH Icon--circle u-background-pinkish"></span>
-  <span class="Icon Icon--altLH Icon--magnifier u-background-pinkish"></span>
-  <span class="Icon Icon--altLH Icon--arrowLeft u-background-pinkish"></span>
-  around
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretDown"></svg> around</div>
 </div>
 ```
 
 
-## `Icon--altTC`
-
-By using this class an Icon will be to centered vertically using `display: table-cell; vertical-align: middle;`
-
+## `caretLeft.svg`
 ```html
-<div style="font-size:2em">
-  Some + - ⦿ 🔎 < fluffy
-  <span class="Icon Icon--altTC Icon--plus u-background-pinkish"></span>
-  <span class="Icon Icon--altTC Icon--minus u-background-pinkish"></span>
-  <span class="Icon Icon--altTC Icon--circle u-background-pinkish"></span>
-  <span class="Icon Icon--altTC Icon--magnifier u-background-pinkish"></span>
-  <span class="Icon Icon--altTC Icon--arrowLeft u-background-pinkish"></span>
-  around
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretLeft"></svg> around</div>
+</div>
+```
+
+
+## `caretUp.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg> around</div>
+</div>
+```
+
+
+## `cross.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#cross"></svg> around</div>
+</div>
+```
+
+
+## `filter.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#filter"></svg> around</div>
+</div>
+```
+
+
+## `minus.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#minus"></svg> around</div>
+</div>
+```
+
+
+## `plus.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#plus"></svg> around</div>
+</div>
+```
+
+
+## `position.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#position"></svg> around</div>
+</div>
+```
+
+
+## `tags.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tags"></svg> around</div>
+</div>
+```
+
+
+## `tokenBox.svg`
+```html
+<div class="u-lineHeight-l">
+  <div class="u-lineHeight-l u-fontSize-xl">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-l">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-m">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> around</div>
+  <div class="u-lineHeight-l u-fontSize-s">Some <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> fluffy <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#tokenBox"></svg> around</div>
 </div>
 ```

@@ -3,6 +3,7 @@
 ```html
 span: 8
 dark: false
+plain:true
 ---
 <div class="
   u-display-inlineFlex
@@ -21,18 +22,18 @@ dark: false
     u-paddingVertical-m
     u-color-whitish
     u-color-whitishDim:hover
-  "><span class="Icon Icon--minus u-fontSize-l"></span></button>
+  "><svg class="Icon"><use xlink:href="./assets/icons.svg#minus"></svg></button>
   <button class="
     u-paddingHorizontal-s
     u-paddingVertical-m
     u-color-whitish
     u-color-whitishDim:hover
-  "><span class="Icon Icon--plus u-fontSize-l"></span></button>
+  "><svg class="Icon"><use xlink:href="./assets/icons.svg#plus"></svg></button>
   <button class="
     u-paddingHorizontal-s
     u-paddingVertical-m
     u-color-blueish
     u-color-whitish:hover
-  "><span class="Icon Icon--circle u-fontSize-l"></span></button>
+  "><svg class="Icon"><use xlink:href="./assets/icons.svg#position"></svg></button>
 </div>
 ```
