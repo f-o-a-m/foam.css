@@ -1,0 +1,47 @@
+.Point-popupContainer {
+  display: inline-block;
+}
+
+.Point-popup {
+  display: inline-block;
+  width: 240px;
+  height: 40px;
+  border-radius: 20px;
+  z-index: 9;
+}
+
+.Point-popupName {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 15px;
+  color: #fff
+}
+
+.Point-popupParameter {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 15px;
+  float: right;
+  color: #fff
+}
+
+.Point-popupChevron--pending {
+  position: absolute;
+  left: 40px;
+  top: 59.25px;
+  z-index: 1;
+}
+
+.Point-popupChevron--challenge {
+  position: absolute;
+  left: 40px;
+  top: 59px;
+  z-index: 1;
+}
+
+.Point-popupChevron--valid {
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+  top: 59.5px;
+}

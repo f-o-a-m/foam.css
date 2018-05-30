@@ -59,6 +59,10 @@ const pages =
         }
       ]
     }
+  , { path: "/points"
+    , title: "Points"
+    , content: pageLoader(() => import("./pages/points.md"))
+    }
   ]
 
 // See `DefaultTheme.js` for more contamination options:
