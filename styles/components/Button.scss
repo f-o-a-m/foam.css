@@ -45,10 +45,6 @@
   background-color: rgba(color(white), $alpha: 0.25);
 }
 
-.Button--full {
-  width: 100%;
-}
-
 .Button--withTransition:hover {
   transform: translateY(-0.3rem);
 }

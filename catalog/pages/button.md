@@ -91,55 +91,7 @@ dark: true
 </div>
 ```
 
-
-## `Button--full`
-
-Sets display to block and stretches the button.
-
-```html
-span: 2
-dark: true
----
-<button class="
-  Button
-  Button--full
-  u-paddingHorizontal-l
-  u-paddingVertical-m
-  u-color-white.6">
-  Button
-</button>
-```
-
-```html
-span: 2
-dark: true
----
-<a href="#" class="
-  Button
-  Button--full
-  u-paddingHorizontal-l
-  u-paddingVertical-m
-  u-color-white.6">
-  Button
-</a>
-```
-
-```html
-span: 2
-dark: true
----
-<div href="#" class="
-  Button
-  Button--full
-  u-paddingHorizontal-l
-  u-paddingVertical-m
-  u-color-white.6">
-  Button
-</div>
-```
-
-
-## What about shadows, background, color?
+## What about shadows, background, color, width?
 
 You can use utility classes for that:
 
@@ -148,7 +100,7 @@ span: 2
 ---
 <button class="
   Button
-  Button--full
+  u-width-full
   u-shadow-m
   u-shadow-m:active
   u-shadow-l:hover
@@ -178,7 +130,7 @@ span: 2
 ---
 <a href="#" class="
   Button
-  Button--full
+  u-width-full
   u-shadow-m
   u-shadow-m:active
   u-shadow-l:hover
@@ -208,7 +160,7 @@ span: 2
 ---
 <div class="
   Button
-  Button--full
+  u-width-full
   u-shadow-m
   u-shadow-m:active
   u-shadow-l:hover
@@ -243,7 +195,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white
@@ -252,7 +204,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white.6
@@ -261,7 +213,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -289,7 +241,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-shadow-s
@@ -299,7 +251,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-shadow-m
@@ -309,7 +261,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -339,7 +291,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white
@@ -348,7 +300,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white.6
@@ -357,7 +309,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -385,7 +337,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white
@@ -394,7 +346,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white.6
@@ -404,7 +356,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -432,7 +384,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white
@@ -441,7 +393,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-white.6
@@ -451,7 +403,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -479,7 +431,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
-    Button--full
+    u-width-full
     u-shadow-m
     u-shadow-m:active
     u-shadow-l:hover
@@ -491,7 +443,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-shadow-m
     u-shadow-m:active
     u-shadow-l:hover
@@ -503,7 +455,7 @@ dark: true
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-shadow-m
     u-shadow-m:active

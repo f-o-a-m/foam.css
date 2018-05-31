@@ -26,7 +26,7 @@ span: 3
   </p>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-shadow-s
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -47,7 +47,7 @@ span: 3
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-shadow-s
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -68,7 +68,7 @@ span: 3
   </button>
   <button class="
     Button
-    Button--full
+    u-width-full
     u-shadow-s
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -173,7 +173,7 @@ span: 2
   </div>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-borderRadius-m
     u-shadow-s
@@ -236,7 +236,7 @@ span: 2
   </div>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     Button--dark
     u-borderRadius-m
@@ -290,7 +290,7 @@ span: 2
   </div>
   <button class="
     Button
-    Button--full
+    u-width-full
     Button--withTransition
     u-borderRadius-m
     u-shadow-s
