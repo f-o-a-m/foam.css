@@ -45,7 +45,6 @@ span: 3
       </span>
     </span>
   </button>
-  </p>
   <button class="
     Button
     Button--full
@@ -67,7 +66,6 @@ span: 3
       </span>
     </span>
   </button>
-  </p>
   <button class="
     Button
     Button--full
