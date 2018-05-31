@@ -6,7 +6,7 @@ plain: true
 
 
 ```html
-<div class="u-padding-l u-backgroundColor-greenish u-color-whitish u-border-pill">
+<div class="u-padding-l u-backgroundColor-greenish u-color-white u-border-pill">
   Move cursor to the top right corner of this and any similar block, to see `<>` button, which on click will display source code of the block.
 </div>
 ```

@@ -3,7 +3,7 @@
 ```html
 span: 3
 ---
-<div class="u-backgroundColor-whitish u-borderRadius-l u-padding-l u-lineHeight-m" style="max-width: 380px;">
+<div class="u-backgroundColor-white u-borderRadius-l u-padding-l u-lineHeight-m" style="max-width: 380px;">
   <div class="Grid u-width-full u-marginBottom-m">
     <div class="Grid-block Grid-block--weight1 u-fontSize-xl ">
       New Lab
@@ -32,7 +32,7 @@ span: 3
     u-paddingVertical-m
     u-marginBottom-m
     u-backgroundColor-greenish
-    u-color-whitish
+    u-color-white
     u-fontWeight-regular
     u-textAlign-left
     ">
@@ -54,7 +54,7 @@ span: 3
     u-paddingVertical-m
     u-marginBottom-m
     u-backgroundColor-pinkish
-    u-color-whitish
+    u-color-white
     u-fontWeight-regular
     u-textAlign-left
     ">
@@ -76,7 +76,7 @@ span: 3
     u-paddingVertical-m
     u-marginBottom-xxl
     u-backgroundColor-blueish
-    u-color-whitish
+    u-color-white
     u-fontWeight-regular
     u-textAlign-left
     ">
@@ -115,7 +115,7 @@ span: 3
       u-paddingHorizontal-m
       u-paddingVertical-s
       u-border-pill
-      u-backgroundColor-whitishDark
+      u-backgroundColor-whiteDark
       u-color-gray
       u-marginRight-s
       ">Workplace</span><!--
@@ -124,7 +124,7 @@ span: 3
       u-paddingHorizontal-m
       u-paddingVertical-s
       u-border-pill
-      u-backgroundColor-whitishDark
+      u-backgroundColor-whiteDark
       u-color-gray
       ">Technology</span>
   </p>
@@ -151,7 +151,7 @@ span: 2
   u-paddingVertical-m
   u-marginBottom-m
   u-backgroundColor-blueish
-  u-color-whitish
+  u-color-white
   u-fontWeight-regular
   u-textAlign-left
   u-lineHeight-m
@@ -164,7 +164,7 @@ span: 2
       <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg>
     </div>
   </div>
-  <div class="u-backgroundColor-whitish.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
+  <div class="u-backgroundColor-white.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
      New Lab was registered three days ago.
   </div>
   <div class="u-marginBottom-m">
@@ -190,7 +190,7 @@ span: 2
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-backgroundColor-pinkish
-    u-color-whitish
+    u-color-white
     u-marginBottom-m
     ">
     Challenge New Lab’s validity
@@ -214,7 +214,7 @@ span: 2
   u-paddingVertical-m
   u-marginBottom-m
   u-backgroundColor-greenish
-  u-color-whitish
+  u-color-white
   u-fontWeight-regular
   u-textAlign-left
   u-lineHeight-m
@@ -227,7 +227,7 @@ span: 2
       <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg>
     </div>
   </div>
-  <div class="u-backgroundColor-whitish.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
+  <div class="u-backgroundColor-white.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
     New Lab was last verified December 11, 2018
   </div>
   <div class="u-marginBottom-m">
@@ -253,7 +253,7 @@ span: 2
     u-shadow-s:active
     u-paddingHorizontal-l
     u-paddingVertical-m
-    u-backgroundColor-whitish
+    u-backgroundColor-white
     u-color-greenish
     u-marginBottom-m
     ">
@@ -274,7 +274,7 @@ span: 2
   u-paddingVertical-m
   u-marginBottom-m
   u-backgroundColor-pinkish
-  u-color-whitish
+  u-color-white
   u-fontWeight-regular
   u-textAlign-left
   u-lineHeight-m
@@ -287,7 +287,7 @@ span: 2
       <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg>
     </div>
   </div>
-  <div class="u-backgroundColor-whitish.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
+  <div class="u-backgroundColor-white.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
     New Lab was challenged today.
   </div>
   <div class="u-marginBottom-m">
@@ -306,7 +306,7 @@ span: 2
     u-shadow-s:active
     u-paddingHorizontal-l
     u-paddingVertical-m
-    u-backgroundColor-whitish
+    u-backgroundColor-white
     u-color-pinkish
     u-marginBottom-m
     ">

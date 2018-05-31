@@ -48,7 +48,7 @@
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-backgroundColor-blackish
-    u-color-whitish
+    u-color-white
     u-lineHeight-m
   ">
     0.00
