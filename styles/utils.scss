@@ -60,7 +60,7 @@
 .u-fontSize-s { font-size: 1rem; }
 
 .u-lineHeight-s { line-height: 1; } // default height
-.u-lineHeight-m { line-height: 1.2; } // = 100% in sigma
+.u-lineHeight-m { line-height: 1.25; } // a bit more then 100% in sigma so for base 16px font we get 20px line height
 .u-lineHeight-l { line-height: 1.4375; } // ~ 120% in sigma
 
 .u-fontStyle-italic { font-style: italic; }
@@ -97,6 +97,9 @@
 @include utils('.u-paddingBottom-', (padding-bottom), $spacing);
 @include utils('.u-paddingVertical-', (padding-top, padding-bottom), $spacing);
 @include utils('.u-paddingHorizontal-', (padding-left, padding-right), $spacing);
+
+
+// # ===SIZING===
 
 // sass-lint:disable indentation
 @include utils('.u-width-', (width), (

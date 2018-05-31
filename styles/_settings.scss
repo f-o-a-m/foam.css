@@ -48,7 +48,9 @@ $color: (
   whitish: hsl(0, 0%, 100%),
   'whitish\\.1': hsla(0, 0%, 100%, 0.1),
   whitishDim: hsla(0, 0%, 100%, 0.6),
-  pinkish: hsl(10, 86%, 68%),
+  // pinkishLight: hsl(3, 88%, 74%),
+  pinkish:      hsl(10, 86%, 68%),
+  // pinkishDark:  hsl(3, 62%, 66%),
   blueish: hsl(214, 84%, 56%),
   greenish: hsl(145, 63%, 42%),
   grayish: hsl(0, 0%, 37%)

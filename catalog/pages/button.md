@@ -436,7 +436,6 @@ dark: true
     u-paddingHorizontal-l
     u-paddingVertical-m
     u-color-whitish
-    
     u-marginBottom-l">
     Button
   </button>

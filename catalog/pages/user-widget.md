@@ -49,8 +49,9 @@
     u-paddingVertical-m
     u-backgroundColor-blackish
     u-color-whitish
+    u-lineHeight-m
   ">
-    <span class="u-lineHeight-m">0.00</span>
+    0.00
     <span class="u-sup">FST</span>
   </div>
 </div>
