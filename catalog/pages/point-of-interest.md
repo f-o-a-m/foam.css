@@ -165,19 +165,13 @@ span: 2
     </div>
   </div>
   <div class="u-backgroundColor-white.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
-     New Lab was registered three days ago.
+    New Lab was registered three days ago.
   </div>
   <div class="u-marginBottom-m">
     Total FST Invested in New Lab
   </div>
   <div class="u-marginBottom-xxl u-fontSize-xxl">
     1,275<span class="u-verticalAlign-top u-fontSize-s u-fontWeight-bold u-fontStyle-italic">FST</span>
-  </div>
-  <div class="u-marginBottom-m">
-    My FST staked on New Lab
-  </div>
-  <div class="u-marginBottom-xxl u-fontSize-xxl">
-    382.5<span class="u-verticalAlign-top u-fontSize-s u-fontWeight-bold u-fontStyle-italic">FST</span>
   </div>
   <button class="
     Button
