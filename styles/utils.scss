@@ -24,16 +24,6 @@
   inlineBlock: inline-block,
 ));
 
-
-//# ===ALIGNMENT===
-
-.u-verticalAlign-top { vertical-align: top; }
-.u-verticalAlign-bottom { vertical-align: bottom; }
-.u-textAlign-left { text-align: left; }
-.u-textAlign-right { text-align: right; }
-.u-textAlign-center { text-align: center; }
-
-
 //# ===COLORS===
 
 .u-background-gradientDark { background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 50%, 0.5)); }
@@ -77,6 +67,15 @@
   position: relative;
   vertical-align: baseline;
 }
+
+.u-verticalAlign-top { vertical-align: top; }
+.u-verticalAlign-bottom { vertical-align: bottom; }
+.u-textAlign-left { text-align: left; }
+.u-textAlign-right { text-align: right; }
+.u-textAlign-center { text-align: center; }
+
+.u-textDecoration-underline { text-decoration: underline; }
+.u-textDecoration-lineThrough { text-decoration: line-through; }
 
 
 // # ===MARGIN===
