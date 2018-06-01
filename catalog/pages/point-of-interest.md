@@ -87,10 +87,12 @@ span: 3
       </span>
     </span>
   </button>
-  <p class="u-fontWeight-bold u-marginBottom-m">
-    Address
-  </p>
-  <p class="u-color-gray u-fontSize-s">#be8b92dc8539c44aa93738b45dbe689256a59deb</p>
+  <div class="Grid u-marginBottom-m">
+    <div class="Grid-block u-width-8/12 u-fontWeight-bold">
+      Address
+    </div>
+    <div class="Grid-block u-width-4/12 u-color-gray u-truncate">#be8b92dc8539c44aa93738b45dbe689256a59deb</div>
+  </div>
   <p class="u-marginBottom-xl">
     19 Morris Avenue Bldg 128,<br>
     Brooklyn, NY 11205<br>
@@ -162,7 +164,7 @@ span: 2
       <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg>
     </div>
   </div>
-  <div class="u-backgroundColor-white.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
+  <div class="u-backgroundColor-white.1 u-borderRadius-m u-paddingVertical-m u-paddingHorizontal-l u-textAlign-center u-marginBottom-xxl">
     New Lab was registered three days ago.
   </div>
   <div class="u-marginBottom-m">
@@ -219,7 +221,7 @@ span: 2
       <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg>
     </div>
   </div>
-  <div class="u-backgroundColor-white.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
+  <div class="u-backgroundColor-white.1 u-borderRadius-m u-paddingVertical-m u-paddingHorizontal-l u-textAlign-center u-marginBottom-xxl">
     New Lab was last verified December 11, 2018
   </div>
   <div class="u-marginBottom-m">
@@ -279,7 +281,7 @@ span: 2
       <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg>
     </div>
   </div>
-  <div class="u-backgroundColor-white.1 u-borderRadius-m u-padding-m u-textAlign-center u-marginBottom-xxl">
+  <div class="u-backgroundColor-white.1 u-borderRadius-m u-paddingVertical-m u-paddingHorizontal-l u-textAlign-center u-marginBottom-xxl">
     New Lab was challenged today.
   </div>
   <div class="u-marginBottom-m">
