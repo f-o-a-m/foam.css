@@ -60,14 +60,6 @@
 .u-fontWeight-bold { font-weight: 700; }
 .u-fontWeight-black { font-weight: 900; }
 
-.u-sup {
-  font-size: 70%;
-  top: -0.3em;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
 .u-verticalAlign-top { vertical-align: top; }
 .u-verticalAlign-bottom { vertical-align: bottom; }
 .u-textAlign-left { text-align: left; }
@@ -76,6 +68,20 @@
 
 .u-textDecoration-underline { text-decoration: underline; }
 .u-textDecoration-lineThrough { text-decoration: line-through; }
+
+.u-sup {
+  font-size: 70%;
+  top: -0.3em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.u-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 
 // # ===MARGIN===
