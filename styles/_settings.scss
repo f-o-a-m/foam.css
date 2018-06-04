@@ -57,9 +57,10 @@ $color: (
 );
 
 $shadow: (
-  s: 0.0rem 0.2rem 0.4rem rgba(color(blackish), $alpha: 0.25),
-  m: 0.0rem 0.4rem 1.5rem rgba(color(blackish), $alpha: 0.25),
-  l: 0.0rem 0.4rem 2.5rem rgba(color(blackish), $alpha: 0.25),
+  s: 0.0rem 0.2rem 0.4rem rgba(color(blackish), $alpha: 0.225),
+  m: 0.0rem 0.4rem 1.5rem rgba(color(blackish), $alpha: 0.225),
+  l: 0.0rem 0.4rem 2.5rem rgba(color(blackish), $alpha: 0.225),
+  'currentColor': inset 0 0 0 0.1rem currentColor
 );
 
 $spacing: (

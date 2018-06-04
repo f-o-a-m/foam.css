@@ -4,7 +4,7 @@
 <div class="u-display-inlineFlex">
   <div class="
     u-color-grayDark
-    u-shadow-border
+    u-shadow-currentColor
     u-border-pill
     u-padding-m
     u-marginRight-m
@@ -14,7 +14,7 @@
   </div>
   <div class="
     u-color-grayDark
-    u-shadow-border
+    u-shadow-currentColor
     u-border-pill
     u-padding-m
     u-marginRight-m
@@ -24,7 +24,7 @@
   </div>
   <div class="
     u-color-grayDark
-    u-shadow-border
+    u-shadow-currentColor
     u-border-pill
     u-padding-m
     u-marginRight-m
@@ -34,7 +34,7 @@
   </div>
   <div class="
     u-color-grayDark
-    u-shadow-border
+    u-shadow-currentColor
     u-border-pill
     u-padding-m
     u-marginRight-m
