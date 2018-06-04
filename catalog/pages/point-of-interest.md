@@ -171,7 +171,7 @@ span: 2
     Total FST Invested in New Lab
   </div>
   <div class="u-marginBottom-xxl u-fontSize-xxl">
-    1,275<span class="u-verticalAlign-top u-fontSize-s u-fontWeight-bold u-fontStyle-italic">FST</span>
+    1,275<span class="u-verticalAlign-top u-fontSize-xs u-fontWeight-bold u-fontStyle-italic">FST</span>
   </div>
   <button class="
     Button
@@ -189,7 +189,7 @@ span: 2
     ">
     Challenge New Lab’s validity
   </button>
-  <div class="u-fontSize-s u-textAlign-center">
+  <div class="u-fontSize-xs u-textAlign-center">
     Time left to challenge: 9<span class="u-fontStyle-italic u-sup">D</span> 14<span class="u-fontStyle-italic u-sup">HR</span> 19<span class="u-fontStyle-italic u-sup">MIN</span>
   </div>
 </div>
@@ -228,13 +228,13 @@ span: 2
     Total FST Invested in New Lab
   </div>
   <div class="u-marginBottom-xxl u-fontSize-xxl">
-    1,275<span class="u-verticalAlign-top u-fontSize-s u-fontWeight-bold u-fontStyle-italic">FST</span>
+    1,275<span class="u-verticalAlign-top u-fontSize-xs u-fontWeight-bold u-fontStyle-italic">FST</span>
   </div>
   <div class="u-marginBottom-m">
     My FST staked on New Lab
   </div>
   <div class="u-marginBottom-xxl u-fontSize-xxl">
-    382.5<span class="u-verticalAlign-top u-fontSize-s u-fontWeight-bold u-fontStyle-italic">FST</span>
+    382.5<span class="u-verticalAlign-top u-fontSize-xs u-fontWeight-bold u-fontStyle-italic">FST</span>
   </div>
   <button class="
     Button
@@ -288,7 +288,7 @@ span: 2
     Total FST Invested in New Lab
   </div>
   <div class="u-marginBottom-xxl u-fontSize-xxl">
-    1,275<span class="u-verticalAlign-top u-fontSize-s u-fontWeight-bold u-fontStyle-italic">FST</span>
+    1,275<span class="u-verticalAlign-top u-fontSize-xs u-fontWeight-bold u-fontStyle-italic">FST</span>
   </div>
   <button class="
     Button
@@ -306,7 +306,79 @@ span: 2
     ">
     Vote on New Lab
   </button>
-  <div class="u-fontSize-s u-textAlign-center">
+  <div class="u-fontSize-xs u-textAlign-center">
+    Time left to vote: 7<span class="u-fontStyle-italic u-sup">D</span> 14<span class="u-fontStyle-italic u-sup">HR</span> 19<span class="u-fontStyle-italic u-sup">MIN</span>
+  </div>
+</div>
+``` u-width-full
+    Button--withTransition
+    Button--dark
+    u-borderRadius-m
+    u-shadow-s
+    u-shadow-m:hover
+    u-shadow-s:active
+    u-paddingHorizontal-l
+    u-paddingVertical-m
+    u-backgroundColor-white
+    u-color-greenish
+    u-marginBottom-m
+    ">
+    Deposit FST
+  </button>
+</div>
+```
+
+
+```html
+span: 2
+---
+<div class="
+  u-borderRadius-l
+  u-width-full
+  u-shadow-s
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-marginBottom-m
+  u-backgroundColor-pinkish
+  u-color-white
+  u-fontWeight-regular
+  u-textAlign-left
+  u-lineHeight-m
+  ">
+  <div class="Grid u-width-full u-paddingBottom-xl">
+    <div class="Grid-block Grid-block--weight1">
+      Challenged Point of Interest
+    </div>
+    <div class="Grid-block u-width-auto">
+      <svg class="Icon u-fontSize-l"><use xlink:href="./assets/icons.svg#caretUp"></svg>
+    </div>
+  </div>
+  <div class="u-backgroundColor-white.1 u-borderRadius-m u-paddingVertical-m u-paddingHorizontal-l u-textAlign-center u-marginBottom-xxl">
+    New Lab was challenged today.
+  </div>
+  <div class="u-marginBottom-m">
+    Total FST Invested in New Lab
+  </div>
+  <div class="u-marginBottom-xxl u-fontSize-xxl">
+    1,275<span class="u-verticalAlign-top u-fontSize-xs u-fontWeight-bold u-fontStyle-italic">FST</span>
+  </div>
+  <button class="
+    Button
+    u-width-full
+    Button--withTransition
+    u-borderRadius-m
+    u-shadow-s
+    u-shadow-m:hover
+    u-shadow-s:active
+    u-paddingHorizontal-l
+    u-paddingVertical-m
+    u-backgroundColor-white
+    u-color-pinkish
+    u-marginBottom-m
+    ">
+    Vote on New Lab
+  </button>
+  <div class="u-fontSize-xs u-textAlign-center">
     Time left to vote: 7<span class="u-fontStyle-italic u-sup">D</span> 14<span class="u-fontStyle-italic u-sup">HR</span> 19<span class="u-fontStyle-italic u-sup">MIN</span>
   </div>
 </div>
