@@ -40,7 +40,7 @@ $color: (
   blackish: hsl(0, 0%, 13%),
   grayDark: hsl(0, 0%, 30%),
   gray: hsl(0, 0%, 50%),
-  // grayLight: hsl(0, 0%, 70%),
+  grayLight: hsl(0, 0%, 70%),
   // whiteDarker: hsl(0, 0%, 85%),
   // whiteDark: hsl(0, 0%, 95%),
   transparent: hsla(0, 0%, 0%, 0),
@@ -50,6 +50,7 @@ $color: (
   'white\\.6': hsla(0, 0%, 100%, 0.6),
   // pinkishLight: hsl(3, 88%, 74%),
   pinkish:      hsl(10, 86%, 68%),
+  goldish:      hsla(39, 100%, 70%, 1),
   // pinkishDark:  hsl(3, 62%, 66%),
   blueish: hsl(214, 84%, 56%),
   greenish: hsl(145, 63%, 42%),
@@ -57,9 +58,11 @@ $color: (
 );
 
 $shadow: (
-  s: 0.0rem 0.2rem 0.4rem rgba(color(blackish), $alpha: 0.25),
-  m: 0.0rem 0.4rem 1.5rem rgba(color(blackish), $alpha: 0.25),
-  l: 0.0rem 0.4rem 2.5rem rgba(color(blackish), $alpha: 0.25),
+  s: 0.0rem 0.2rem 0.4rem rgba(color(blackish), $alpha: 0.225),
+  m: 0.0rem 0.4rem 1.5rem rgba(color(blackish), $alpha: 0.225),
+  l: 0.0rem 0.4rem 2.5rem rgba(color(blackish), $alpha: 0.225),
+  'black': inset 0 0 0 0.1rem rgba(color(blackish), $alpha: 0.225),
+  'currentColor': inset 0 0 0 0.1rem currentColor
 );
 
 $spacing: (

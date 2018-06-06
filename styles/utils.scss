@@ -1,23 +1,39 @@
 @import "settings";
 
 
+//# ===POSITION===
+
+.u-cursor-pointer { cursor: pointer; }
+
+
+//# ===POSITION===
+
+.u-position-absolute { position: absolute; }
+.u-position-relative { position: relative; }
+.u-top-0 { top: 0; }
+.u-bottom-0 { bottom: 0; }
+.u-left-0 { left: 0; }
+.u-right-0 { right: 0; }
+
+
 //# ===BORDER===
 
 .u-borderRadius-l { border-radius: 2rem; }
 .u-borderRadius-m { border-radius: 1rem; }
 .u-border-pill { border-radius: 999rem; }
 
+.u-outline-none { outline: none; }
 
 //# ===SHADOWS===
 
-.u-shadow-border { box-shadow: inset 0 0 0 0.1rem currentColor; }
-@include utils('.u-shadow-', (box-shadow), $shadow, (hover, active));
+@include utils('.u-shadow-', (box-shadow), $shadow, (hover, active, focus));
 
 
 //# ===DISPLAY===
 
 // sass-lint:disable indentation
 @include utils('.u-display-', (display), (
+  none: none,
   flex: flex,
   block: block,
   inlineFlex: inline-flex,
@@ -31,7 +47,7 @@
 .u-background-gradientPinkish { background: linear-gradient(color(pinkish), hsla(0, 0%, 50%, 0.5)); }
 .u-background-gradientGreenish { background: linear-gradient(color(greenish), hsla(0, 0%, 50%, 0.5)); }
 
-@include utils('.u-backgroundColor-', (background-color), $color);
+@include utils('.u-backgroundColor-', (background-color), $color, (hover));
 @include utils('.u-color-', (color), $color, (hover));
 
 // sass-lint:disable indentation
@@ -47,7 +63,8 @@
 .u-fontSize-xl { font-size: 2.4rem; }
 .u-fontSize-l { font-size: 2rem; }
 .u-fontSize-m { font-size: 1.6rem; } // default size
-.u-fontSize-s { font-size: 1rem; }
+.u-fontSize-s { font-size: 1.2rem; }
+.u-fontSize-xs { font-size: 1rem; }
 
 .u-lineHeight-s { line-height: 1; } // default height
 .u-lineHeight-m { line-height: 1.25; } // a bit more then 100% in sigma so for base 16px font we get 20px line height

@@ -95,3 +95,11 @@ hr {
   border-style: solid;
   border-color: currentColor;
 }
+
+textarea {
+  resize: vertical;
+}
+
+label, textarea, input {
+  display: block;
+}
