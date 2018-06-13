@@ -35,7 +35,8 @@ const pages =
         }
       , { path: "/icon"
         , title: "Icon"
-        , content: pageLoader(() => import("./pages/icon.md"))
+        , content: pageLoader(() => import("./pages/Icon.md"))
+        , imports: { Icon: require('./pages/Icon.jsx') }
         }
       , { path: "/grid"
         , title: "Grid"
@@ -56,6 +57,11 @@ const pages =
       , { path: "/point-of-interest"
         , title: "Point of interest"
         , content: pageLoader(() => import("./pages/point-of-interest.md"))
+        }
+      , { path: "/tooltip"
+        , title: "Tooltip"
+        , content: pageLoader(() => import("./pages/Tooltip.md"))
+        , imports: { Tooltip: require("./pages/Tooltip.jsx") }
         }
       ]
     }

@@ -1,6 +1,20 @@
+// [1] - For most (if not all) of icons we have, `fill` is not specified. By default
+//       they are black, so we set `fill` to `currentColor`, this value will be inherited
+//       by all shapes in SVGs (unless different `fill` is specified).
+//       NOTE: We need to make sure no accidental `fill` is used for this to work
 .Icon {
-  width: 1em;
+  fill: currentColor // [1]
+}
+
+.Icon--fixHeight {
   height: 1em;
+}
+
+.Icon--fixWidth {
+  width: 1em;
+}
+
+.Icon--asText {
   display: inline-block;
   vertical-align: middle;
 }
