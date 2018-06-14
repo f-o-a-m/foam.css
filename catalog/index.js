@@ -48,20 +48,19 @@ const pages =
     , pages:
       [ { path: "/user-widget"
         , title: "User Widget"
-        , content: pageLoader(() => import("./pages/user-widget.md"))
+        , component: require('./pages/UserWidget.jsx').example
         }
       , { path: "/map-controls"
         , title: "Map Controls"
-        , content: pageLoader(() => import("./pages/map-controls.md"))
+        , component: require('./pages/MapControls.jsx').example
         }
       , { path: "/point-of-interest"
         , title: "Point of interest"
-        , content: pageLoader(() => import("./pages/point-of-interest.md"))
+        , component: require('./pages/PointOfInterest.jsx').example
         }
       , { path: "/tooltip"
         , title: "Tooltip"
-        , content: pageLoader(() => import("./pages/Tooltip.md"))
-        , imports: { Tooltip: require("./pages/Tooltip.jsx") }
+        , component: require("./pages/Tooltip.jsx").example
         }
       ]
     }

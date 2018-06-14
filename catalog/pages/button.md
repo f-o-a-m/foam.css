@@ -1,7 +1,7 @@
 
 ## `Button`
 
-By default all `Button`s have animation of background-color on interaction.
+By default all `Button`s border which is rounded
 
 ```html
 span: 2
@@ -43,6 +43,80 @@ dark: true
 </div>
 ```
 
+
+## `Button--withDim`
+
+Adds very opaque white overlay
+
+```html
+span: 2
+dark: true
+---
+<button class="
+  Button
+  Button--withDim
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-color-white.6">
+  Button
+</button>
+<button class="
+  Button
+  Button--withDim
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-backgroundColor-greenish
+  u-color-white">
+  Button
+</button>
+```
+
+```html
+span: 2
+dark: true
+---
+<a href="#" class="
+  Button
+  Button--withDim
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-color-white.6">
+  Button
+</a>
+<a href="#" class="
+  Button
+  Button--withDim
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-backgroundColor-pinkish
+  u-color-white">
+  Button
+</a>
+```
+
+
+```html
+span: 2
+dark: true
+---
+<div href="#" class="
+  Button
+  Button--withDim
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-color-white.6">
+  Button
+</div>
+<div href="#" class="
+  Button
+  Button--withDim
+  u-paddingHorizontal-l
+  u-paddingVertical-m
+  u-backgroundColor-blueish
+  u-color-white">
+  Button
+</div>
+```
 
 ## `Button--withTransition`
 
