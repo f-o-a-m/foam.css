@@ -22,7 +22,7 @@ const ItalicSup = ({ children }) => (
 exports.example = () => (
   <Page>
     <ReactSpecimen dark>
-      <div class="Grid Grid-wrap u-stackingContext">
+      <div className="Grid Grid-wrap u-stackingContext">
         <MapTextBlock>
           41.6952 <ItalicSup>LAT</ItalicSup><span className="u-marginLeft-m">-44.7939 <ItalicSup>LON</ItalicSup></span>
         </MapTextBlock>
@@ -40,7 +40,7 @@ exports.example = () => (
         <MapTextBlock>
           0.00 <ItalicSup>FST</ItalicSup>
         </MapTextBlock>
-        <div class="u-color-white.1 u-shadow-currentColor u-border-pill u-position-relative">
+        <div className="u-color-white.1 u-shadow-currentColor u-border-pill u-position-relative">
           <img style={{position: "relative", zIndex: "-1", width: "40px", height: "40px" }} src="./assets/avatar-example.png"/>
         </div>
       </div>

@@ -69,36 +69,3 @@ span: 5
 </div>
 ```
 
-
-
-
-# Gradients
-
-
-```html
-span: 2
-dark: true
----
-<div class="u-padding-xl u-marginBottom-m u-background-gradientDark"></div>
-<div class="u-padding-xl u-marginBottom-m u-background-gradientPinkish"></div>
-<div class="u-padding-xl u-marginBottom-m u-background-gradientGreenish"></div>
-<div class="u-padding-xl u-marginBottom-m u-background-gradientBlueish"></div>
-```
-
-```html
-span: 2
----
-<div class="u-padding-xl u-marginBottom-m u-background-gradientDark"></div>
-<div class="u-padding-xl u-marginBottom-m u-background-gradientPinkish"></div>
-<div class="u-padding-xl u-marginBottom-m u-background-gradientGreenish"></div>
-<div class="u-padding-xl u-marginBottom-m u-background-gradientBlueish"></div>
-```
-
-```html
-span: 2
----
-<div class="u-padding-xl u-marginBottom-m u-backgroundColor-pinkish u-background-gradientDark"></div>
-<div class="u-padding-xl u-marginBottom-m u-backgroundColor-pinkish u-background-gradientPinkish"></div>
-<div class="u-padding-xl u-marginBottom-m u-backgroundColor-pinkish u-background-gradientGreenish"></div>
-<div class="u-padding-xl u-marginBottom-m u-backgroundColor-pinkish u-background-gradientBlueish"></div>
-```
