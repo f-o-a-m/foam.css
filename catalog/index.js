@@ -7,57 +7,37 @@ const pages =
     , title: "Welcome"
     , content: pageLoader(() => import("./pages/WELCOME.md"))
     }
-    , { title: "Utils"
-      , pages:
-        [ { path: "/utils"
-          , title: "Overview"
-          , content: pageLoader(() => import("./pages/utils.md"))
-          }
-        , { path: "/typography"
-          , title: "Typography"
-          , content: pageLoader(() => import("./pages/typography.md"))
-          }
-        , { path: "/colors"
-          , title: "Colors"
-          , content: pageLoader(() => import("./pages/colors.md"))
-          }
-        , { path: "/spacing"
-          , title: "Spacing"
-          , content: pageLoader(() => import("./pages/spacing.md"))
-          }
-        ]
-      }
-  , { title: "Components"
-    , pages:
-      [ { path: "/button"
-        , title: "Button"
-        , content: pageLoader(() => import("./pages/button.md"))
-        }
-      , { path: "/icon"
-        , title: "Icon"
-        , component: require('./pages/Icon.jsx').example
-        }
-      , { path: "/grid"
-        , title: "Grid"
-        , content: pageLoader(() => import("./pages/grid.md"))
-        }
-      ]
+  , { path: "/typography"
+    , title: "Typography"
+    , content: pageLoader(() => import("./pages/typography.md"))
     }
-  , { title: "Templates"
-    , pages:
-      [ { path: "/map-controls"
-        , title: "Map Controls"
-        , component: require('./pages/MapControls.jsx').example
-        }
-      , { path: "/point-of-interest"
-        , title: "Point of interest"
-        , component: require('./pages/PointOfInterest.jsx').example
-        }
-      , { path: "/tooltip"
-        , title: "Tooltip"
-        , component: require("./pages/Tooltip.jsx").example
-        }
-      ]
+  , { path: "/colors"
+    , title: "Colors"
+    , content: pageLoader(() => import("./pages/colors.md"))
+    }
+  , { path: "/spacing"
+    , title: "Spacing"
+    , content: pageLoader(() => import("./pages/spacing.md"))
+    }
+  , { path: "/button"
+    , title: "Button"
+    , content: pageLoader(() => import("./pages/button.md"))
+    }
+  , { path: "/icon"
+    , title: "Icon"
+    , component: require('./pages/Icon.jsx').example
+    }
+  , { path: "/map-controls"
+    , title: "Map Controls"
+    , component: require('./pages/MapControls.jsx').example
+    }
+  , { path: "/point-of-interest"
+    , title: "Point of interest"
+    , component: require('./pages/PointOfInterest.jsx').example
+    }
+  , { path: "/tooltip"
+    , title: "Tooltip"
+    , component: require("./pages/Tooltip.jsx").example
     }
   ]
 

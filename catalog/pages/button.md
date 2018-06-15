@@ -269,6 +269,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -278,6 +279,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -287,6 +289,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     Button--withTransition
     u-paddingHorizontal-l
@@ -297,6 +300,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -315,6 +319,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -325,6 +330,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -335,6 +341,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     Button--withTransition
     u-paddingHorizontal-l
@@ -346,6 +353,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -365,6 +373,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -374,6 +383,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -383,6 +393,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     Button--withTransition
     u-paddingHorizontal-l
@@ -393,6 +404,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -411,6 +423,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -420,6 +433,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -430,6 +444,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     Button--withTransition
     u-paddingHorizontal-l
@@ -440,6 +455,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -458,6 +474,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -467,6 +484,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -477,6 +495,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     Button--withTransition
     u-paddingHorizontal-l
@@ -487,6 +506,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     Button--withTransition
     u-paddingHorizontal-l
     u-paddingVertical-m
@@ -505,6 +525,7 @@ dark: true
   u-padding-l">
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-shadow-m
     u-shadow-m:active
@@ -517,6 +538,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     u-shadow-m
     u-shadow-m:active
@@ -529,6 +551,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     u-width-full
     Button--withTransition
     u-shadow-m
@@ -542,6 +565,7 @@ dark: true
   </button>
   <button class="
     Button
+    Button--withDim
     Button--withTransition
     u-shadow-m
     u-shadow-m:active
