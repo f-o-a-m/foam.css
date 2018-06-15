@@ -196,7 +196,7 @@ class ViewCardExample extends React.Component {
                   u-paddingHorizontal-l u-paddingVertical-m
                   u-backgroundColor-pinkish u-color-white
                   ">
-                  <span className="u-display-block u-marginBottom-s">Challenge on New Lab’s validity</span>
+                  <span className="u-display-block u-marginBottom-s">Challenge New Lab’s validity</span>
                   <span className="u-display-block"><span className="u-fontSize-s">Time left to vote: </span><CountDown className="u-verticalAlign-middle"/></span>
                 </button>
               )}

@@ -1,5 +1,8 @@
 @import "settings";
 
+// # STACKING CONTEXT
+// once this class is applied to an element, that element will create new stacking context
+.u-stackingContext { opacity: 0.99; }
 
 //# ===POSITION===
 

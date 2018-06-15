@@ -35,8 +35,7 @@ const pages =
         }
       , { path: "/icon"
         , title: "Icon"
-        , content: pageLoader(() => import("./pages/Icon.md"))
-        , imports: { Icon: require('./pages/Icon.jsx') }
+        , component: require('./pages/Icon.jsx').example
         }
       , { path: "/grid"
         , title: "Grid"
@@ -46,11 +45,7 @@ const pages =
     }
   , { title: "Templates"
     , pages:
-      [ { path: "/user-widget"
-        , title: "User Widget"
-        , component: require('./pages/UserWidget.jsx').example
-        }
-      , { path: "/map-controls"
+      [ { path: "/map-controls"
         , title: "Map Controls"
         , component: require('./pages/MapControls.jsx').example
         }
