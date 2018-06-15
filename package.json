@@ -6,15 +6,17 @@
     "watch": "node-sass -wr ./styles/ --output ./catalog/static/dist/",
     "icons": "svg-sprite --symbol --symbol-dest=assets --symbol-sprite=icons.svg icons/*.svg",
     "start": "catalog start",
-    "build": "catalog build"
+    "build": "npm run icons && npm run css && npm run catalog:build",
+    "catalog:build": "catalog build"
   },
   "dependencies": {
-    "svg-sprite": "^1.4.0",
     "ajv": "^6.4.0",
     "catalog": "~3.5.2",
+    "classnames": "^2.2.6",
     "node-sass": "^4.8.3",
-    "sass-lint": "^1.12.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "sass-lint": "^1.12.1",
+    "svg-sprite": "^1.4.0"
   }
 }

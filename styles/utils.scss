@@ -1,5 +1,8 @@
 @import "settings";
 
+// # STACKING CONTEXT
+// once this class is applied to an element, that element will create new stacking context
+.u-stackingContext { opacity: 0.99; }
 
 //# ===POSITION===
 
@@ -42,11 +45,6 @@
 
 //# ===COLORS===
 
-.u-background-gradientDark { background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 50%, 0.5)); }
-.u-background-gradientBlueish { background: linear-gradient(color(blueish), hsla(0, 0%, 50%, 0.5)); }
-.u-background-gradientPinkish { background: linear-gradient(color(pinkish), hsla(0, 0%, 50%, 0.5)); }
-.u-background-gradientGreenish { background: linear-gradient(color(greenish), hsla(0, 0%, 50%, 0.5)); }
-
 @include utils('.u-backgroundColor-', (background-color), $color, (hover));
 @include utils('.u-color-', (color), $color, (hover));
 
@@ -59,7 +57,8 @@
 
 //# ===TYPOGRAPHY===
 
-.u-fontSize-xxl { font-size: 4.8rem; }
+.u-fontSize-xxxl { font-size: 4.8rem; }
+.u-fontSize-xxl { font-size: 4.0rem; }
 .u-fontSize-xl { font-size: 2.4rem; }
 .u-fontSize-l { font-size: 2rem; }
 .u-fontSize-m { font-size: 1.6rem; } // default size

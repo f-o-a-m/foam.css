@@ -8,8 +8,12 @@ if [ $# -eq 0 ]
     printf "Path to SVG icon was expected, but got no aguments. \nAborting\n"; exit 1;
 fi
 
+# http://how-to.wikia.com/wiki/How_to_use_Inkscape_in_commandline_mode
+# run `inkscape --verb-list` for more verbs
 # Make sure canvas fits drawing (i.e. ther is no empty spaces around the drawing)
 inkscape --verb=FitCanvasToDrawing --verb=FileVacuum --verb=FileSave --verb=FileQuit $1
+# in case of an icon with stokes add `--verb=EditSelectAll --verb=StrokeToPath` to argument
+# list (make sure to remove extra styles by hand as svgo can't handle them)
 
 # Remove unneeded attributes/tags and do general clean up
 svgo --precision 2 --disable removeViewBox --disable removeTitle --enable removeDimensions --pretty $1
