@@ -1,0 +1,12 @@
+.Icon {
+  fill: currentColor; }
+
+.Icon--fixHeight {
+  height: 1em; }
+
+.Icon--fixWidth {
+  width: 1em; }
+
+.Icon--asText {
+  display: inline-block;
+  vertical-align: middle; }

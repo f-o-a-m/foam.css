@@ -1,0 +1,150 @@
+/* in case of bugs see https://github.com/philipwalton/flexbugs */
+.Grid {
+  display: flex; }
+
+.Grid--inline {
+  display: inline-flex; }
+
+.Grid-wrap {
+  flex-wrap: wrap; }
+
+.Grid-nowrap {
+  flex-wrap: nowrap; }
+
+/**
+ * 1. Set `max-width:100%` to prevent
+ *    overflow.
+ * 2. Set `box-sizing:border-box` if
+ *    needed to account for padding
+ *    and border size.
+ * 3. by default block takes 0px so "weight" classes work properly
+ */
+.Grid-block {
+  flex: 0 0 auto;
+  /* [3] */
+  width: 0px;
+  /* [3] */
+  min-width: 0px;
+  /* [3] */
+  min-height: 0px;
+  /* [3] */
+  box-sizing: border-box;
+  /* [2] */
+  max-width: 100%;
+  /* [1] */ }
+
+/**
+ * Alignment per grid for cross axis(vertical)
+ * @default stretch
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg
+ */
+.Grid--alignStart {
+  align-items: flex-start; }
+
+.Grid--alignEnd {
+  align-items: flex-end; }
+
+.Grid--alignCenter {
+  align-items: center; }
+
+.Grid--alignBaseline {
+  align-items: baseline; }
+
+.Grid--alignStretch {
+  align-items: stretch; }
+
+/**
+ * space per grid for main axis(horizontal)
+ * @default flex-start
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content.svg
+ */
+.Grid--spaceStart {
+  justify-content: flex-start; }
+
+.Grid--spaceEnd {
+  justify-content: flex-end; }
+
+.Grid--spaceCenter {
+  justify-content: center; }
+
+.Grid--spaceBetween {
+  justify-content: space-between; }
+
+.Grid--spaceAround {
+  justify-content: space-around; }
+
+/**
+ * aligne grid rows
+ * @default flex-start
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2013/04/align-content.svg
+ */
+.Grid--contentStart {
+  align-content: flex-start; }
+
+.Grid--contentEnd {
+  align-content: flex-end; }
+
+.Grid--contentCenter {
+  align-content: center; }
+
+.Grid--contentBetween {
+  align-content: space-between; }
+
+.Grid--contentAround {
+  align-content: space-around; }
+
+/**
+ * Alignment per block
+ * same as .Grid--align* but for block
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-self.svg
+ */
+.Grid-block--alignStart {
+  align-self: flex-start; }
+
+.Grid-block--alignEnd {
+  align-self: flex-end; }
+
+.Grid-block--alignCenter {
+  align-self: center; }
+
+.Grid-block--alignBaseline {
+  align-self: baseline; }
+
+.Grid-block--alignStretch {
+  align-self: stretch; }
+
+/**
+ * Block weight in row
+ * @see https://cdn.css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg
+ */
+.Grid-block--weight1 {
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.Grid-block--weight2 {
+  flex-grow: 2;
+  flex-shrink: 2; }
+
+.Grid-block--weight3 {
+  flex-grow: 3;
+  flex-shrink: 3; }
+
+.Grid-block--weight4 {
+  flex-grow: 4;
+  flex-shrink: 4; }
+
+.Grid-block--weight5 {
+  flex-grow: 5;
+  flex-shrink: 5; }
+
+.Grid-block--weight6 {
+  flex-grow: 6;
+  flex-shrink: 6; }
+
+.Grid-block--weight7 {
+  flex-grow: 7;
+  flex-shrink: 7; }
+
+.Grid-block--weight8 {
+  flex-grow: 8;
+  flex-shrink: 8; }
