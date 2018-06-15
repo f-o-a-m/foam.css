@@ -8,7 +8,7 @@ script:
   - npm run lint
   - npm run css
   - npm run icons
-  - npm run build -- --public-url=/foam.css
+  - npm run catalog:build -- --public-url=/foam.css
 
 deploy:
   provider: pages
